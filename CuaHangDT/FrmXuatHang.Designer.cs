@@ -39,20 +39,22 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtGioXuat = new System.Windows.Forms.TextBox();
             this.cbMaKH = new System.Windows.Forms.ComboBox();
-            this.cbNgayXuat = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.cbMaNCC = new System.Windows.Forms.ComboBox();
             this.cbMaNV = new System.Windows.Forms.ComboBox();
-            this.cbMaPX = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btLuu = new System.Windows.Forms.Button();
-            this.btHuy = new System.Windows.Forms.Button();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.btnHuy = new System.Windows.Forms.Button();
+            this.txtMaPX = new System.Windows.Forms.TextBox();
+            this.txtNgayXuat = new System.Windows.Forms.TextBox();
+            this.btnDong = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -128,12 +130,12 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.txtNgayXuat);
             this.groupBox2.Controls.Add(this.txtGioXuat);
             this.groupBox2.Controls.Add(this.txtSoLuong);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.cbMaKH);
-            this.groupBox2.Controls.Add(this.cbNgayXuat);
             this.groupBox2.Controls.Add(this.cbMaSP);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label8);
@@ -163,14 +165,6 @@
             this.cbMaKH.Name = "cbMaKH";
             this.cbMaKH.Size = new System.Drawing.Size(200, 27);
             this.cbMaKH.TabIndex = 1;
-            // 
-            // cbNgayXuat
-            // 
-            this.cbNgayXuat.FormattingEnabled = true;
-            this.cbNgayXuat.Location = new System.Drawing.Point(539, 64);
-            this.cbNgayXuat.Name = "cbNgayXuat";
-            this.cbNgayXuat.Size = new System.Drawing.Size(200, 27);
-            this.cbNgayXuat.TabIndex = 1;
             // 
             // label11
             // 
@@ -214,14 +208,6 @@
             this.cbMaNV.Size = new System.Drawing.Size(200, 27);
             this.cbMaNV.TabIndex = 1;
             // 
-            // cbMaPX
-            // 
-            this.cbMaPX.FormattingEnabled = true;
-            this.cbMaPX.Location = new System.Drawing.Point(164, 34);
-            this.cbMaPX.Name = "cbMaPX";
-            this.cbMaPX.Size = new System.Drawing.Size(200, 27);
-            this.cbMaPX.TabIndex = 1;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -260,10 +246,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtMaPX);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.cbMaNCC);
             this.groupBox1.Controls.Add(this.cbMaNV);
-            this.groupBox1.Controls.Add(this.cbMaPX);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
@@ -276,33 +262,69 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "THÔNG TIN XUẤT HÀNG";
             // 
-            // btLuu
+            // btnLuu
             // 
-            this.btLuu.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btLuu.Location = new System.Drawing.Point(201, 452);
-            this.btLuu.Name = "btLuu";
-            this.btLuu.Size = new System.Drawing.Size(140, 50);
-            this.btLuu.TabIndex = 6;
-            this.btLuu.Text = "LƯU";
-            this.btLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnLuu.Location = new System.Drawing.Point(23, 452);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(140, 50);
+            this.btnLuu.TabIndex = 6;
+            this.btnLuu.Text = "LƯU";
+            this.btnLuu.UseVisualStyleBackColor = true;
             // 
-            // btHuy
+            // btnHuy
             // 
-            this.btHuy.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btHuy.Location = new System.Drawing.Point(439, 452);
-            this.btHuy.Name = "btHuy";
-            this.btHuy.Size = new System.Drawing.Size(140, 50);
-            this.btHuy.TabIndex = 6;
-            this.btHuy.Text = "HỦY";
-            this.btHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnHuy.Location = new System.Drawing.Point(414, 452);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(140, 50);
+            this.btnHuy.TabIndex = 6;
+            this.btnHuy.Text = "HỦY";
+            this.btnHuy.UseVisualStyleBackColor = true;
+            // 
+            // txtMaPX
+            // 
+            this.txtMaPX.Location = new System.Drawing.Point(164, 37);
+            this.txtMaPX.Name = "txtMaPX";
+            this.txtMaPX.Size = new System.Drawing.Size(200, 26);
+            this.txtMaPX.TabIndex = 2;
+            // 
+            // txtNgayXuat
+            // 
+            this.txtNgayXuat.Location = new System.Drawing.Point(539, 69);
+            this.txtNgayXuat.Name = "txtNgayXuat";
+            this.txtNgayXuat.Size = new System.Drawing.Size(200, 26);
+            this.txtNgayXuat.TabIndex = 2;
+            // 
+            // btnDong
+            // 
+            this.btnDong.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnDong.Location = new System.Drawing.Point(611, 452);
+            this.btnDong.Name = "btnDong";
+            this.btnDong.Size = new System.Drawing.Size(140, 50);
+            this.btnDong.TabIndex = 6;
+            this.btnDong.Text = "ĐÓNG";
+            this.btnDong.UseVisualStyleBackColor = true;
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnXoa.Location = new System.Drawing.Point(219, 452);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(140, 50);
+            this.btnXoa.TabIndex = 6;
+            this.btnXoa.Text = "XÓA";
+            this.btnXoa.UseVisualStyleBackColor = true;
             // 
             // FrmXuatHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(789, 514);
-            this.Controls.Add(this.btHuy);
-            this.Controls.Add(this.btLuu);
+            this.Controls.Add(this.btnDong);
+            this.Controls.Add(this.btnHuy);
+            this.Controls.Add(this.btnXoa);
+            this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.dgv);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -332,18 +354,20 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox cbMaNCC;
         private System.Windows.Forms.ComboBox cbMaNV;
-        private System.Windows.Forms.ComboBox cbMaPX;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtGioXuat;
-        private System.Windows.Forms.ComboBox cbNgayXuat;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox cbMaKH;
-        private System.Windows.Forms.Button btLuu;
-        private System.Windows.Forms.Button btHuy;
+        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Button btnHuy;
+        private System.Windows.Forms.TextBox txtNgayXuat;
+        private System.Windows.Forms.TextBox txtMaPX;
+        private System.Windows.Forms.Button btnDong;
+        private System.Windows.Forms.Button btnXoa;
     }
 }
