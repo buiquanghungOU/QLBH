@@ -45,6 +45,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKhachHang.Designer.cs">
+      <DependentUpon>FrmKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNhaCungCap.Designer.cs">
+      <DependentUpon>FrmNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNhanVien.Designer.cs">
+      <DependentUpon>FrmNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmNhapHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +81,12 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSanPham.Designer.cs">
+      <DependentUpon>FrmSanPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmThanhToan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +101,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmKhachHang.resx">
+      <DependentUpon>FrmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNhaCungCap.resx">
+      <DependentUpon>FrmNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNhanVien.resx">
+      <DependentUpon>FrmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmNhapHang.resx">
       <DependentUpon>FrmNhapHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSanPham.resx">
+      <DependentUpon>FrmSanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmThanhToan.resx">
       <DependentUpon>FrmThanhToan.cs</DependentUpon>

@@ -14,7 +14,12 @@ namespace CuaHangDT
 {
     public partial class frmQuanLy : Form
     {
+<<<<<<< HEAD
         
+=======
+       string cnStr = "";
+       SqlConnection cn;
+>>>>>>> origin/DanhMuc
         
 
         public frmQuanLy()
@@ -26,7 +31,13 @@ namespace CuaHangDT
 
         private void Form1_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
            
+=======
+            //Khai bao ket noi
+            cnStr = ConfigurationManager.ConnectionStrings["cnStr"].ConnectionString;
+            cn = new SqlConnection(cnStr);
+>>>>>>> origin/DanhMuc
         }
 
 
