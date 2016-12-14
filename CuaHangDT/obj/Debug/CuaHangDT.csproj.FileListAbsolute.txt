@@ -1,21 +1,7 @@
-C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\bin\Debug\CuaHangDT.exe.config
-C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\bin\Debug\CuaHangDT.exe
-C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\bin\Debug\CuaHangDT.pdb
-C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmNhapHang.resources
-C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\obj\Debug\CuaHangDT.frmQuanLy.resources
-C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\obj\Debug\CuaHangDT.frmLogin.resources
-C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmThanhToan.resources
-C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmXuatHang.resources
-C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\obj\Debug\CuaHangDT.Properties.Resources.resources
-C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\obj\Debug\CuaHangDT.csproj.GenerateResource.Cache
-C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\obj\Debug\CuaHangDT.exe
-C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\obj\Debug\CuaHangDT.pdb
-C:\Users\user\Desktop\QLBHV1\QLBH\CuaHangDT\obj\Debug\CuaHangDT.csprojResolveAssemblyReference.cache
-C:\Users\user\Desktop\QLBHV1\QLBH\CuaHangDT\obj\Debug\CuaHangDT.exe
-C:\Users\user\Desktop\QLBHV1\QLBH\CuaHangDT\obj\Debug\CuaHangDT.pdb
 C:\Users\user\Desktop\QLBHV1\QLBH\CuaHangDT\bin\Debug\CuaHangDT.exe.config
 C:\Users\user\Desktop\QLBHV1\QLBH\CuaHangDT\bin\Debug\CuaHangDT.exe
 C:\Users\user\Desktop\QLBHV1\QLBH\CuaHangDT\bin\Debug\CuaHangDT.pdb
+C:\Users\user\Desktop\QLBHV1\QLBH\CuaHangDT\obj\Debug\CuaHangDT.csprojResolveAssemblyReference.cache
 C:\Users\user\Desktop\QLBHV1\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmKhachHang.resources
 C:\Users\user\Desktop\QLBHV1\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmNhaCungCap.resources
 C:\Users\user\Desktop\QLBHV1\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmNhanVien.resources
@@ -27,3 +13,5 @@ C:\Users\user\Desktop\QLBHV1\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmThanhToan.res
 C:\Users\user\Desktop\QLBHV1\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmXuatHang.resources
 C:\Users\user\Desktop\QLBHV1\QLBH\CuaHangDT\obj\Debug\CuaHangDT.Properties.Resources.resources
 C:\Users\user\Desktop\QLBHV1\QLBH\CuaHangDT\obj\Debug\CuaHangDT.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\QLBHV1\QLBH\CuaHangDT\obj\Debug\CuaHangDT.exe
+C:\Users\user\Desktop\QLBHV1\QLBH\CuaHangDT\obj\Debug\CuaHangDT.pdb
