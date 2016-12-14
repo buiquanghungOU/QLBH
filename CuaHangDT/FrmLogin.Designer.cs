@@ -80,6 +80,7 @@
             this.cbUser.Size = new System.Drawing.Size(253, 28);
             this.cbUser.TabIndex = 0;
             this.cbUser.Text = "Admin";
+            this.cbUser.SelectedIndexChanged += new System.EventHandler(this.cbUser_SelectedIndexChanged);
             // 
             // txtPassword
             // 
@@ -154,6 +155,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmLogin_FormClosing);
             this.Load += new System.EventHandler(this.frmLogin_Load);
             this.Enter += new System.EventHandler(this.frmLogin_Enter);
             this.ResumeLayout(false);

@@ -17,6 +17,8 @@ namespace CuaHangDT
         string cnStr = @"Data Source=.;Initial Catalog=QLBH_BT;Integrated Security=True";
         SqlConnection cn;
         SqlCommand cmd;
+        DataSet ds;
+        SqlDataAdapter da;
 
         public frmLogin()
         {
@@ -27,7 +29,6 @@ namespace CuaHangDT
         {
             try
             {
-
                 cn = new SqlConnection(cnStr);
                 cn.Open();
                 string sql = "SELECT Count(*) FROM [QLBH_BT].[dbo].[USER] WHERE MaNV=@acc AND Password=@pass";
@@ -72,7 +73,9 @@ namespace CuaHangDT
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            //Xóa rỗng khi nhấn hủy
+            cbUser.Text = "";
+            txtPassword.Text = "";
         }
 
         private void frmLogin_Enter(object sender, EventArgs e)
@@ -82,7 +85,44 @@ namespace CuaHangDT
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
+            this.LoadUser();
+        }
 
-        }       
+        private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void LoadUser()
+        {
+            try
+            {
+                cn = new SqlConnection(cnStr);
+                cn.Open();
+                //Khai bao ket noi
+                string sql = "SELECT MaNV FROM [QLBH_BT].[dbo].[USER]";
+                cmd = new SqlCommand(sql, cn);
+                //Khai bao adapter
+                da = new SqlDataAdapter(cmd);
+                //Khai bao dataset
+                ds = new DataSet();
+                //Copy MaNV tu adapter vao dataset
+                da.Fill(ds, "MaNV");
+                //Lay du lieu tu dataset truyen vao ComboBox
+                cbUser.DataSource = ds.Tables[0];
+                cbUser.DisplayMember = "MaNV";
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                //throw;
+            }
+        }
+
+        private void cbUser_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

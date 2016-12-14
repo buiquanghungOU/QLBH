@@ -14,8 +14,7 @@ namespace CuaHangDT
 {
     public partial class frmQuanLy : Form
     {
-        //string cnStr = "";
-        //SqlConnection cn;
+        
         
 
         public frmQuanLy()
@@ -27,9 +26,7 @@ namespace CuaHangDT
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //Khai bao ket noi
-            //cnStr = ConfigurationManager.ConnectionStrings["cnStr"].ConnectionString;
-            //cn = new SqlConnection(cnStr);
+           
         }
 
 
@@ -65,7 +62,19 @@ namespace CuaHangDT
             Application.Exit();
         }
 
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmLogin login = new frmLogin();
+            login.Show();
+        }
 
-        
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            //frmLogin login = new frmLogin();
+            //frmQuanLy quanly = new frmQuanLy();
+
+            
+        }
     }
 }
