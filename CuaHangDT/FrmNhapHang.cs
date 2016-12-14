@@ -14,9 +14,7 @@ namespace CuaHangDT
 {
     public partial class FrmNhapHang : Form
     {
-        string cnStr;
-        SqlConnection cn;
-        DataSet ds;
+      
 
         public FrmNhapHang()
         {
@@ -33,16 +31,6 @@ namespace CuaHangDT
 
         }
 
-        public DataSet NhapHangDataSet()
-        {
-            try
-            {
-                string sql = "SELECT *FROM Chi Tiết Phiếu Nhập";
-                SqlDataAdapter da = new SqlDataAdapter(sql, cn);
-                ds = new DataSet();
-                da.Fill(ds);
 
-            }
-        }
     }
 }

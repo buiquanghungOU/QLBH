@@ -1,74 +1,12 @@
-E:\LTCSDL\CuaHangDT\CuaHangDT\bin\Debug\CuaHangDT.exe.config
-E:\LTCSDL\CuaHangDT\CuaHangDT\bin\Debug\CuaHangDT.exe
-E:\LTCSDL\CuaHangDT\CuaHangDT\bin\Debug\CuaHangDT.pdb
-E:\LTCSDL\CuaHangDT\CuaHangDT\obj\Debug\CuaHangDT.csprojResolveAssemblyReference.cache
-E:\LTCSDL\CuaHangDT\CuaHangDT\obj\Debug\CuaHangDT.Form1.resources
-E:\LTCSDL\CuaHangDT\CuaHangDT\obj\Debug\CuaHangDT.Login.resources
-E:\LTCSDL\CuaHangDT\CuaHangDT\obj\Debug\CuaHangDT.Properties.Resources.resources
-E:\LTCSDL\CuaHangDT\CuaHangDT\obj\Debug\CuaHangDT.csproj.GenerateResource.Cache
-E:\LTCSDL\CuaHangDT\CuaHangDT\obj\Debug\CuaHangDT.exe
-E:\LTCSDL\CuaHangDT\CuaHangDT\obj\Debug\CuaHangDT.pdb
-G:\[TK41]BaiTapOU\3-HK1\LAP TRINH CO SO DU LIEU\QLBH\CuaHangDT\bin\Debug\CuaHangDT.exe.config
-G:\[TK41]BaiTapOU\3-HK1\LAP TRINH CO SO DU LIEU\QLBH\CuaHangDT\obj\Debug\CuaHangDT.exe
-G:\[TK41]BaiTapOU\3-HK1\LAP TRINH CO SO DU LIEU\QLBH\CuaHangDT\obj\Debug\CuaHangDT.pdb
-G:\[TK41]BaiTapOU\3-HK1\LAP TRINH CO SO DU LIEU\QLBH\CuaHangDT\bin\Debug\CuaHangDT.exe
-G:\[TK41]BaiTapOU\3-HK1\LAP TRINH CO SO DU LIEU\QLBH\CuaHangDT\bin\Debug\CuaHangDT.pdb
-G:\[TK41]BaiTapOU\3-HK1\LAP TRINH CO SO DU LIEU\QLBH\CuaHangDT\bin\Debug\mscorlib.dll
-G:\[TK41]BaiTapOU\3-HK1\LAP TRINH CO SO DU LIEU\QLBH\CuaHangDT\bin\Debug\normidna.nlp
-G:\[TK41]BaiTapOU\3-HK1\LAP TRINH CO SO DU LIEU\QLBH\CuaHangDT\bin\Debug\normnfc.nlp
-G:\[TK41]BaiTapOU\3-HK1\LAP TRINH CO SO DU LIEU\QLBH\CuaHangDT\bin\Debug\normnfd.nlp
-G:\[TK41]BaiTapOU\3-HK1\LAP TRINH CO SO DU LIEU\QLBH\CuaHangDT\bin\Debug\normnfkc.nlp
-G:\[TK41]BaiTapOU\3-HK1\LAP TRINH CO SO DU LIEU\QLBH\CuaHangDT\bin\Debug\normnfkd.nlp
-G:\[TK41]BaiTapOU\3-HK1\LAP TRINH CO SO DU LIEU\QLBH\CuaHangDT\obj\Debug\CuaHangDT.csprojResolveAssemblyReference.cache
-G:\[TK41]BaiTapOU\3-HK1\LAP TRINH CO SO DU LIEU\QLBH\CuaHangDT\obj\Debug\CuaHangDT.Form1.resources
-G:\[TK41]BaiTapOU\3-HK1\LAP TRINH CO SO DU LIEU\QLBH\CuaHangDT\obj\Debug\CuaHangDT.Properties.Resources.resources
-G:\[TK41]BaiTapOU\3-HK1\LAP TRINH CO SO DU LIEU\QLBH\CuaHangDT\obj\Debug\CuaHangDT.csproj.GenerateResource.Cache
-G:\[TK41]BaiTapOU\3-HK1\LAP TRINH CO SO DU LIEU\QLBH\CuaHangDT\obj\Debug\CuaHangDT.frmLogin.resources
-C:\Users\HP Pavilon\Desktop\Login\CuaHangDT\bin\Debug\CuaHangDT.exe.config
-C:\Users\HP Pavilon\Desktop\Login\CuaHangDT\obj\Debug\CuaHangDT.exe
-C:\Users\HP Pavilon\Desktop\Login\CuaHangDT\obj\Debug\CuaHangDT.pdb
-C:\Users\HP Pavilon\Desktop\Quỳnh\CuaHangDT\bin\Debug\CuaHangDT.exe.config
-C:\Users\HP Pavilon\Desktop\Quỳnh\CuaHangDT\obj\Debug\CuaHangDT.exe
-C:\Users\HP Pavilon\Desktop\Quỳnh\CuaHangDT\obj\Debug\CuaHangDT.pdb
-C:\Users\HP Pavilon\Desktop\Quỳnh\CuaHangDT\bin\Debug\CuaHangDT.exe
-C:\Users\HP Pavilon\Desktop\Quỳnh\CuaHangDT\bin\Debug\CuaHangDT.pdb
-C:\Users\HP Pavilon\Desktop\Quỳnh\CuaHangDT\bin\Debug\mscorlib.dll
-C:\Users\HP Pavilon\Desktop\Quỳnh\CuaHangDT\bin\Debug\normidna.nlp
-C:\Users\HP Pavilon\Desktop\Quỳnh\CuaHangDT\bin\Debug\normnfc.nlp
-C:\Users\HP Pavilon\Desktop\Quỳnh\CuaHangDT\bin\Debug\normnfd.nlp
-C:\Users\HP Pavilon\Desktop\Quỳnh\CuaHangDT\bin\Debug\normnfkc.nlp
-C:\Users\HP Pavilon\Desktop\Quỳnh\CuaHangDT\bin\Debug\normnfkd.nlp
-C:\Users\HP Pavilon\Desktop\Quỳnh\CuaHangDT\obj\Debug\CuaHangDT.csprojResolveAssemblyReference.cache
-C:\Users\HP Pavilon\Desktop\Quỳnh\CuaHangDT\obj\Debug\CuaHangDT.frmLogin.resources
-C:\Users\HP Pavilon\Desktop\Quỳnh\CuaHangDT\obj\Debug\CuaHangDT.Properties.Resources.resources
-C:\Users\HP Pavilon\Desktop\Quỳnh\CuaHangDT\obj\Debug\CuaHangDT.csproj.GenerateResource.Cache
-C:\Users\HP Pavilon\Desktop\Quỳnh\CuaHangDT\obj\Debug\CuaHangDT.frmQuanLy.resources
-C:\Users\HP Pavilon\Desktop\CuaHangDT\bin\Debug\CuaHangDT.exe.config
-C:\Users\HP Pavilon\Desktop\CuaHangDT\obj\Debug\CuaHangDT.exe
-C:\Users\HP Pavilon\Desktop\CuaHangDT\obj\Debug\CuaHangDT.pdb
-<<<<<<< HEAD
-C:\Users\My PC\Desktop\git\QLBH\CuaHangDT\bin\Debug\CuaHangDT.exe.config
-C:\Users\My PC\Desktop\git\QLBH\CuaHangDT\obj\Debug\CuaHangDT.exe
-C:\Users\My PC\Desktop\git\QLBH\CuaHangDT\obj\Debug\CuaHangDT.pdb
-C:\Users\My PC\Desktop\git\QLBH\CuaHangDT\bin\Debug\CuaHangDT.exe
-C:\Users\My PC\Desktop\git\QLBH\CuaHangDT\bin\Debug\CuaHangDT.pdb
-C:\Users\My PC\Desktop\git\QLBH\CuaHangDT\obj\Debug\CuaHangDT.csprojResolveAssemblyReference.cache
-C:\Users\My PC\Desktop\git\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmNhapHang.resources
-C:\Users\My PC\Desktop\git\QLBH\CuaHangDT\obj\Debug\CuaHangDT.frmQuanLy.resources
-C:\Users\My PC\Desktop\git\QLBH\CuaHangDT\obj\Debug\CuaHangDT.frmLogin.resources
-C:\Users\My PC\Desktop\git\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmXuatHang.resources
-C:\Users\My PC\Desktop\git\QLBH\CuaHangDT\obj\Debug\CuaHangDT.Properties.Resources.resources
-C:\Users\My PC\Desktop\git\QLBH\CuaHangDT\obj\Debug\CuaHangDT.csproj.GenerateResource.Cache
-C:\Users\My PC\Desktop\git\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmThanhToan.resources
-=======
-C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\bin\Debug\CuaHangDT.exe.config
-C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\obj\Debug\CuaHangDT.exe
-C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\obj\Debug\CuaHangDT.pdb
-C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\bin\Debug\CuaHangDT.exe
-C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\bin\Debug\CuaHangDT.pdb
-C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\obj\Debug\CuaHangDT.csprojResolveAssemblyReference.cache
-C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\obj\Debug\CuaHangDT.frmQuanLy.resources
-C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\obj\Debug\CuaHangDT.frmLogin.resources
-C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\obj\Debug\CuaHangDT.Properties.Resources.resources
-C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\obj\Debug\CuaHangDT.csproj.GenerateResource.Cache
->>>>>>> origin
+C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\bin\Debug\CuaHangDT.exe.config
+C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\bin\Debug\CuaHangDT.exe
+C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\bin\Debug\CuaHangDT.pdb
+C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmNhapHang.resources
+C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\obj\Debug\CuaHangDT.frmQuanLy.resources
+C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\obj\Debug\CuaHangDT.frmLogin.resources
+C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmThanhToan.resources
+C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmXuatHang.resources
+C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\obj\Debug\CuaHangDT.Properties.Resources.resources
+C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\obj\Debug\CuaHangDT.csproj.GenerateResource.Cache
+C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\obj\Debug\CuaHangDT.exe
+C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\obj\Debug\CuaHangDT.pdb

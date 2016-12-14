@@ -14,9 +14,9 @@ namespace CuaHangDT
 {
     public partial class frmQuanLy : Form
     {
-        string cnStr = "";
-        SqlConnection cn;
-        DataSet ds;
+        //string cnStr = "";
+        //SqlConnection cn;
+        
 
         public frmQuanLy()
         {
@@ -28,16 +28,10 @@ namespace CuaHangDT
         private void Form1_Load(object sender, EventArgs e)
         {
             //Khai bao ket noi
-            cnStr = ConfigurationManager.ConnectionStrings["cnStr"].ConnectionString;
-            cn = new SqlConnection(cnStr);
+            //cnStr = ConfigurationManager.ConnectionStrings["cnStr"].ConnectionString;
+            //cn = new SqlConnection(cnStr);
         }
 
-        private void frmQuanLy_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (MessageBox.Show("Đóng ứng dụng?", "Thông báo",
-              MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
-                e.Cancel = true;
-        }
 
         private void nhậpHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -64,6 +58,11 @@ namespace CuaHangDT
             FrmThanhToan f = new FrmThanhToan();
             f.MdiParent = this;
             f.Show();
+        }
+
+        private void frmQuanLy_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
 
 
