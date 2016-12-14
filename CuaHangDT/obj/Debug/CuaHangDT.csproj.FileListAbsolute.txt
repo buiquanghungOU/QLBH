@@ -10,3 +10,6 @@ C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\obj\Debug\CuaHangDT.Properties.
 C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\obj\Debug\CuaHangDT.csproj.GenerateResource.Cache
 C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\obj\Debug\CuaHangDT.exe
 C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\obj\Debug\CuaHangDT.pdb
+C:\Users\PHUONG LE\Desktop\New folder\QLBH\CuaHangDT\bin\Debug\CuaHangDT.exe.config
+C:\Users\PHUONG LE\Desktop\New folder\QLBH\CuaHangDT\obj\Debug\CuaHangDT.exe
+C:\Users\PHUONG LE\Desktop\New folder\QLBH\CuaHangDT\obj\Debug\CuaHangDT.pdb
