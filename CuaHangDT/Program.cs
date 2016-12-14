@@ -16,7 +16,7 @@ namespace CuaHangDT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmQuanLy());
+            Application.Run(new frmLogin());
         }
     }
 }
