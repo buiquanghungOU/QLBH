@@ -46,3 +46,13 @@ C:\Users\HP Pavilon\Desktop\Quỳnh\CuaHangDT\obj\Debug\CuaHangDT.frmQuanLy.reso
 C:\Users\HP Pavilon\Desktop\CuaHangDT\bin\Debug\CuaHangDT.exe.config
 C:\Users\HP Pavilon\Desktop\CuaHangDT\obj\Debug\CuaHangDT.exe
 C:\Users\HP Pavilon\Desktop\CuaHangDT\obj\Debug\CuaHangDT.pdb
+C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\bin\Debug\CuaHangDT.exe.config
+C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\obj\Debug\CuaHangDT.exe
+C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\obj\Debug\CuaHangDT.pdb
+C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\bin\Debug\CuaHangDT.exe
+C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\bin\Debug\CuaHangDT.pdb
+C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\obj\Debug\CuaHangDT.csprojResolveAssemblyReference.cache
+C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\obj\Debug\CuaHangDT.frmQuanLy.resources
+C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\obj\Debug\CuaHangDT.frmLogin.resources
+C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\obj\Debug\CuaHangDT.Properties.Resources.resources
+C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\obj\Debug\CuaHangDT.csproj.GenerateResource.Cache
