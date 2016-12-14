@@ -78,6 +78,11 @@ namespace CuaHangDT
         private void frmLogin_Enter(object sender, EventArgs e)
         {
             //this.AcceptButton = btnSignin;
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
         }       
     }
 }
