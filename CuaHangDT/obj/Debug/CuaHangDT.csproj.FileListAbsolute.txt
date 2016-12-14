@@ -11,7 +11,6 @@ C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\obj\Debug\CuaHangDT.Properties.
 C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\obj\Debug\CuaHangDT.csproj.GenerateResource.Cache
 C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\obj\Debug\CuaHangDT.exe
 C:\Users\My PC\Desktop\clone nhap\QLBH\CuaHangDT\obj\Debug\CuaHangDT.pdb
-<<<<<<< HEAD
 C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\bin\Debug\CuaHangDT.exe.config
 C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\obj\Debug\CuaHangDT.exe
 C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\obj\Debug\CuaHangDT.pdb
@@ -52,7 +51,6 @@ C:\Users\My PC\Desktop\git\QLBH\CuaHangDT\obj\Debug\CuaHangDT.Properties.Resourc
 C:\Users\My PC\Desktop\git\QLBH\CuaHangDT\obj\Debug\CuaHangDT.csproj.GenerateResource.Cache
 C:\Users\My PC\Desktop\git\QLBH\CuaHangDT\obj\Debug\CuaHangDT.csprojResolveAssemblyReference.cache
 >>>>>>> 19a81fc05a0e8341f97fd1f182259454f7033ca1
-=======
 C:\Users\user\Desktop\QLBHV1\QLBH\CuaHangDT\bin\Debug\CuaHangDT.exe.config
 C:\Users\user\Desktop\QLBHV1\QLBH\CuaHangDT\bin\Debug\CuaHangDT.exe
 C:\Users\user\Desktop\QLBHV1\QLBH\CuaHangDT\bin\Debug\CuaHangDT.pdb
@@ -71,3 +69,7 @@ C:\Users\user\Desktop\QLBHV1\QLBH\CuaHangDT\obj\Debug\CuaHangDT.csproj.GenerateR
 C:\Users\user\Desktop\QLBHV1\QLBH\CuaHangDT\obj\Debug\CuaHangDT.exe
 C:\Users\user\Desktop\QLBHV1\QLBH\CuaHangDT\obj\Debug\CuaHangDT.pdb
 >>>>>>> origin/DanhMuc
+C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmKhachHang.resources
+C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmNhaCungCap.resources
+C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmNhanVien.resources
+C:\Users\HP Pavilon\Desktop\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmSanPham.resources
