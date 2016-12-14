@@ -14,7 +14,7 @@ namespace CuaHangDT
     public partial class frmLogin : Form
     {
         frmQuanLy QL;
-        string cnStr = @"Data Source=QUANGHUNG;Initial Catalog=QLBH_BT;Integrated Security=True";
+        string cnStr = @"Data Source=.;Initial Catalog=QLBH_BT;Integrated Security=True";
         SqlConnection cn;
         SqlCommand cmd;
 
