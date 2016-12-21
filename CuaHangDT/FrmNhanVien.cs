@@ -79,8 +79,7 @@ namespace CuaHangDT
         private void btnLoad_Click(object sender, EventArgs e)
         {
             try
-            {
-               
+            {              
                 cnStr = "SELECT * FROM NHANVIEN";
                 da = new SqlDataAdapter(cnStr, cn);
                 DataTable table = new DataTable();// tạo bảng ảo
@@ -112,13 +111,12 @@ namespace CuaHangDT
 
         private void btnThem_Click(object sender, EventArgs e)
         {
+           
             try
-            {
-                
+            {               
                 if (cbMaNV.Text != "")
                 {
                     cn.Open();
-                    
                     string Ins = "";
                     Ins = "INSERT INTO NHANVIEN (MaNV,HoNV,TenNV,GioiTinh,NgaySinh,ViTri,NgayBD,DiaChi,DienThoai,[E-Mail]) VALUES('" + cbMaNV.Text + "','" + txtHoNV.Text + "','" + txtTenNV.Text + "','" + cbGioiTinh.Text + "','" + timeNgaysinh.Value + "','" + cbVitri.Text + "','" + timeNgaylamviec.Value + "','" + txtDiachi.Text + "','" + txtDienThoai.Text + "','" + txtEmail.Text + "')";
                     da = new SqlDataAdapter(Ins, cn);
@@ -142,11 +140,12 @@ namespace CuaHangDT
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            cn.Open();
+           
             try
             {
                 if (cbMaNV.Text != "")
                 {
+                    cn.Open();
                     cnStr = "UPDATE NHANVIEN SET HoNV = '" + txtHoNV.Text + "',TenNV ='" + txtTenNV.Text + "',GioiTinh = '" + cbGioiTinh.Text + "',NgaySinh = '" + timeNgaysinh.Value + "',ViTri = '" + cbVitri.Text + "',NgayBD = '" + timeNgaylamviec.Value + "',DiaChi = '" + txtDiachi.Text + "',DienThoai = '" + txtDienThoai.Text + "',[E-Mail] = '" + txtEmail.Text + "' WHERE MaNV ='" + cbMaNV.Text + "'";
                     da = new SqlDataAdapter(cnStr, cn);
                     da.SelectCommand.ExecuteNonQuery();
@@ -164,6 +163,33 @@ namespace CuaHangDT
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            DialogResult Xoa;
+            Xoa = MessageBox.Show("Bạn có chắc chắn muốn XÓA Nhân Viên này không?", "THÔNG BÁO!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (Xoa == DialogResult.Yes)
+            {
+                try
+                {
+                    cn.Open();
+                    cnStr = "DELETE FROM NHANVIEN WHERE MaNV = '" + cbMaNV.Text + "'";
+                    da = new SqlDataAdapter(cnStr, cn);
+                    da.SelectCommand.ExecuteNonQuery();
+                    cn.Close();
+                    DefaultLoad();
+                    dgvNhanVien.ClearSelection();
+                    MessageBox.Show("ĐÃ XÓA THÀNH CÔNG!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.btnLoad_Click(sender, e);
+                   
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            
         }
     }
 }
