@@ -5,6 +5,7 @@ C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\bin\Debug\EntityFramework.dll
 C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\bin\Debug\EntityFramework.xml
 C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\obj\Debug\CuaHangDT.csprojResolveAssemblyReference.cache
 C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmKhachHang.resources
 C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmNhaCungCap.resources
 C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmNhanVien.resources
