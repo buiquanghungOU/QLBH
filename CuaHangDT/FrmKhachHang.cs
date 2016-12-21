@@ -74,7 +74,7 @@ namespace CuaHangDT
                 {
                     cn.Open();
                     string Ins = "";
-                    Ins = "INSERT INTO KHACHHANG (MaKH,HoKH,TenKH,DiaChi,DienThoai,[E-Mail]) VALUES('" + cbMaKH.Text + "','" + txtHoKH.Text + "','" + txtTenKH.Text + "','" + txtDiachi.Text + "','" + txtDienThoai.Text + "','" + txtEmail.Text + "')";
+                    Ins = "INSERT INTO KHACHHANG (MaKH,HoKH,TenKH,DiaChi,DienThoai,[E-Mail]) VALUES('" + cbMaKH.Text + "',N'" + txtHoKH.Text + "',N'" + txtTenKH.Text + "',N'" + txtDiachi.Text + "','" + txtDienThoai.Text + "','" + txtEmail.Text + "')";
                     da = new SqlDataAdapter(Ins, cn);
                     da.SelectCommand.ExecuteNonQuery();
 
@@ -90,6 +90,32 @@ namespace CuaHangDT
             catch (SqlException ex)
             {
                 MessageBox.Show(ex.Message);              
+            }
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (cbMaKH.Text != "")
+                {
+                    cn.Open();
+                    cnStr = "UPDATE KHACHHANG SET HoKH = N'" + txtHoKH.Text + "',TenKH = N'" + txtTenKH.Text+ "',DiaChi = N'" + txtDiachi.Text + "',DienThoai = '" + txtDienThoai.Text + "',[E-Mail] = '" + txtEmail.Text + "' WHERE MaKH = '" + cbMaKH.Text + "'";
+                    da = new SqlDataAdapter(cnStr, cn);
+                    da.SelectCommand.ExecuteNonQuery();
+                    da = new SqlDataAdapter(cnStr, cn);
+                    cn.Close();
+                    MessageBox.Show("Sửa Thành Công!", "THÔNG BÁO!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.btnLoadData_Click(sender, e);
+                }
+                else
+                {
+                    MessageBox.Show("Bạn chưa nhập Mã Khách Hàng", "THÔNG BÁO!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

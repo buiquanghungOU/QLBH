@@ -18,8 +18,7 @@ namespace CuaHangDT
         string cnStr = "";
         SqlConnection cn;
         SqlDataAdapter da;
-        // SqlCommand cmd;
-
+        
         public FrmNhanVien()
         {
             InitializeComponent();
@@ -110,15 +109,14 @@ namespace CuaHangDT
         }
 
         private void btnThem_Click(object sender, EventArgs e)
-        {
-           
+        {           
             try
             {               
                 if (cbMaNV.Text != "")
                 {
                     cn.Open();
                     string Ins = "";
-                    Ins = "INSERT INTO NHANVIEN (MaNV,HoNV,TenNV,GioiTinh,NgaySinh,ViTri,NgayBD,DiaChi,DienThoai,[E-Mail]) VALUES('" + cbMaNV.Text + "','" + txtHoNV.Text + "','" + txtTenNV.Text + "','" + cbGioiTinh.Text + "','" + timeNgaysinh.Value + "','" + cbVitri.Text + "','" + timeNgaylamviec.Value + "','" + txtDiachi.Text + "','" + txtDienThoai.Text + "','" + txtEmail.Text + "')";
+                    Ins = "INSERT INTO NHANVIEN (MaNV,HoNV,TenNV,GioiTinh,NgaySinh,ViTri,NgayBD,DiaChi,DienThoai,[E-Mail]) VALUES (N'" + cbMaNV.Text + "',N'" + txtHoNV.Text + "',N'" + txtTenNV.Text + "',N'" + cbGioiTinh.Text + "',N'" + timeNgaysinh.Value + "',N'" + cbVitri.Text + "',N'" + timeNgaylamviec.Value + "',N'" + txtDiachi.Text + "',N'" + txtDienThoai.Text + "',N'" + txtEmail.Text + "')";
                     da = new SqlDataAdapter(Ins, cn);
                     da.SelectCommand.ExecuteNonQuery();
 
@@ -213,7 +211,7 @@ namespace CuaHangDT
 
         private void cbGioiTinh_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE GioiTinh ='" + cbGioiTinh.SelectedValue + "'", cn);
+            da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE GioiTinh = N'" + cbGioiTinh.SelectedValue + "'", cn);
             DataTable table = new DataTable();
             da.Fill(table);
             da.Dispose();
@@ -222,7 +220,7 @@ namespace CuaHangDT
 
         private void cbVitri_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE ViTri='" + cbVitri.SelectedValue + "'", cn);
+            da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE ViTri = N'" + cbVitri.SelectedValue + "'", cn);
             DataTable table = new DataTable();
             da.Fill(table);
             da.Dispose();
