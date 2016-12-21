@@ -230,31 +230,42 @@ namespace CuaHangDT
 
         private void btnSua_Click_1(object sender, EventArgs e)
         {
-
             try
             {
                 cn.Open();
-                string del = "DELETE FROM NHACUNGCAP WHERE MaNCC='" + cbMaNCC + "'";
-                da = new SqlDataAdapter(del, cn);
+
+                string upd =
+                   "UPDATE NHACUNGCAP SET TenNCC ='" + txtTenNCC.Text + "',TenNDD ='" + txtTenNDD.Text + "',DiaChi= '" + txtDiachi.Text + "',Tax= '" + txtSoFax.Text + "',Fax='" + txtSoFax.Text + "',SDT='" + txtDienThoai.Text + "',[E-mail]='" + txtEmail.Text + "' WHERE  MaNCC ='" + cbMaNCC.Text + "'";
+                da = new SqlDataAdapter(upd, cn);
+
                 da.SelectCommand.ExecuteNonQuery();
-                cn.Close();
-                MessageBox.Show("Xóa thành công", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Sửa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Loadlaicbb();
                 this.btnTaiDL_Click(sender, e);
+<<<<<<< HEAD
 >>>>>>> 4db07939a774ea65914978d62451e5d2d69e14a1
 
+=======
+>>>>>>> b184e81da4c349aaf0c349d1c6f9dbec03ea0248
             }
             catch (SqlException ex)
             {
                 MessageBox.Show(ex.Message);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b184e81da4c349aaf0c349d1c6f9dbec03ea0248
 
             }
             finally
             {
                 cn.Close();
+<<<<<<< HEAD
 >>>>>>> adbda8fe7639d5cb0023f8ed97190d6cbe487b6c
             }
 =======
+=======
+>>>>>>> b184e81da4c349aaf0c349d1c6f9dbec03ea0248
             }
         }
 
