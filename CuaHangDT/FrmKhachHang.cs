@@ -89,7 +89,7 @@ namespace CuaHangDT
             }
             catch (SqlException ex)
             {
-                MessageBox.Show(ex.Message);              
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -100,7 +100,7 @@ namespace CuaHangDT
                 if (cbMaKH.Text != "")
                 {
                     cn.Open();
-                    cnStr = "UPDATE KHACHHANG SET HoKH = N'" + txtHoKH.Text + "',TenKH = N'" + txtTenKH.Text+ "',DiaChi = N'" + txtDiachi.Text + "',DienThoai = '" + txtDienThoai.Text + "',[E-Mail] = '" + txtEmail.Text + "' WHERE MaKH = '" + cbMaKH.Text + "'";
+                    cnStr = "UPDATE KHACHHANG SET HoKH = N'" + txtHoKH.Text + "',TenKH = N'" + txtTenKH.Text + "',DiaChi = N'" + txtDiachi.Text + "',DienThoai = '" + txtDienThoai.Text + "',[E-Mail] = '" + txtEmail.Text + "' WHERE MaKH = '" + cbMaKH.Text + "'";
                     da = new SqlDataAdapter(cnStr, cn);
                     da.SelectCommand.ExecuteNonQuery();
                     da = new SqlDataAdapter(cnStr, cn);
@@ -117,6 +117,54 @@ namespace CuaHangDT
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            DialogResult Xoa;
+            Xoa = MessageBox.Show("Bạn có chắc chắn muốn XÓA Khách Hàng này không?", "THÔNG BÁO!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (Xoa == DialogResult.Yes)
+            {
+                try
+                {
+                    cn.Open();
+                    cnStr = "DELETE FROM KHACHHANG WHERE MaKH = '" + cbMaKH.Text + "'";
+                    da = new SqlDataAdapter(cnStr, cn);
+                    da.SelectCommand.ExecuteNonQuery();
+                    cn.Close();
+                    DefaultLoad();//xóa trống các field
+                    dgvKhachHang.ClearSelection();// xóa chọn ở dgv
+                    MessageBox.Show("ĐÃ XÓA THÀNH CÔNG!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.btnLoadData_Click(sender, e);
+
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            DialogResult Thoat;
+            Thoat = MessageBox.Show("Bạn có muốn thoát không?", "THÔNG BÁO!", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (Thoat == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void dgvKhachHang_Click(object sender, EventArgs e)
+        {
+            int index = dgvKhachHang.CurrentRow.Index;//click vào đối tượng trên datagridview sẽ hiện lên cái textbox
+
+            cbMaKH.Text = dgvKhachHang.Rows[index].Cells[0].Value.ToString();
+            txtHoKH.Text = dgvKhachHang.Rows[index].Cells[1].Value.ToString();
+            txtTenKH.Text = dgvKhachHang.Rows[index].Cells[2].Value.ToString();            
+            txtDiachi.Text = dgvKhachHang.Rows[index].Cells[3].Value.ToString();
+            txtDienThoai.Text = dgvKhachHang.Rows[index].Cells[4].Value.ToString();
+            txtEmail.Text = dgvKhachHang.Rows[index].Cells[5].Value.ToString();
         }
     }
 }
