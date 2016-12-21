@@ -90,5 +90,12 @@ namespace CuaHangDT
             f.MdiParent = this;
             f.Show();
         }
+
+        private void danhSáchKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmKhachHang f = new FrmKhachHang();
+            f.MdiParent = this;
+            f.Show();
+        }
     }
 }
