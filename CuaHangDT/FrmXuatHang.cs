@@ -154,18 +154,8 @@ namespace CuaHangDT
                 try
                 {
                     var CT = db.CHITIETPHIEUXUATs.Single(p => p.MaPX == MaPX);
-                    var PX = db.PHIEUXUATs.Single(p => p.MaPX == MaPX);
-
-                    CT.MaPX = cbMaPX.Text;
-                    CT.MaSP = cbMaSP.Text;
                     CT.SoLuong = int.Parse(txtSoLuong.Text);
                     CT.Ngayxuat = dateNgayXuat.Value;
-                    CT.Gioxuat = DateTime.Parse(lbGioXuat.Text);
-
-                    PX.MaPX = cbMaPX.Text;
-                    PX.MaNV = cbMaNV.Text;
-                    PX.NgayXuat = dateNgayXuat.Value;
-
                     db.SaveChanges();
                     LoadCTPhieuXuat();
                 }

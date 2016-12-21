@@ -97,5 +97,19 @@ namespace CuaHangDT
             f.MdiParent = this;
             f.Show();
         }
+
+        private void sảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmSanPham f = new FrmSanPham();
+            f.MdiParent = this;
+            f.Show();
+        }
+
+        private void nhàCungCấpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmNhaCungCap f = new FrmNhaCungCap();
+            f.MdiParent = this;
+            f.Show();
+        }
     }
 }

@@ -269,7 +269,6 @@
             this.btnXoa.TabIndex = 11;
             this.btnXoa.Text = "XÓA";
             this.btnXoa.UseVisualStyleBackColor = true;
-           
             // 
             // btSua
             // 
@@ -314,7 +313,10 @@
             this.Controls.Add(this.dgvHoaDon);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmThanhToan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmThanhToan";
             this.Load += new System.EventHandler(this.FrmThanhToan_Load);
             this.groupBox1.ResumeLayout(false);
