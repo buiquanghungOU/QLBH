@@ -168,21 +168,27 @@ namespace CuaHangDT
 
         private void btnSua_Click_1(object sender, EventArgs e)
         {
-
             try
             {
                 cn.Open();
-                string del = "DELETE FROM NHACUNGCAP WHERE MaNCC='" + cbMaNCC + "'";
-                da = new SqlDataAdapter(del, cn);
-                da.SelectCommand.ExecuteNonQuery();
-                cn.Close();
-                MessageBox.Show("Xóa thành công", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.btnTaiDL_Click(sender, e);
 
+                string upd =
+                   "UPDATE NHACUNGCAP SET TenNCC ='" + txtTenNCC.Text + "',TenNDD ='" + txtTenNDD.Text + "',DiaChi= '" + txtDiachi.Text + "',Tax= '" + txtSoFax.Text + "',Fax='" + txtSoFax.Text + "',SDT='" + txtDienThoai.Text + "',[E-mail]='" + txtEmail.Text + "' WHERE  MaNCC ='" + cbMaNCC.Text + "'";
+                da = new SqlDataAdapter(upd, cn);
+
+                da.SelectCommand.ExecuteNonQuery();
+                MessageBox.Show("Sửa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Loadlaicbb();
+                this.btnTaiDL_Click(sender, e);
             }
             catch (SqlException ex)
             {
                 MessageBox.Show(ex.Message);
+
+            }
+            finally
+            {
+                cn.Close();
             }
         }
 

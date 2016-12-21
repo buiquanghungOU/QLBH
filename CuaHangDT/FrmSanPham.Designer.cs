@@ -32,13 +32,12 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.btnTim = new System.Windows.Forms.Button();
+            this.btnTaiDL = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -56,6 +55,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtBaohanh = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.btnHuy = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -71,7 +73,7 @@
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(540, 297);
+            this.btnXoa.Location = new System.Drawing.Point(502, 297);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 39);
             this.btnXoa.TabIndex = 44;
@@ -81,7 +83,7 @@
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(387, 297);
+            this.btnSua.Location = new System.Drawing.Point(361, 297);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 39);
             this.btnSua.TabIndex = 43;
@@ -91,34 +93,36 @@
             // btnThem
             // 
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(239, 297);
+            this.btnThem.Location = new System.Drawing.Point(228, 297);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 39);
             this.btnThem.TabIndex = 42;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
             // 
-            // btnTim
+            // btnTaiDL
             // 
-            this.btnTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTim.Location = new System.Drawing.Point(91, 297);
-            this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(75, 39);
-            this.btnTim.TabIndex = 41;
-            this.btnTim.Text = "Tìm";
-            this.btnTim.UseVisualStyleBackColor = true;
+            this.btnTaiDL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaiDL.Location = new System.Drawing.Point(54, 297);
+            this.btnTaiDL.Name = "btnTaiDL";
+            this.btnTaiDL.Size = new System.Drawing.Size(118, 39);
+            this.btnTaiDL.TabIndex = 41;
+            this.btnTaiDL.Text = "Tải Dữ Liệu";
+            this.btnTaiDL.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnHuy);
+            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.txtBaohanh);
             this.groupBox1.Controls.Add(this.btnXoa);
             this.groupBox1.Controls.Add(this.btnSua);
             this.groupBox1.Controls.Add(this.btnThem);
-            this.groupBox1.Controls.Add(this.btnTim);
+            this.groupBox1.Controls.Add(this.btnTaiDL);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.label8);
@@ -147,9 +151,9 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(131, 246);
+            this.textBox2.Location = new System.Drawing.Point(147, 246);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(603, 26);
+            this.textBox2.Size = new System.Drawing.Size(587, 26);
             this.textBox2.TabIndex = 40;
             // 
             // label11
@@ -165,9 +169,9 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(132, 214);
+            this.textBox1.Location = new System.Drawing.Point(147, 214);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(602, 26);
+            this.textBox1.Size = new System.Drawing.Size(587, 26);
             this.textBox1.TabIndex = 38;
             // 
             // label10
@@ -179,15 +183,6 @@
             this.label10.Size = new System.Drawing.Size(83, 20);
             this.label10.TabIndex = 37;
             this.label10.Text = "Thông số :";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(510, 173);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(224, 26);
-            this.dateTimePicker1.TabIndex = 36;
             // 
             // label9
             // 
@@ -203,9 +198,9 @@
             // 
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(131, 173);
+            this.comboBox1.Location = new System.Drawing.Point(147, 174);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(206, 28);
+            this.comboBox1.Size = new System.Drawing.Size(252, 28);
             this.comboBox1.TabIndex = 34;
             // 
             // label8
@@ -220,19 +215,20 @@
             // 
             // cbTinhtrang
             // 
+            this.cbTinhtrang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTinhtrang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTinhtrang.FormattingEnabled = true;
-            this.cbTinhtrang.Location = new System.Drawing.Point(528, 137);
+            this.cbTinhtrang.Location = new System.Drawing.Point(555, 137);
             this.cbTinhtrang.Name = "cbTinhtrang";
-            this.cbTinhtrang.Size = new System.Drawing.Size(206, 28);
+            this.cbTinhtrang.Size = new System.Drawing.Size(179, 28);
             this.cbTinhtrang.TabIndex = 32;
             // 
             // txtDongia
             // 
             this.txtDongia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDongia.Location = new System.Drawing.Point(131, 137);
+            this.txtDongia.Location = new System.Drawing.Point(147, 139);
             this.txtDongia.Name = "txtDongia";
-            this.txtDongia.Size = new System.Drawing.Size(267, 26);
+            this.txtDongia.Size = new System.Drawing.Size(252, 26);
             this.txtDongia.TabIndex = 31;
             // 
             // label6
@@ -259,13 +255,14 @@
             // 
             this.cbTenSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTenSP.FormattingEnabled = true;
-            this.cbTenSP.Location = new System.Drawing.Point(131, 102);
+            this.cbTenSP.Location = new System.Drawing.Point(147, 102);
             this.cbTenSP.Name = "cbTenSP";
-            this.cbTenSP.Size = new System.Drawing.Size(603, 28);
+            this.cbTenSP.Size = new System.Drawing.Size(587, 28);
             this.cbTenSP.TabIndex = 28;
             // 
             // cbMaNCC
             // 
+            this.cbMaNCC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMaNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMaNCC.FormattingEnabled = true;
             this.cbMaNCC.Location = new System.Drawing.Point(147, 67);
@@ -294,6 +291,7 @@
             // 
             // cbMaHSX
             // 
+            this.cbMaHSX.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMaHSX.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMaHSX.FormattingEnabled = true;
             this.cbMaHSX.Location = new System.Drawing.Point(555, 65);
@@ -315,9 +313,9 @@
             // 
             this.cbMaSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMaSP.FormattingEnabled = true;
-            this.cbMaSP.Location = new System.Drawing.Point(132, 31);
+            this.cbMaSP.Location = new System.Drawing.Point(147, 31);
             this.cbMaSP.Name = "cbMaSP";
-            this.cbMaSP.Size = new System.Drawing.Size(267, 28);
+            this.cbMaSP.Size = new System.Drawing.Size(252, 28);
             this.cbMaSP.TabIndex = 10;
             // 
             // label7
@@ -350,6 +348,34 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã sản phẩm:";
             // 
+            // txtBaohanh
+            // 
+            this.txtBaohanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBaohanh.Location = new System.Drawing.Point(555, 171);
+            this.txtBaohanh.Name = "txtBaohanh";
+            this.txtBaohanh.Size = new System.Drawing.Size(123, 26);
+            this.txtBaohanh.TabIndex = 45;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(684, 174);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(50, 20);
+            this.label12.TabIndex = 46;
+            this.label12.Text = "tháng";
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuy.Location = new System.Drawing.Point(659, 297);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(75, 39);
+            this.btnHuy.TabIndex = 47;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.UseVisualStyleBackColor = true;
+            // 
             // FrmSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -372,13 +398,12 @@
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.Button btnTim;
+        private System.Windows.Forms.Button btnTaiDL;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label8;
@@ -396,5 +421,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtBaohanh;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button btnHuy;
     }
 }
