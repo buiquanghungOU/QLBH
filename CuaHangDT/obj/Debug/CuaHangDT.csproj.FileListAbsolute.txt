@@ -1,4 +1,10 @@
 C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\bin\Debug\CuaHangDT.exe.config
+C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\bin\Debug\CuaHangDT.exe
+C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\bin\Debug\CuaHangDT.pdb
+C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\bin\Debug\EntityFramework.dll
+C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\bin\Debug\EntityFramework.xml
+C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\obj\Debug\CuaHangDT.csprojResolveAssemblyReference.cache
 C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmKhachHang.resources
 C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmNhaCungCap.resources
@@ -12,11 +18,5 @@ C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmThongKeDT.re
 C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmXuatHang.resources
 C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\obj\Debug\CuaHangDT.Properties.Resources.resources
 C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\obj\Debug\CuaHangDT.csproj.GenerateResource.Cache
-C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\bin\Debug\CuaHangDT.exe
-C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\bin\Debug\CuaHangDT.pdb
-C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\bin\Debug\EntityFramework.dll
-C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\bin\Debug\EntityFramework.xml
-C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\obj\Debug\CuaHangDT.exe
 C:\Users\PHUONG LE\Desktop\DT\QLBH\CuaHangDT\obj\Debug\CuaHangDT.pdb
