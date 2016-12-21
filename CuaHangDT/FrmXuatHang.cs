@@ -70,7 +70,14 @@ namespace CuaHangDT
 
         private void btnThem_Click(object sender, EventArgs e)
         {
+            var db = new QLBH_BTEntities();
+            var MaPX = cbMaPX.Text;
+
             try
+            {
+                db.PHIEUXUATs.Single(p => p.MaPX == MaPX);
+            }
+            catch
             {
                 using (var db1 = new QLBH_BTEntities())
                 {
@@ -83,7 +90,10 @@ namespace CuaHangDT
                     db1.PHIEUXUATs.Add(px);
                     db1.SaveChanges();
                 }
-
+              
+            }
+            finally
+            {
                 using (var db2 = new QLBH_BTEntities())
                 {
                     var ctpx = new CHITIETPHIEUXUAT
@@ -96,34 +106,36 @@ namespace CuaHangDT
                     };
                     db2.CHITIETPHIEUXUATs.Add(ctpx);
                     db2.SaveChanges();
-
                 }
-
                 LoadCTPhieuXuat();
-
-            }
-            catch (Exception ex)
-
-            {
-                MessageBox.Show(ex.Message);
-                //throw;
             }
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
             var MaPX = cbMaPX.Text;
-
             try
             {
                 QLBH_BTEntities db = new QLBH_BTEntities();
-                var CT = db.CHITIETPHIEUXUATs.Single(p => p.MaPX == MaPX);
-                var PX = db.PHIEUXUATs.Single(p => p.MaPX == MaPX);
-                db.CHITIETPHIEUXUATs.Remove(CT);
-                db.PHIEUXUATs.Remove(PX);
+                //var CT = db.CHITIETPHIEUXUATs.Single(p => p.MaPX == MaPX);
+                //db.CHITIETPHIEUXUATs.Remove(CT);
 
+                var Xoa = (from PX in db.PHIEUXUATs
+                          join CT in db.CHITIETPHIEUXUATs on PX.MaPX equals CT.MaPX
+                          where CT.MaPX == MaPX 
+                          select CT).FirstOrDefault();
+                db.CHITIETPHIEUXUATs.Remove(Xoa);
+                try
+                {
+                    db.CHITIETPHIEUXUATs.Single(p => p.MaPX == MaPX);
+                }
+                catch
+                {
+                    var PX = db.PHIEUXUATs.Single(p => p.MaPX == MaPX);
+                    db.PHIEUXUATs.Remove(PX);
+                    
+                }
                 db.SaveChanges();
-
                 LoadCTPhieuXuat();
 
             }

@@ -41,12 +41,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lbGioXuat = new System.Windows.Forms.Label();
             this.cbMaPX = new System.Windows.Forms.ComboBox();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnDong = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
-            this.lbGioXuat = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietPhieuXuat)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -173,6 +173,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "THÔNG TIN XUẤT HÀNG";
             // 
+            // lbGioXuat
+            // 
+            this.lbGioXuat.AutoSize = true;
+            this.lbGioXuat.Location = new System.Drawing.Point(535, 87);
+            this.lbGioXuat.Name = "lbGioXuat";
+            this.lbGioXuat.Size = new System.Drawing.Size(0, 19);
+            this.lbGioXuat.TabIndex = 4;
+            // 
             // cbMaPX
             // 
             this.cbMaPX.FormattingEnabled = true;
@@ -227,14 +235,6 @@
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // lbGioXuat
-            // 
-            this.lbGioXuat.AutoSize = true;
-            this.lbGioXuat.Location = new System.Drawing.Point(535, 87);
-            this.lbGioXuat.Name = "lbGioXuat";
-            this.lbGioXuat.Size = new System.Drawing.Size(0, 19);
-            this.lbGioXuat.TabIndex = 4;
-            // 
             // timer1
             // 
             this.timer1.Enabled = true;
@@ -258,7 +258,6 @@
             this.Name = "FrmXuatHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmXuatHang";
-            this.TopMost = true;
             this.Load += new System.EventHandler(this.FrmXuatHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietPhieuXuat)).EndInit();
             this.groupBox1.ResumeLayout(false);
