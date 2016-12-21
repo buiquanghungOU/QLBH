@@ -17,6 +17,9 @@ namespace CuaHangDT
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 <<<<<<< HEAD
+            Application.Run(new FrmKhachHang());
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
             Application.Run(new FrmNhanVien());
 =======
@@ -25,6 +28,7 @@ namespace CuaHangDT
 =======
             Application.Run(new FrmNhaCungCap());
 >>>>>>> 4db07939a774ea65914978d62451e5d2d69e14a1
+>>>>>>> refs/remotes/origin/master
         }
     }
 }
