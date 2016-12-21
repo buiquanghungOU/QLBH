@@ -156,7 +156,35 @@ namespace CuaHangDT
 
         }
 
-       
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            var MaPN = cbMaPN.Text;
+            try
+            {
+                QLBH_BTEntities db = new QLBH_BTEntities();
+                var Xoa = (from CT in db.CHITIETPHIEUNHAPs
+                           join PN in db.PHIEUNHAPs on CT.MaPN equals PN.MaPN
+                           where CT.MaPN == MaPN
+                           select CT).FirstOrDefault();
+                db.CHITIETPHIEUNHAPs.Remove(Xoa);
+                try
+                {
+                    db.CHITIETPHIEUNHAPs.Single(p => p.MaPN == MaPN);
+                }
+                catch
+                {
+                    var PN = db.PHIEUNHAPs.Single(p => p.MaPN == MaPN);
+                    db.PHIEUNHAPs.Remove(PN);
+                }
+                db.SaveChanges();
+                LoadCTNhapHang();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
 
