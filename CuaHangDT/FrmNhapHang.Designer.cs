@@ -38,7 +38,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtDonGia = new System.Windows.Forms.TextBox();
+            this.txtThanhTien = new System.Windows.Forms.TextBox();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -51,6 +51,7 @@
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnDong = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
+            this.btnTaiDuLieu = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietPN)).BeginInit();
@@ -97,6 +98,7 @@
             this.cbMaPN.Name = "cbMaPN";
             this.cbMaPN.Size = new System.Drawing.Size(200, 27);
             this.cbMaPN.TabIndex = 1;
+            this.cbMaPN.SelectionChangeCommitted += new System.EventHandler(this.cbMaPN_SelectionChangeCommitted);
             // 
             // cbMaNV
             // 
@@ -144,7 +146,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.txtDonGia);
+            this.groupBox2.Controls.Add(this.txtThanhTien);
             this.groupBox2.Controls.Add(this.txtSoLuong);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
@@ -160,12 +162,12 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "CHI TIẾT PHIẾU NHẬP";
             // 
-            // txtDonGia
+            // txtThanhTien
             // 
-            this.txtDonGia.Location = new System.Drawing.Point(539, 35);
-            this.txtDonGia.Name = "txtDonGia";
-            this.txtDonGia.Size = new System.Drawing.Size(200, 26);
-            this.txtDonGia.TabIndex = 2;
+            this.txtThanhTien.Location = new System.Drawing.Point(539, 35);
+            this.txtThanhTien.Name = "txtThanhTien";
+            this.txtThanhTien.Size = new System.Drawing.Size(200, 26);
+            this.txtThanhTien.TabIndex = 2;
             // 
             // txtSoLuong
             // 
@@ -242,6 +244,7 @@
             this.btnThem.TabIndex = 3;
             this.btnThem.Text = "THÊM";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnHuy
             // 
@@ -273,12 +276,24 @@
             this.btnXoa.TabIndex = 3;
             this.btnXoa.Text = "XÓA";
             this.btnXoa.UseVisualStyleBackColor = true;
+           
+            // 
+            // btnTaiDuLieu
+            // 
+            this.btnTaiDuLieu.Location = new System.Drawing.Point(653, 401);
+            this.btnTaiDuLieu.Name = "btnTaiDuLieu";
+            this.btnTaiDuLieu.Size = new System.Drawing.Size(99, 23);
+            this.btnTaiDuLieu.TabIndex = 4;
+            this.btnTaiDuLieu.Text = "TẢI DỮ LIỆU";
+            this.btnTaiDuLieu.UseVisualStyleBackColor = true;
+            this.btnTaiDuLieu.Click += new System.EventHandler(this.btnTaiDuLieu_Click);
             // 
             // FrmNhapHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 493);
+            this.Controls.Add(this.btnTaiDuLieu);
             this.Controls.Add(this.btnDong);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnXoa);
@@ -309,7 +324,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtDonGia;
+        private System.Windows.Forms.TextBox txtThanhTien;
         private System.Windows.Forms.TextBox txtSoLuong;
         private System.Windows.Forms.ComboBox cbMaSP;
         private System.Windows.Forms.Label label8;
@@ -323,5 +338,6 @@
         private System.Windows.Forms.Button btnDong;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.ComboBox cbMaPN;
+        private System.Windows.Forms.Button btnTaiDuLieu;
     }
 }

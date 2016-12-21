@@ -85,6 +85,78 @@ namespace CuaHangDT
             this.Hide();
         }
 
+        private void cbMaPN_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            using (var db = new QLBH_BTEntities())
+            {
+                var CT = from CTPN in db.CHITIETPHIEUNHAPs
+                         join PN in db.PHIEUNHAPs on CTPN.MaPN equals PN.MaPN
+                         where (CTPN.MaPN == cbMaPN.Text)
+                         orderby CTPN.MaPN
+                         select new
+                         {
+                             MaPN = PN.MaPN,
+                             MaNV = PN.MaNV,
+                             MaSP = CTPN.MaSP,
+                             MaNCC = PN.MaNCC,
+                             SoLuong = CTPN.SoLuong,
+                             ThanhTien = CTPN.ThanhTien,
+                         };
+                dgvChiTietPN.DataSource = CT.ToList();
+            }
+        }
 
+        private void btnTaiDuLieu_Click(object sender, EventArgs e)
+        {
+            LoadCTNhapHang();
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            var db = new QLBH_BTEntities();
+            var MaPN = cbMaPN.Text;
+            try
+            {
+                db.PHIEUNHAPs.Single(p => p.MaPN == MaPN);
+            }
+            catch
+            {
+                //Them moi ma chua co
+                using (var db1 = new QLBH_BTEntities())
+                {
+                    var pn = new PHIEUNHAP
+                    {
+                        MaPN = cbMaPN.Text,
+                        MaNV = cbMaNV.Text,
+                        MaNCC = cbMaNCC.Text,
+                    };
+                    db1.PHIEUNHAPs.Add(pn);
+                    db1.SaveChanges();
+                }
+            }
+            finally
+            {
+                using (var db2 = new QLBH_BTEntities())
+                {
+                    var ctpn = new CHITIETPHIEUNHAP
+                    {
+                        MaPN = cbMaPN.Text,
+                        MaSP = cbMaSP.Text,
+                        SoLuong = int.Parse(txtSoLuong.Text),
+                        ThanhTien = int.Parse(txtThanhTien.Text),
+
+                    };
+                    db2.CHITIETPHIEUNHAPs.Add(ctpn);
+                    db2.SaveChanges();
+
+                }
+
+                LoadCTNhapHang();
+            }
+
+        }
+
+       
     }
 }
+
