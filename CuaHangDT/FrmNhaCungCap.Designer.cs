@@ -48,14 +48,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnTaiDL = new System.Windows.Forms.Button();
-<<<<<<< HEAD
-            this.btnHuy = new System.Windows.Forms.Button();
-=======
+            
+
             this.btnThoat = new System.Windows.Forms.Button();
->>>>>>> 4db07939a774ea65914978d62451e5d2d69e14a1
+
             this.label1 = new System.Windows.Forms.Label();
-            this.btnTaiDL = new System.Windows.Forms.Button();
+            
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -141,11 +139,9 @@
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.btnXoa.Location = new System.Drawing.Point(530, 232);
-=======
+
             this.btnXoa.Location = new System.Drawing.Point(543, 232);
->>>>>>> 4db07939a774ea65914978d62451e5d2d69e14a1
+
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 39);
             this.btnXoa.TabIndex = 22;
@@ -156,11 +152,9 @@
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.btnSua.Location = new System.Drawing.Point(373, 232);
-=======
+
             this.btnSua.Location = new System.Drawing.Point(370, 232);
->>>>>>> 4db07939a774ea65914978d62451e5d2d69e14a1
+
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 39);
             this.btnSua.TabIndex = 21;
@@ -171,11 +165,9 @@
             // btnThem
             // 
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.btnThem.Location = new System.Drawing.Point(215, 232);
-=======
+
             this.btnThem.Location = new System.Drawing.Point(210, 232);
->>>>>>> 4db07939a774ea65914978d62451e5d2d69e14a1
+
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 39);
             this.btnThem.TabIndex = 20;
@@ -190,11 +182,9 @@
             this.dgvNhaCC.Name = "dgvNhaCC";
             this.dgvNhaCC.Size = new System.Drawing.Size(784, 256);
             this.dgvNhaCC.TabIndex = 10;
-<<<<<<< HEAD
-            this.dgvNhaCC.Click += new System.EventHandler(this.dgvNhaCC_Click);
-=======
+
             this.dgvNhaCC.Click += new System.EventHandler(this.dgvNhaCC_Click_1);
->>>>>>> 4db07939a774ea65914978d62451e5d2d69e14a1
+
             // 
             // txtEmail
             // 
@@ -280,12 +270,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnTaiDL);
-<<<<<<< HEAD
-            this.groupBox1.Controls.Add(this.btnHuy);
-=======
+            
+
             this.groupBox1.Controls.Add(this.btnThoat);
->>>>>>> 4db07939a774ea65914978d62451e5d2d69e14a1
+
             this.groupBox1.Controls.Add(this.txtSoFax);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.txtSoTax);
@@ -314,36 +302,9 @@
             this.groupBox1.Text = "Nhà cung cấp";
             // 
             // btnTaiDL
-<<<<<<< HEAD
+
             // 
-            this.btnTaiDL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaiDL.Location = new System.Drawing.Point(17, 232);
-            this.btnTaiDL.Name = "btnTaiDL";
-            this.btnTaiDL.Size = new System.Drawing.Size(115, 39);
-            this.btnTaiDL.TabIndex = 31;
-            this.btnTaiDL.Text = "Tải Dữ Liệu";
-            this.btnTaiDL.UseVisualStyleBackColor = true;
-            this.btnTaiDL.Click += new System.EventHandler(this.btnTaiDL_Click);
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuy.Location = new System.Drawing.Point(690, 232);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(75, 39);
-            this.btnHuy.TabIndex = 29;
-            this.btnHuy.Text = "Huỷ";
-            this.btnHuy.UseVisualStyleBackColor = true;
-=======
-            // 
-            this.btnTaiDL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaiDL.Location = new System.Drawing.Point(45, 232);
-            this.btnTaiDL.Name = "btnTaiDL";
-            this.btnTaiDL.Size = new System.Drawing.Size(110, 39);
-            this.btnTaiDL.TabIndex = 30;
-            this.btnTaiDL.Text = "Tải dữ liệu";
-            this.btnTaiDL.UseVisualStyleBackColor = true;
-            this.btnTaiDL.Click += new System.EventHandler(this.btnTaiDL_Click);
+
             // 
             // btnThoat
             // 
@@ -355,7 +316,7 @@
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
->>>>>>> 4db07939a774ea65914978d62451e5d2d69e14a1
+
             // 
             // label1
             // 
@@ -369,13 +330,7 @@
             // 
             // btnTaiDL
             // 
-            this.btnTaiDL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaiDL.Location = new System.Drawing.Point(40, 232);
-            this.btnTaiDL.Name = "btnTaiDL";
-            this.btnTaiDL.Size = new System.Drawing.Size(115, 39);
-            this.btnTaiDL.TabIndex = 30;
-            this.btnTaiDL.Text = "Tải Dữ Liệu";
-            this.btnTaiDL.UseVisualStyleBackColor = true;
+
             // 
             // button1
             // 
@@ -481,7 +436,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.btnTaiDL);
+            
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Controls.Add(this.label6);
@@ -647,10 +602,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-<<<<<<< HEAD
-        private System.Windows.Forms.Button btnHuy;
-        private System.Windows.Forms.Button btnTaiDL;
-<<<<<<< HEAD
+
+
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label6;
@@ -673,11 +626,9 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.DataGridView dataGridView1;
-=======
->>>>>>> adbda8fe7639d5cb0023f8ed97190d6cbe487b6c
-=======
+
         private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.Button btnTaiDL;
->>>>>>> 4db07939a774ea65914978d62451e5d2d69e14a1
+        
+
     }
 }
