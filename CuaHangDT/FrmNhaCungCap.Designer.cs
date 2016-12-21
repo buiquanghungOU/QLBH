@@ -48,7 +48,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnHuy = new System.Windows.Forms.Button();
+            this.btnTaiDL = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhaCC)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -111,27 +112,29 @@
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(392, 232);
+            this.btnXoa.Location = new System.Drawing.Point(543, 232);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 39);
             this.btnXoa.TabIndex = 22;
             this.btnXoa.Text = "Xoá";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(245, 232);
+            this.btnSua.Location = new System.Drawing.Point(370, 232);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 39);
             this.btnSua.TabIndex = 21;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click_1);
             // 
             // btnThem
             // 
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(93, 232);
+            this.btnThem.Location = new System.Drawing.Point(210, 232);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 39);
             this.btnThem.TabIndex = 20;
@@ -146,6 +149,7 @@
             this.dgvNhaCC.Name = "dgvNhaCC";
             this.dgvNhaCC.Size = new System.Drawing.Size(784, 256);
             this.dgvNhaCC.TabIndex = 10;
+            this.dgvNhaCC.Click += new System.EventHandler(this.dgvNhaCC_Click_1);
             // 
             // txtEmail
             // 
@@ -187,6 +191,7 @@
             this.cbMaNCC.Name = "cbMaNCC";
             this.cbMaNCC.Size = new System.Drawing.Size(267, 28);
             this.cbMaNCC.TabIndex = 10;
+            this.cbMaNCC.SelectionChangeCommitted += new System.EventHandler(this.cbMaNCC_SelectionChangeCommitted_1);
             // 
             // label9
             // 
@@ -230,7 +235,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnHuy);
+            this.groupBox1.Controls.Add(this.btnTaiDL);
+            this.groupBox1.Controls.Add(this.btnThoat);
             this.groupBox1.Controls.Add(this.txtSoFax);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.txtSoTax);
@@ -258,15 +264,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nhà cung cấp";
             // 
-            // btnHuy
+            // btnTaiDL
             // 
-            this.btnHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuy.Location = new System.Drawing.Point(563, 232);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(75, 39);
-            this.btnHuy.TabIndex = 29;
-            this.btnHuy.Text = "Huỷ";
-            this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnTaiDL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaiDL.Location = new System.Drawing.Point(45, 232);
+            this.btnTaiDL.Name = "btnTaiDL";
+            this.btnTaiDL.Size = new System.Drawing.Size(110, 39);
+            this.btnTaiDL.TabIndex = 30;
+            this.btnTaiDL.Text = "Tải dữ liệu";
+            this.btnTaiDL.UseVisualStyleBackColor = true;
+            this.btnTaiDL.Click += new System.EventHandler(this.btnTaiDL_Click);
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.Location = new System.Drawing.Point(690, 232);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(75, 39);
+            this.btnThoat.TabIndex = 29;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // label1
             // 
@@ -319,6 +337,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnHuy;
+        private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button btnTaiDL;
     }
 }
