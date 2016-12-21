@@ -48,6 +48,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnTaiDL = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhaCC)).BeginInit();
@@ -111,7 +112,7 @@
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(392, 232);
+            this.btnXoa.Location = new System.Drawing.Point(530, 232);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 39);
             this.btnXoa.TabIndex = 22;
@@ -121,7 +122,7 @@
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(245, 232);
+            this.btnSua.Location = new System.Drawing.Point(373, 232);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 39);
             this.btnSua.TabIndex = 21;
@@ -131,7 +132,7 @@
             // btnThem
             // 
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(93, 232);
+            this.btnThem.Location = new System.Drawing.Point(215, 232);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 39);
             this.btnThem.TabIndex = 20;
@@ -146,6 +147,7 @@
             this.dgvNhaCC.Name = "dgvNhaCC";
             this.dgvNhaCC.Size = new System.Drawing.Size(784, 256);
             this.dgvNhaCC.TabIndex = 10;
+            this.dgvNhaCC.Click += new System.EventHandler(this.dgvNhaCC_Click);
             // 
             // txtEmail
             // 
@@ -230,6 +232,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnTaiDL);
             this.groupBox1.Controls.Add(this.btnHuy);
             this.groupBox1.Controls.Add(this.txtSoFax);
             this.groupBox1.Controls.Add(this.label5);
@@ -258,10 +261,21 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nhà cung cấp";
             // 
+            // btnTaiDL
+            // 
+            this.btnTaiDL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaiDL.Location = new System.Drawing.Point(17, 232);
+            this.btnTaiDL.Name = "btnTaiDL";
+            this.btnTaiDL.Size = new System.Drawing.Size(115, 39);
+            this.btnTaiDL.TabIndex = 31;
+            this.btnTaiDL.Text = "Tải Dữ Liệu";
+            this.btnTaiDL.UseVisualStyleBackColor = true;
+            this.btnTaiDL.Click += new System.EventHandler(this.btnTaiDL_Click);
+            // 
             // btnHuy
             // 
             this.btnHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuy.Location = new System.Drawing.Point(563, 232);
+            this.btnHuy.Location = new System.Drawing.Point(690, 232);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(75, 39);
             this.btnHuy.TabIndex = 29;
@@ -320,5 +334,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnHuy;
+        private System.Windows.Forms.Button btnTaiDL;
     }
 }

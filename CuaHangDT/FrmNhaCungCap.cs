@@ -16,7 +16,8 @@ namespace CuaHangDT
     {
         string cnStr = "";
         SqlConnection cn;
-        DataSet ds;
+        SqlDataAdapter da;
+
         public FrmNhaCungCap()
         {
             InitializeComponent();
@@ -26,66 +27,101 @@ namespace CuaHangDT
         {
             cnStr = ConfigurationManager.ConnectionStrings["cnStr"].ConnectionString;
             cn = new SqlConnection(cnStr);
-            dgvNhaCC.DataSource= DSNhaCungCap().Tables[0];
+            
         }
 
         private void FrmNhaCungCap_FormClosing(object sender, FormClosingEventArgs e)
         {
             //Application.Exit();
         }
-        public DataSet DSNhaCungCap()
+
+        public void Connect()
         {
             try
             {
-                string sql = "SELECT * FROM NHACUNGCAP";
-                SqlDataAdapter da = new SqlDataAdapter(sql, cn);
-                ds = new DataSet();
-                da.Fill(ds);
-                return ds;
+                if (cn != null && cn.State == ConnectionState.Closed)
+                    cn.Open();
             }
             catch (SqlException ex)
             {
                 MessageBox.Show(ex.Message);
-                return null;
+
+                //throw;
+            }
+        }
+        public void Disconnect()
+        {
+            try
+            {
+                if (cn != null && cn.State == ConnectionState.Open)
+                    cn.Close();
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+
+                //throw;
+            }
+        }
+
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                cn.Open();
+                string ins =
+                    "INSERT INTO NHACUNGCAP (MaNCC,TenNCC,TenNDD,DiaChi,Tax,Fax,SDT,[E-mail]) VALUES"
+                    + "('" + cbMaNCC.Text + "',N'" + txtTenNCC.Text + "',N'" + txtTenNDD.Text + "',N'" + txtDiachi.Text + "',N'" + txtSoTax.Text + "',N'" + txtSoFax.Text + "',N'" + txtDienThoai.Text + "',N'" + txtEmail.Text + "')";
+                da = new SqlDataAdapter(ins, cn);
+                da.SelectCommand.ExecuteNonQuery();
+                MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.btnTaiDL_Click(sender, e);
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
+        private void dgvNhaCC_Click(object sender, EventArgs e)
+        {
+            int index = dgvNhaCC.CurrentRow.Index;
+            cbMaNCC.Text = dgvNhaCC.Rows[index].Cells[0].Value.ToString();
+            txtTenNCC.Text = dgvNhaCC.Rows[index].Cells[1].Value.ToString();
+            txtTenNDD.Text = dgvNhaCC.Rows[index].Cells[2].Value.ToString();
+            txtDiachi.Text = dgvNhaCC.Rows[index].Cells[3].Value.ToString();
+            txtSoTax.Text = dgvNhaCC.Rows[index].Cells[4].Value.ToString();
+            txtSoFax.Text = dgvNhaCC.Rows[index].Cells[5].Value.ToString();
+            txtDienThoai.Text = dgvNhaCC.Rows[index].Cells[6].Value.ToString();
+            txtEmail.Text = dgvNhaCC.Rows[index].Cells[7].Value.ToString();
+        }
+
+        private void btnTaiDL_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //cn.Open();
+                String load = "SELECT * FROM NHACUNGCAP";
+                da = new SqlDataAdapter(load, cn);
+                DataTable table = new DataTable();
+                da.Fill(table);
+                dgvNhaCC.DataSource = table;
+
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
 
             }
             finally
             {
                 cn.Close();
             }
-
-        }   
-
-        private void btnThem_Click(object sender, EventArgs e)
-        {
-            
-            SqlDataAdapter da = new SqlDataAdapter(); // Cập nhật vào CSDL
-            
-            //Thêm vào CSDL
-            string ins = "INSERT INTO NHACUNGCAP(MaNCC, TenNCC, TenNDD, DiaChi, Tax, Fax, SDT, [E-Mail]) VALUES (@mancc, @tenncc, @tenndd, @diachi, @tax, @fax, @sdt, @email)";
-            SqlCommand cmd = new SqlCommand(ins,cn);
-           /* cmd.Parameters.Add("@mancc", SqlDbType.NVarChar, 32, "MaNCC")
-            cmd.Parameters.Add("@tenncc", SqlDbType.NVarChar, 100, "TenNCC");
-            cmd.Parameters.Add("@tenndd", SqlDbType.NVarChar, 100, "TenNDD");
-            cmd.Parameters.Add("@diachi", SqlDbType.NVarChar, 225, "DiaChi");
-            cmd.Parameters.Add("@tax", SqlDbType.Real, 100 ,"Tax");
-            cmd.Parameters.Add("@fax", SqlDbType.NVarChar,225, "Fax");
-            cmd.Parameters.Add("@sdt", SqlDbType.Real, 50, "SDT");
-            cmd.Parameters.Add("@email", SqlDbType.NVarChar, 128, "[E-mail]"); */
-            
-            cmd.Parameters.Add( new SqlParameter ("@mancc", cbMaNCC.Text));
-            cmd.Parameters.Add( new SqlParameter ("@tenncc", txtTenNCC.Text));
-            cmd.Parameters.Add( new SqlParameter ("@tenndd", txtTenNDD.Text));
-            cmd.Parameters.Add( new SqlParameter ("@diachi", txtDiachi.Text));
-            cmd.Parameters.Add( new SqlParameter ("@tax", txtSoTax.Text));
-            cmd.Parameters.Add( new SqlParameter ("@fax", txtSoFax.Text));
-            cmd.Parameters.Add( new SqlParameter ("@sdt",txtDienThoai.Text));
-            
-
-
-            da.InsertCommand = cmd;
-
-            da.Update(ds);
         }
     }
 }
