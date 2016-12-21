@@ -74,7 +74,7 @@
             // 
             this.cbGioiTinh.DisplayMember = "GioiTinh";
             this.cbGioiTinh.FormattingEnabled = true;
-            this.cbGioiTinh.Location = new System.Drawing.Point(121, 109);
+            this.cbGioiTinh.Location = new System.Drawing.Point(150, 111);
             this.cbGioiTinh.Name = "cbGioiTinh";
             this.cbGioiTinh.Size = new System.Drawing.Size(101, 27);
             this.cbGioiTinh.TabIndex = 3;
@@ -158,7 +158,7 @@
             // txtDienThoai
             // 
             this.txtDienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDienThoai.Location = new System.Drawing.Point(121, 224);
+            this.txtDienThoai.Location = new System.Drawing.Point(150, 227);
             this.txtDienThoai.Name = "txtDienThoai";
             this.txtDienThoai.Size = new System.Drawing.Size(190, 26);
             this.txtDienThoai.TabIndex = 8;
@@ -166,7 +166,7 @@
             // txtDiachi
             // 
             this.txtDiachi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiachi.Location = new System.Drawing.Point(121, 186);
+            this.txtDiachi.Location = new System.Drawing.Point(150, 189);
             this.txtDiachi.Name = "txtDiachi";
             this.txtDiachi.Size = new System.Drawing.Size(190, 26);
             this.txtDiachi.TabIndex = 7;
@@ -175,7 +175,7 @@
             // 
             this.cbVitri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbVitri.FormattingEnabled = true;
-            this.cbVitri.Location = new System.Drawing.Point(121, 147);
+            this.cbVitri.Location = new System.Drawing.Point(150, 147);
             this.cbVitri.Name = "cbVitri";
             this.cbVitri.Size = new System.Drawing.Size(192, 28);
             this.cbVitri.TabIndex = 5;
@@ -192,7 +192,7 @@
             // txtHoNV
             // 
             this.txtHoNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoNV.Location = new System.Drawing.Point(121, 71);
+            this.txtHoNV.Location = new System.Drawing.Point(150, 71);
             this.txtHoNV.Name = "txtHoNV";
             this.txtHoNV.Size = new System.Drawing.Size(190, 26);
             this.txtHoNV.TabIndex = 1;
@@ -201,7 +201,7 @@
             // 
             this.cbMaNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMaNV.FormattingEnabled = true;
-            this.cbMaNV.Location = new System.Drawing.Point(121, 31);
+            this.cbMaNV.Location = new System.Drawing.Point(150, 36);
             this.cbMaNV.Name = "cbMaNV";
             this.cbMaNV.Size = new System.Drawing.Size(101, 28);
             this.cbMaNV.TabIndex = 0;
