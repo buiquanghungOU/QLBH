@@ -32,6 +32,18 @@ namespace CuaHangDT
             LoadComboBoxMaNV();
             LoadComboBoxGioiTinh();
             LoadComboBoxViTri();
+
+        }
+        private void DefaultLoad()
+        {
+            cbMaNV.Text = "";
+            txtHoNV.Text = "";
+            txtTenNV.Text = "";
+            cbGioiTinh.Text = "";
+            cbVitri.Text = "";
+            txtDiachi.Text = "";
+            txtDienThoai.Text = "";
+            txtEmail.Text = "";
         }
         private void LoadComboBoxMaNV() // Hiển thị dữ liệu lên ComboBox
         {
@@ -68,6 +80,7 @@ namespace CuaHangDT
         {
             try
             {
+               
                 cnStr = "SELECT * FROM NHANVIEN";
                 da = new SqlDataAdapter(cnStr, cn);
                 DataTable table = new DataTable();// tạo bảng ảo
@@ -95,6 +108,36 @@ namespace CuaHangDT
             txtDiachi.Text = dgvNhanVien.Rows[index].Cells[7].Value.ToString();
             txtDienThoai.Text = dgvNhanVien.Rows[index].Cells[8].Value.ToString();
             txtEmail.Text = dgvNhanVien.Rows[index].Cells[9].Value.ToString();
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                
+                if (cbMaNV.Text != "")
+                {
+                    cn.Open();
+                    
+                    string Ins = "";
+                    Ins = "INSERT INTO NHANVIEN (MaNV,HoNV,TenNV,GioiTinh,NgaySinh,ViTri,NgayBD,DiaChi,DienThoai,[E-Mail]) VALUES('" + cbMaNV.Text + "','" + txtHoNV.Text + "','" + txtTenNV.Text + "','" + cbGioiTinh.Text + "','" + timeNgaysinh.Value + "','" + cbVitri.Text + "','" + timeNgaylamviec.Value + "','" + txtDiachi.Text + "','" + txtDienThoai.Text + "','" + txtEmail.Text + "')";
+                    da = new SqlDataAdapter(Ins, cn);
+                    da.SelectCommand.ExecuteNonQuery();
+
+                    MessageBox.Show("Thêm Thành Công!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.btnLoad_Click(sender, e);
+                    cn.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Bạn chưa nhập mã Nhân Viên", "THÔNG BÁO!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+                //throw;
+            }
         }
     }
 }

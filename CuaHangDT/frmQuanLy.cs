@@ -83,5 +83,12 @@ namespace CuaHangDT
 
             
         }
+
+        private void danhSáchNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmNhanVien f = new FrmNhanVien();
+            f.MdiParent = this;
+            f.Show();
+        }
     }
 }
