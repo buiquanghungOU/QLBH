@@ -30,6 +30,9 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.cbMaNCC = new System.Windows.Forms.ComboBox();
+            this.cbMaPN = new System.Windows.Forms.ComboBox();
+            this.cbMaNV = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,13 +47,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.dgvChiTietPN = new System.Windows.Forms.DataGridView();
-            this.btnLuu = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
-            this.cbMaNCC = new System.Windows.Forms.ComboBox();
-            this.cbMaNV = new System.Windows.Forms.ComboBox();
             this.btnDong = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
-            this.cbMaPN = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietPN)).BeginInit();
@@ -73,7 +73,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "THÔNG TIN NHẬP HÀNG";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // dateTimePicker1
             // 
@@ -82,6 +81,30 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 26);
             this.dateTimePicker1.TabIndex = 2;
+            // 
+            // cbMaNCC
+            // 
+            this.cbMaNCC.FormattingEnabled = true;
+            this.cbMaNCC.Location = new System.Drawing.Point(539, 84);
+            this.cbMaNCC.Name = "cbMaNCC";
+            this.cbMaNCC.Size = new System.Drawing.Size(200, 27);
+            this.cbMaNCC.TabIndex = 1;
+            // 
+            // cbMaPN
+            // 
+            this.cbMaPN.FormattingEnabled = true;
+            this.cbMaPN.Location = new System.Drawing.Point(164, 33);
+            this.cbMaPN.Name = "cbMaPN";
+            this.cbMaPN.Size = new System.Drawing.Size(200, 27);
+            this.cbMaPN.TabIndex = 1;
+            // 
+            // cbMaNV
+            // 
+            this.cbMaNV.FormattingEnabled = true;
+            this.cbMaNV.Location = new System.Drawing.Point(164, 84);
+            this.cbMaNV.Name = "cbMaNV";
+            this.cbMaNV.Size = new System.Drawing.Size(200, 27);
+            this.cbMaNV.TabIndex = 1;
             // 
             // label4
             // 
@@ -210,16 +233,15 @@
             this.dgvChiTietPN.Size = new System.Drawing.Size(757, 156);
             this.dgvChiTietPN.TabIndex = 2;
             // 
-            // btnLuu
+            // btnThem
             // 
-            this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnLuu.Location = new System.Drawing.Point(31, 431);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(140, 50);
-            this.btnLuu.TabIndex = 3;
-            this.btnLuu.Text = "LƯU";
-            this.btnLuu.UseVisualStyleBackColor = true;
-            this.btnLuu.Click += new System.EventHandler(this.btLuu_Click);
+            this.btnThem.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnThem.Location = new System.Drawing.Point(31, 431);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(140, 50);
+            this.btnThem.TabIndex = 3;
+            this.btnThem.Text = "THÊM";
+            this.btnThem.UseVisualStyleBackColor = true;
             // 
             // btnHuy
             // 
@@ -230,23 +252,6 @@
             this.btnHuy.TabIndex = 3;
             this.btnHuy.Text = "HỦY";
             this.btnHuy.UseVisualStyleBackColor = true;
-            this.btnHuy.Click += new System.EventHandler(this.btHuy_Click);
-            // 
-            // cbMaNCC
-            // 
-            this.cbMaNCC.FormattingEnabled = true;
-            this.cbMaNCC.Location = new System.Drawing.Point(539, 84);
-            this.cbMaNCC.Name = "cbMaNCC";
-            this.cbMaNCC.Size = new System.Drawing.Size(200, 27);
-            this.cbMaNCC.TabIndex = 1;
-            // 
-            // cbMaNV
-            // 
-            this.cbMaNV.FormattingEnabled = true;
-            this.cbMaNV.Location = new System.Drawing.Point(164, 84);
-            this.cbMaNV.Name = "cbMaNV";
-            this.cbMaNV.Size = new System.Drawing.Size(200, 27);
-            this.cbMaNV.TabIndex = 1;
             // 
             // btnDong
             // 
@@ -257,7 +262,7 @@
             this.btnDong.TabIndex = 3;
             this.btnDong.Text = "ĐÓNG";
             this.btnDong.UseVisualStyleBackColor = true;
-            this.btnDong.Click += new System.EventHandler(this.btHuy_Click);
+            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
             // btnXoa
             // 
@@ -268,15 +273,6 @@
             this.btnXoa.TabIndex = 3;
             this.btnXoa.Text = "XÓA";
             this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btLuu_Click);
-            // 
-            // cbMaPN
-            // 
-            this.cbMaPN.FormattingEnabled = true;
-            this.cbMaPN.Location = new System.Drawing.Point(164, 33);
-            this.cbMaPN.Name = "cbMaPN";
-            this.cbMaPN.Size = new System.Drawing.Size(200, 27);
-            this.cbMaPN.TabIndex = 1;
             // 
             // FrmNhapHang
             // 
@@ -286,7 +282,7 @@
             this.Controls.Add(this.btnDong);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnXoa);
-            this.Controls.Add(this.btnLuu);
+            this.Controls.Add(this.btnThem);
             this.Controls.Add(this.dgvChiTietPN);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -320,7 +316,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dgvChiTietPN;
-        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.ComboBox cbMaNCC;
         private System.Windows.Forms.ComboBox cbMaNV;
