@@ -68,6 +68,7 @@
             this.btnThoat.TabIndex = 14;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // cbGioiTinh
             // 
@@ -78,6 +79,7 @@
             this.cbGioiTinh.Size = new System.Drawing.Size(101, 27);
             this.cbGioiTinh.TabIndex = 3;
             this.cbGioiTinh.ValueMember = "GioiTinh";
+            this.cbGioiTinh.SelectionChangeCommitted += new System.EventHandler(this.cbGioiTinh_SelectionChangeCommitted);
             // 
             // btnXoa
             // 
@@ -177,6 +179,7 @@
             this.cbVitri.Name = "cbVitri";
             this.cbVitri.Size = new System.Drawing.Size(192, 28);
             this.cbVitri.TabIndex = 5;
+            this.cbVitri.SelectionChangeCommitted += new System.EventHandler(this.cbVitri_SelectionChangeCommitted);
             // 
             // txtTenNV
             // 
@@ -202,6 +205,7 @@
             this.cbMaNV.Name = "cbMaNV";
             this.cbMaNV.Size = new System.Drawing.Size(101, 28);
             this.cbMaNV.TabIndex = 0;
+            this.cbMaNV.SelectionChangeCommitted += new System.EventHandler(this.cbMaNV_SelectionChangeCommitted);
             // 
             // dgvNhanVien
             // 

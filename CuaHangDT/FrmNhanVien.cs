@@ -128,7 +128,7 @@ namespace CuaHangDT
                 }
                 else
                 {
-                    MessageBox.Show("Bạn chưa nhập mã Nhân Viên", "THÔNG BÁO!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Bạn chưa nhập Mã Nhân Viên", "THÔNG BÁO!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch (SqlException ex)
@@ -190,6 +190,43 @@ namespace CuaHangDT
                 }
             }
             
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            DialogResult Thoat;
+            Thoat = MessageBox.Show("Bạn có muốn thoát không?", "THÔNG BÁO!", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (Thoat == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void cbMaNV_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE MaNV = '" + cbMaNV.SelectedValue + "'", cn);
+            DataTable table = new DataTable();
+            da.Fill(table); // đổ vào bảng ảo
+            da.Dispose(); //giai phong tai nguyên
+            dgvNhanVien.DataSource = table;//gán dữ liệu nguồn
+        }
+
+        private void cbGioiTinh_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE GioiTinh ='" + cbGioiTinh.SelectedValue + "'", cn);
+            DataTable table = new DataTable();
+            da.Fill(table);
+            da.Dispose();
+            dgvNhanVien.DataSource = table;
+        }
+
+        private void cbVitri_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE ViTri='" + cbVitri.SelectedValue + "'", cn);
+            DataTable table = new DataTable();
+            da.Fill(table);
+            da.Dispose();
+            dgvNhanVien.DataSource = table;
         }
     }
 }
