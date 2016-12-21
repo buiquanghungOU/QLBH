@@ -17,6 +17,10 @@ namespace CuaHangDT
         string cnStr = "";
         SqlConnection cn;
         SqlDataAdapter da;
+<<<<<<< HEAD
+=======
+
+>>>>>>> adbda8fe7639d5cb0023f8ed97190d6cbe487b6c
         public FrmNhaCungCap()
         {
             InitializeComponent();
@@ -33,7 +37,11 @@ namespace CuaHangDT
         {
             //Application.Exit();
         }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> adbda8fe7639d5cb0023f8ed97190d6cbe487b6c
         public void Connect()
         {
             try
@@ -58,8 +66,73 @@ namespace CuaHangDT
             catch (SqlException ex)
             {
                 MessageBox.Show(ex.Message);
+<<<<<<< HEAD
 
                 //throw;
+=======
+
+                //throw;
+            }
+        }
+
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                cn.Open();
+                string ins =
+                    "INSERT INTO NHACUNGCAP (MaNCC,TenNCC,TenNDD,DiaChi,Tax,Fax,SDT,[E-mail]) VALUES"
+                    + "('" + cbMaNCC.Text + "',N'" + txtTenNCC.Text + "',N'" + txtTenNDD.Text + "',N'" + txtDiachi.Text + "',N'" + txtSoTax.Text + "',N'" + txtSoFax.Text + "',N'" + txtDienThoai.Text + "',N'" + txtEmail.Text + "')";
+                da = new SqlDataAdapter(ins, cn);
+                da.SelectCommand.ExecuteNonQuery();
+                MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.btnTaiDL_Click(sender, e);
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
+        private void dgvNhaCC_Click(object sender, EventArgs e)
+        {
+            int index = dgvNhaCC.CurrentRow.Index;
+            cbMaNCC.Text = dgvNhaCC.Rows[index].Cells[0].Value.ToString();
+            txtTenNCC.Text = dgvNhaCC.Rows[index].Cells[1].Value.ToString();
+            txtTenNDD.Text = dgvNhaCC.Rows[index].Cells[2].Value.ToString();
+            txtDiachi.Text = dgvNhaCC.Rows[index].Cells[3].Value.ToString();
+            txtSoTax.Text = dgvNhaCC.Rows[index].Cells[4].Value.ToString();
+            txtSoFax.Text = dgvNhaCC.Rows[index].Cells[5].Value.ToString();
+            txtDienThoai.Text = dgvNhaCC.Rows[index].Cells[6].Value.ToString();
+            txtEmail.Text = dgvNhaCC.Rows[index].Cells[7].Value.ToString();
+        }
+
+        private void btnTaiDL_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //cn.Open();
+                String load = "SELECT * FROM NHACUNGCAP";
+                da = new SqlDataAdapter(load, cn);
+                DataTable table = new DataTable();
+                da.Fill(table);
+                dgvNhaCC.DataSource = table;
+
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+            finally
+            {
+                cn.Close();
+>>>>>>> adbda8fe7639d5cb0023f8ed97190d6cbe487b6c
             }
         }
         private void btnThem_Click(object sender, EventArgs e)
