@@ -139,5 +139,31 @@ namespace CuaHangDT
                 //throw;
             }
         }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            cn.Open();
+            try
+            {
+                if (cbMaNV.Text != "")
+                {
+                    cnStr = "UPDATE NHANVIEN SET HoNV = '" + txtHoNV.Text + "',TenNV ='" + txtTenNV.Text + "',GioiTinh = '" + cbGioiTinh.Text + "',NgaySinh = '" + timeNgaysinh.Value + "',ViTri = '" + cbVitri.Text + "',NgayBD = '" + timeNgaylamviec.Value + "',DiaChi = '" + txtDiachi.Text + "',DienThoai = '" + txtDienThoai.Text + "',[E-Mail] = '" + txtEmail.Text + "' WHERE MaNV ='" + cbMaNV.Text + "'";
+                    da = new SqlDataAdapter(cnStr, cn);
+                    da.SelectCommand.ExecuteNonQuery();
+                    da = new SqlDataAdapter(cnStr, cn);
+                    cn.Close();
+                    MessageBox.Show("Sửa Thành Công!", "THÔNG BÁO!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.btnLoad_Click(sender, e);
+                }
+                else
+                {
+                    MessageBox.Show("Bạn chưa nhập mã Nhân Viên", "THÔNG BÁO!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
