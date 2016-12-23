@@ -18,8 +18,7 @@ namespace CuaHangDT
         string cnStr = "";
         SqlConnection cn;
         SqlDataAdapter da;
-        // SqlCommand cmd;
-
+       
         public FrmNhanVien()
         {
             InitializeComponent();
@@ -61,7 +60,7 @@ namespace CuaHangDT
             DataTable table = new DataTable();
             da.Fill(table);
             da.Dispose();
-            cbGioiTinh.DataSource = table;//gán dữ liệu nguồn
+            cbGioiTinh.DataSource = table;
 
             cbGioiTinh.ValueMember = "GioiTinh";
         }
@@ -71,7 +70,7 @@ namespace CuaHangDT
             DataTable table = new DataTable();
             da.Fill(table);
             da.Dispose();
-            cbVitri.DataSource = table;//gán dữ liệu nguồn
+            cbVitri.DataSource = table;
 
             cbVitri.ValueMember = "ViTri";
         }
@@ -156,7 +155,7 @@ namespace CuaHangDT
                 }
                 else
                 {
-                    MessageBox.Show("Bạn chưa nhập mã Nhân Viên", "THÔNG BÁO!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Bạn chưa nhập Mã Nhân Viên", "THÔNG BÁO!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch (SqlException ex)
@@ -213,7 +212,7 @@ namespace CuaHangDT
 
         private void cbGioiTinh_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE GioiTinh ='" + cbGioiTinh.SelectedValue + "'", cn);
+            da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE GioiTinh = N'" + cbGioiTinh.SelectedValue + "'", cn);
             DataTable table = new DataTable();
             da.Fill(table);
             da.Dispose();
@@ -222,11 +221,29 @@ namespace CuaHangDT
 
         private void cbVitri_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE ViTri='" + cbVitri.SelectedValue + "'", cn);
+            da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE ViTri= N'" + cbVitri.SelectedValue + "'", cn);
             DataTable table = new DataTable();
             da.Fill(table);
             da.Dispose();
             dgvNhanVien.DataSource = table;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmTimNV f = new FrmTimNV();            
+            f.Show();
+        }
+
+        private void FrmNhanVien_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult Huy;
+            Huy = MessageBox.Show("Bạn Có Muốn Thoát không", "THÔNG BÁO!", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (Huy == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
+
+       
     }
 }
