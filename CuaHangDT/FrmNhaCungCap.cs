@@ -232,6 +232,12 @@ namespace CuaHangDT
             txtDienThoai.Text = dgvNhaCC.Rows[index].Cells[6].Value.ToString();
             txtEmail.Text = dgvNhaCC.Rows[index].Cells[7].Value.ToString();
         }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            FrmTimNCC f = new FrmTimNCC();
+            f.Show();
+        }
     }
 
 }
