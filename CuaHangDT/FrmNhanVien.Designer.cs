@@ -165,7 +165,6 @@
             this.txtDienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
             this.txtDienThoai.Location = new System.Drawing.Point(134, 227);
-
             this.txtDienThoai.Name = "txtDienThoai";
             this.txtDienThoai.Size = new System.Drawing.Size(192, 26);
             this.txtDienThoai.TabIndex = 9;
@@ -207,7 +206,8 @@
             this.txtHoNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
             this.txtHoNV.Location = new System.Drawing.Point(136, 71);
-          this.txtHoNV.Name = "txtHoNV";
+            this.txtHoNV.Name = "txtHoNV";
+
             this.txtHoNV.Size = new System.Drawing.Size(190, 26);
             this.txtHoNV.TabIndex = 1;
             // 
