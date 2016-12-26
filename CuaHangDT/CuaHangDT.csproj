@@ -123,6 +123,7 @@
     <Compile Include="FrmThongKeDT.Designer.cs">
       <DependentUpon>FrmThongKeDT.cs</DependentUpon>
     </Compile>
+
     <Compile Include="FrmTim-NhapHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,8 +210,15 @@
     <EmbeddedResource Include="FrmThongKeDT.resx">
       <DependentUpon>FrmThongKeDT.cs</DependentUpon>
     </EmbeddedResource>
+
+    <EmbeddedResource Include="FrmTimKH.resx">
+      <DependentUpon>FrmTimKH.cs</DependentUpon>
+    </EmbeddedResource>
+  
+
     <EmbeddedResource Include="FrmTim-NhapHang.resx">
       <DependentUpon>FrmTim-NhapHang.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="FrmXuatHang.resx">
       <DependentUpon>FrmXuatHang.cs</DependentUpon>

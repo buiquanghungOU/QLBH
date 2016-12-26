@@ -18,7 +18,7 @@ namespace CuaHangDT
         string cnStr = "";
         SqlConnection cn;
         SqlDataAdapter da;
-        
+
         public FrmNhanVien()
         {
             InitializeComponent();
@@ -60,7 +60,7 @@ namespace CuaHangDT
             DataTable table = new DataTable();
             da.Fill(table);
             da.Dispose();
-            cbGioiTinh.DataSource = table;//gán dữ liệu nguồn
+            cbGioiTinh.DataSource = table;
 
             cbGioiTinh.ValueMember = "GioiTinh";
         }
@@ -70,7 +70,7 @@ namespace CuaHangDT
             DataTable table = new DataTable();
             da.Fill(table);
             da.Dispose();
-            cbVitri.DataSource = table;//gán dữ liệu nguồn
+            cbVitri.DataSource = table;
 
             cbVitri.ValueMember = "ViTri";
         }
@@ -94,7 +94,7 @@ namespace CuaHangDT
 
         private void dgvNhanVien_Click_1(object sender, EventArgs e)
         {
-            int index = dgvNhanVien.CurrentRow.Index;//click vào đối tượng trên datagridview sẽ hiện lên cái textbox
+            int index = dgvNhanVien.CurrentRow.Index;//click vào đối tượng trên datagridview sẽ hiện lên textbox
 
             cbMaNV.Text = dgvNhanVien.Rows[index].Cells[0].Value.ToString();
             txtHoNV.Text = dgvNhanVien.Rows[index].Cells[1].Value.ToString();
@@ -115,6 +115,7 @@ namespace CuaHangDT
                 if (cbMaNV.Text != "")
                 {
                     cn.Open();
+                    
                     string Ins = "";
                     Ins = "INSERT INTO NHANVIEN (MaNV,HoNV,TenNV,GioiTinh,NgaySinh,ViTri,NgayBD,DiaChi,DienThoai,[E-Mail]) VALUES (N'" + cbMaNV.Text + "',N'" + txtHoNV.Text + "',N'" + txtTenNV.Text + "',N'" + cbGioiTinh.Text + "',N'" + timeNgaysinh.Value + "',N'" + cbVitri.Text + "',N'" + timeNgaylamviec.Value + "',N'" + txtDiachi.Text + "',N'" + txtDienThoai.Text + "',N'" + txtEmail.Text + "')";
                     da = new SqlDataAdapter(Ins, cn);
@@ -144,17 +145,18 @@ namespace CuaHangDT
                 if (cbMaNV.Text != "")
                 {
                     cn.Open();
-                    cnStr = "UPDATE NHANVIEN SET HoNV = '" + txtHoNV.Text + "',TenNV ='" + txtTenNV.Text + "',GioiTinh = '" + cbGioiTinh.Text + "',NgaySinh = '" + timeNgaysinh.Value + "',ViTri = '" + cbVitri.Text + "',NgayBD = '" + timeNgaylamviec.Value + "',DiaChi = '" + txtDiachi.Text + "',DienThoai = '" + txtDienThoai.Text + "',[E-Mail] = '" + txtEmail.Text + "' WHERE MaNV ='" + cbMaNV.Text + "'";
+                    cnStr = "UPDATE NHANVIEN SET HoNV = N'" + txtHoNV.Text + "',TenNV = N'" + txtTenNV.Text + "',GioiTinh = N'" + cbGioiTinh.Text + "',NgaySinh = '" + timeNgaysinh.Value + "',ViTri = N'" + cbVitri.Text + "',NgayBD = '" + timeNgaylamviec.Value + "',DiaChi = '" + txtDiachi.Text + "',DienThoai = '" + txtDienThoai.Text + "',[E-Mail] = '" + txtEmail.Text + "' WHERE MaNV = '" + cbMaNV.Text + "'";
                     da = new SqlDataAdapter(cnStr, cn);
                     da.SelectCommand.ExecuteNonQuery();
                     da = new SqlDataAdapter(cnStr, cn);
-                    cn.Close();
+                    
                     MessageBox.Show("Sửa Thành Công!", "THÔNG BÁO!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.btnLoad_Click(sender, e);
+                    cn.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Bạn chưa nhập mã Nhân Viên", "THÔNG BÁO!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Bạn chưa nhập Mã Nhân Viên", "THÔNG BÁO!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch (SqlException ex)
@@ -179,8 +181,7 @@ namespace CuaHangDT
                     DefaultLoad();
                     dgvNhanVien.ClearSelection();
                     MessageBox.Show("ĐÃ XÓA THÀNH CÔNG!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.btnLoad_Click(sender, e);
-                   
+                    this.btnLoad_Click(sender, e);                   
                 }
                 catch (SqlException ex)
                 {
@@ -211,7 +212,7 @@ namespace CuaHangDT
 
         private void cbGioiTinh_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE GioiTinh = N'" + cbGioiTinh.SelectedValue + "'", cn);
+            da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE GioiTinh = N'" + cbGioiTinh.SelectedValue + "'",cn);
             DataTable table = new DataTable();
             da.Fill(table);
             da.Dispose();
@@ -220,11 +221,35 @@ namespace CuaHangDT
 
         private void cbVitri_SelectionChangeCommitted(object sender, EventArgs e)
         {
+
+
+            //da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE ViTri = N'" + cbVitri.SelectedValue + "'", cn);
+
             da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE ViTri = N'" + cbVitri.SelectedValue + "'", cn);
+
+
             DataTable table = new DataTable();
             da.Fill(table);
             da.Dispose();
             dgvNhanVien.DataSource = table;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //FrmTimNV f = new FrmTimNV();            
+            //f.Show();
+        }
+
+        private void FrmNhanVien_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult Huy;
+            Huy = MessageBox.Show("Bạn Có Muốn Thoát không", "THÔNG BÁO!", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (Huy == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
+
+       
     }
 }

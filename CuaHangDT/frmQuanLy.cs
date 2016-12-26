@@ -98,6 +98,7 @@ namespace CuaHangDT
             f.Show();
         }
 
+
         private void sảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmSanPham f = new FrmSanPham();
@@ -111,5 +112,6 @@ namespace CuaHangDT
             f.MdiParent = this;
             f.Show();
         }
+
     }
 }
