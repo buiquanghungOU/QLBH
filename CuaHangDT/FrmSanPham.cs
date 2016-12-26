@@ -198,7 +198,7 @@ namespace CuaHangDT
                 LoadLaiCBB();
                 this.btnTaiDL_Click(sender, e);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 MessageBox.Show("Sản phẩm bạn thêm đã tồn tại trong kho hàng!!!", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

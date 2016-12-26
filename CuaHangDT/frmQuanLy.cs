@@ -97,7 +97,7 @@ namespace CuaHangDT
             f.MdiParent = this;
             f.Show();
         }
-<<<<<<< HEAD
+
 
         private void sảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -112,7 +112,6 @@ namespace CuaHangDT
             f.MdiParent = this;
             f.Show();
         }
-=======
->>>>>>> d8533a8da7ebf12ecaec5da84869662342fff5c2
+
     }
 }
