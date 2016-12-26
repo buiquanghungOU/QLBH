@@ -123,6 +123,12 @@
     <Compile Include="FrmThongKeDT.Designer.cs">
       <DependentUpon>FrmThongKeDT.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTim-NhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTim-NhapHang.Designer.cs">
+      <DependentUpon>FrmTim-NhapHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmXuatHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,6 +208,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmThongKeDT.resx">
       <DependentUpon>FrmThongKeDT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTim-NhapHang.resx">
+      <DependentUpon>FrmTim-NhapHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmXuatHang.resx">
       <DependentUpon>FrmXuatHang.cs</DependentUpon>

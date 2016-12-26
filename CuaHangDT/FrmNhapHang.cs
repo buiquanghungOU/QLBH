@@ -14,7 +14,7 @@ namespace CuaHangDT
 {
     public partial class FrmNhapHang : Form
     {
-       
+
         public FrmNhapHang()
         {
             InitializeComponent();
@@ -35,23 +35,10 @@ namespace CuaHangDT
                              MaNCC = PN.MaNCC,
                              SoLuong = CTPN.SoLuong,
                              ThanhTien = CTPN.ThanhTien,
+                             NgayNhap = PN.NgayNhap,
                          };
                 dgvChiTietPN.DataSource = CT.ToList();
             }
-            binding();
-        }
-
-        void binding()
-        {
-            cbMaNCC.DataBindings.Clear();
-            cbMaNCC.DataBindings.Add("text", dgvChiTietPN.DataSource, "MaNCC");
-            cbMaNV.DataBindings.Clear();
-            cbMaNV.DataBindings.Add("text", dgvChiTietPN.DataSource, "MaNV");
-            cbMaPN.DataBindings.Clear();
-            cbMaPN.DataBindings.Add("text", dgvChiTietPN.DataSource, "MaPN");
-            cbMaSP.DataBindings.Clear();
-            cbMaSP.DataBindings.Add("text", dgvChiTietPN.DataSource, "MaSP");
-
         }
 
         private void FrmNhapHang_Load(object sender, EventArgs e)
@@ -85,27 +72,6 @@ namespace CuaHangDT
             this.Hide();
         }
 
-        private void cbMaPN_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-            using (var db = new QLBH_BTEntities())
-            {
-                var CT = from CTPN in db.CHITIETPHIEUNHAPs
-                         join PN in db.PHIEUNHAPs on CTPN.MaPN equals PN.MaPN
-                         where (CTPN.MaPN == cbMaPN.Text)
-                         orderby CTPN.MaPN
-                         select new
-                         {
-                             MaPN = PN.MaPN,
-                             MaNV = PN.MaNV,
-                             MaSP = CTPN.MaSP,
-                             MaNCC = PN.MaNCC,
-                             SoLuong = CTPN.SoLuong,
-                             ThanhTien = CTPN.ThanhTien,
-                         };
-                dgvChiTietPN.DataSource = CT.ToList();
-            }
-        }
-
         private void btnTaiDuLieu_Click(object sender, EventArgs e)
         {
             LoadCTNhapHang();
@@ -129,6 +95,8 @@ namespace CuaHangDT
                         MaPN = cbMaPN.Text,
                         MaNV = cbMaNV.Text,
                         MaNCC = cbMaNCC.Text,
+                        NgayNhap = dateNgayNhap.Value,
+
                     };
                     db1.PHIEUNHAPs.Add(pn);
                     db1.SaveChanges();
@@ -185,6 +153,62 @@ namespace CuaHangDT
                 MessageBox.Show(ex.Message);
             }
         }
+
+
+
+        private void dgvChiTietPN_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            using (var db = new QLBH_BTEntities())
+            {
+                try
+                {
+                    var index = e.RowIndex;
+                    cbMaPN.SelectedValue = dgvChiTietPN.Rows[index].Cells[0].Value.ToString();
+                    cbMaNV.SelectedValue = dgvChiTietPN.Rows[index].Cells[1].Value.ToString();
+                    cbMaSP.SelectedValue = dgvChiTietPN.Rows[index].Cells[2].Value.ToString();
+                    cbMaNCC.SelectedValue = dgvChiTietPN.Rows[index].Cells[3].Value.ToString();
+                    txtSoLuong.Text = dgvChiTietPN.Rows[index].Cells[4].Value.ToString();
+                    txtThanhTien.Text = dgvChiTietPN.Rows[index].Cells[5].Value.ToString();
+                    dateNgayNhap.Text = dgvChiTietPN.Rows[index].Cells[6].Value.ToString();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    //throw;
+                }
+            }
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            QLBH_BTEntities db = new QLBH_BTEntities();
+            try
+            {
+
+                var MaPN = cbMaPN.Text;
+                var MaSP = cbMaSP.Text;
+                var Sua = (from CTPN in db.CHITIETPHIEUNHAPs
+                           join PN in db.PHIEUNHAPs on CTPN.MaPN equals PN.MaPN
+                           where (CTPN.MaPN == MaPN && CTPN.MaSP == MaSP)
+                           select CTPN).FirstOrDefault();
+
+                Sua.SoLuong = int.Parse(txtSoLuong.Text);
+                Sua.ThanhTien = int.Parse(txtThanhTien.Text);
+                db.Entry(Sua).State = System.Data.Entity.EntityState.Modified;
+                db.SaveChanges();
+                LoadCTNhapHang();
+
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                //throw;
+            }
+        }
     }
 }
+
 
