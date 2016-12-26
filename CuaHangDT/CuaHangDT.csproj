@@ -123,17 +123,6 @@
     <Compile Include="FrmThongKeDT.Designer.cs">
       <DependentUpon>FrmThongKeDT.cs</DependentUpon>
     </Compile>
-
-    <Compile Include="FrmTim-NhapHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-<<<<<<< HEAD
-    <Compile Include="FrmTim-NhapHang.Designer.cs">
-      <DependentUpon>FrmTim-NhapHang.cs</DependentUpon>
-=======
-    <Compile Include="FrmTimKH.Designer.cs">
-      <DependentUpon>FrmTimKH.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmTimNCC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,7 +134,6 @@
     </Compile>
     <Compile Include="FrmTimNV.Designer.cs">
       <DependentUpon>FrmTimNV.cs</DependentUpon>
->>>>>>> cb9ff0757ba5fd9e9065ca0480f8084af5ce8ce0
     </Compile>
     <Compile Include="FrmXuatHang.cs">
       <SubType>Form</SubType>
@@ -227,23 +215,11 @@
     <EmbeddedResource Include="FrmThongKeDT.resx">
       <DependentUpon>FrmThongKeDT.cs</DependentUpon>
     </EmbeddedResource>
-
-    <EmbeddedResource Include="FrmTimKH.resx">
-      <DependentUpon>FrmTimKH.cs</DependentUpon>
-    </EmbeddedResource>
-<<<<<<< HEAD
-  
-
-    <EmbeddedResource Include="FrmTim-NhapHang.resx">
-      <DependentUpon>FrmTim-NhapHang.cs</DependentUpon>
-
-=======
     <EmbeddedResource Include="FrmTimNCC.resx">
       <DependentUpon>FrmTimNCC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTimNV.resx">
       <DependentUpon>FrmTimNV.cs</DependentUpon>
->>>>>>> cb9ff0757ba5fd9e9065ca0480f8084af5ce8ce0
     </EmbeddedResource>
     <EmbeddedResource Include="FrmXuatHang.resx">
       <DependentUpon>FrmXuatHang.cs</DependentUpon>
