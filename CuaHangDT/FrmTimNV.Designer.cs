@@ -51,6 +51,7 @@
             this.cbCachTim.Name = "cbCachTim";
             this.cbCachTim.Size = new System.Drawing.Size(153, 29);
             this.cbCachTim.TabIndex = 0;
+            this.cbCachTim.SelectedIndexChanged += new System.EventHandler(this.cbCachTim_SelectedIndexChanged);
             // 
             // label1
             // 

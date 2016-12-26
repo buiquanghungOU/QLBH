@@ -18,11 +18,7 @@ namespace CuaHangDT
         string cnStr = "";
         SqlConnection cn;
         SqlDataAdapter da;
-<<<<<<< HEAD
-        
-=======
-       
->>>>>>> d8533a8da7ebf12ecaec5da84869662342fff5c2
+
         public FrmNhanVien()
         {
             InitializeComponent();
@@ -224,11 +220,11 @@ namespace CuaHangDT
 
         private void cbVitri_SelectionChangeCommitted(object sender, EventArgs e)
         {
-<<<<<<< HEAD
+
             da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE ViTri = N'" + cbVitri.SelectedValue + "'", cn);
-=======
+
             da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE ViTri= N'" + cbVitri.SelectedValue + "'", cn);
->>>>>>> d8533a8da7ebf12ecaec5da84869662342fff5c2
+
             DataTable table = new DataTable();
             da.Fill(table);
             da.Dispose();
