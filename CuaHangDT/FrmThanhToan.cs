@@ -179,5 +179,32 @@ namespace CuaHangDT
                 //throw;
             }
         }
+
+        private void btSua_Click(object sender, EventArgs e)
+        {
+            QLBH_BTEntities db = new QLBH_BTEntities();
+            try
+            {
+                var MaHD = cbMaHD.Text;
+                var MaSP = cbMaSP.Text;
+
+                var Sua = (from CTHD in db.CHITIETHOADONs
+                           join HD in db.HOADONs on CTHD.MaHD equals HD.MaHD
+                           where (CTHD.MaHD == MaHD && CTHD.MaSP == MaSP)
+                           select CTHD).FirstOrDefault();
+
+                Sua.SoLuong = int.Parse(txtSoLuong.Text);
+                Sua.DonGia = int.Parse(txtDonGia.Text);
+                db.Entry(Sua).State = System.Data.Entity.EntityState.Modified;
+                db.SaveChanges();
+                LoadCTHoaDon();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                //throw;
+            }
+        }
     }
 }

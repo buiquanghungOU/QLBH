@@ -272,6 +272,7 @@
             this.btSua.TabIndex = 9;
             this.btSua.Text = "SỬA";
             this.btSua.UseVisualStyleBackColor = true;
+            this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
             // btThem
             // 
