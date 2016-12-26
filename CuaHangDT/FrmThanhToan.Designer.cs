@@ -39,6 +39,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.txtDonGia = new System.Windows.Forms.TextBox();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -51,7 +52,6 @@
             this.btSua = new System.Windows.Forms.Button();
             this.btThem = new System.Windows.Forms.Button();
             this.dgvHoaDon = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).BeginInit();
@@ -171,6 +171,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "CHI TIẾT HÓA ĐƠN";
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button2.Location = new System.Drawing.Point(7, 89);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(120, 39);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "TÌM KIẾM";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // txtDonGia
             // 
             this.txtDonGia.Location = new System.Drawing.Point(564, 57);
@@ -251,7 +261,7 @@
             this.btnXoa.TabIndex = 11;
             this.btnXoa.Text = "XÓA";
             this.btnXoa.UseVisualStyleBackColor = true;
-            
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btSua
             // 
@@ -262,7 +272,6 @@
             this.btSua.TabIndex = 9;
             this.btSua.Text = "SỬA";
             this.btSua.UseVisualStyleBackColor = true;
-           
             // 
             // btThem
             // 
@@ -283,16 +292,6 @@
             this.dgvHoaDon.Size = new System.Drawing.Size(897, 159);
             this.dgvHoaDon.TabIndex = 8;
             this.dgvHoaDon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHoaDon_CellClick);
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.Location = new System.Drawing.Point(7, 89);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 39);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "TÌM KIẾM";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // FrmThanhToan
             // 

@@ -148,5 +148,36 @@ namespace CuaHangDT
             dateNgayLapHD.Text = dgvHoaDon.Rows[index].Cells[6].Value.ToString();
 
         }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            QLBH_BTEntities db = new QLBH_BTEntities();
+            try
+            {
+                var MaHD = cbMaHD.Text;
+                var Xoa = (from CTHD in db.CHITIETHOADONs
+                           join HD in db.HOADONs on CTHD.MaHD equals HD.MaHD
+                           orderby CTHD.MaHD
+                           where CTHD.MaHD == MaHD
+                           select CTHD).FirstOrDefault();
+                db.CHITIETHOADONs.Remove(Xoa);
+                try
+                {
+                    db.CHITIETHOADONs.Single(p => p.MaHD == MaHD);
+                }
+                catch
+                {
+                    var HD = db.HOADONs.Single(p => p.MaHD == MaHD);
+                    db.HOADONs.Remove(HD);
+                }
+                db.SaveChanges();
+                LoadCTHoaDon();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                //throw;
+            }
+        }
     }
 }
