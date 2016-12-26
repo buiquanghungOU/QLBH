@@ -152,7 +152,11 @@ namespace CuaHangDT
             dgvKhachHang.DataSource = table;//gán dữ liệu nguồn
         }
 
-      
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            FrmTimKH f = new FrmTimKH();
+            f.Show();
+        }
     }
 }
 

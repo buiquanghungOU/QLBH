@@ -99,6 +99,7 @@
             this.btnTim.TabIndex = 29;
             this.btnTim.Text = "Tìm Kiếm";
             this.btnTim.UseVisualStyleBackColor = true;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // btnThoat
             // 
