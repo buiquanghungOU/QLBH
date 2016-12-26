@@ -19,6 +19,13 @@ namespace CuaHangDT
         SqlConnection cn;
         SqlDataAdapter da;
 
+<<<<<<< HEAD
+=======
+        
+
+       
+
+>>>>>>> 093140170ad8794401b23488a1a1978838b1dab0
         public FrmNhanVien()
         {
             InitializeComponent();
@@ -222,11 +229,17 @@ namespace CuaHangDT
         private void cbVitri_SelectionChangeCommitted(object sender, EventArgs e)
         {
 
+<<<<<<< HEAD
 
             //da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE ViTri = N'" + cbVitri.SelectedValue + "'", cn);
 
             da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE ViTri = N'" + cbVitri.SelectedValue + "'", cn);
 
+=======
+            da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE ViTri = N'" + cbVitri.SelectedValue + "'", cn);
+
+            da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE ViTri= N'" + cbVitri.SelectedValue + "'", cn);
+>>>>>>> 093140170ad8794401b23488a1a1978838b1dab0
 
             DataTable table = new DataTable();
             da.Fill(table);
