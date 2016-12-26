@@ -123,6 +123,7 @@
     <Compile Include="FrmThongKeDT.Designer.cs">
       <DependentUpon>FrmThongKeDT.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="FrmTimKH.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +135,13 @@
     </Compile>
     <Compile Include="FrmTimNV.Designer.cs">
       <DependentUpon>FrmTimNV.cs</DependentUpon>
+=======
+    <Compile Include="FrmTim-NhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTim-NhapHang.Designer.cs">
+      <DependentUpon>FrmTim-NhapHang.cs</DependentUpon>
+>>>>>>> 1e8d78bb0afce39bab3393f197add546e4a817dd
     </Compile>
     <Compile Include="FrmXuatHang.cs">
       <SubType>Form</SubType>
@@ -215,11 +223,16 @@
     <EmbeddedResource Include="FrmThongKeDT.resx">
       <DependentUpon>FrmThongKeDT.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="FrmTimKH.resx">
       <DependentUpon>FrmTimKH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTimNV.resx">
       <DependentUpon>FrmTimNV.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="FrmTim-NhapHang.resx">
+      <DependentUpon>FrmTim-NhapHang.cs</DependentUpon>
+>>>>>>> 1e8d78bb0afce39bab3393f197add546e4a817dd
     </EmbeddedResource>
     <EmbeddedResource Include="FrmXuatHang.resx">
       <DependentUpon>FrmXuatHang.cs</DependentUpon>
