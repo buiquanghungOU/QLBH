@@ -14,7 +14,9 @@ namespace CuaHangDT
 {
     public partial class FrmTim_NhapHang : Form
     {
-      
+        string cnStr = "";
+        SqlConnection cn;
+        SqlDataAdapter da;
 
         public FrmTim_NhapHang()
         {
@@ -23,10 +25,37 @@ namespace CuaHangDT
 
         private void FrmTim_NhapHang_Load(object sender, EventArgs e)
         {
-           
-
+            cnStr = ConfigurationManager.ConnectionStrings["cnStr"].ConnectionString;
+            cn = new SqlConnection(cnStr);
+            cbCachTim.Items.Add("Mã Phiếu Nhập");
+            cbCachTim.Items.Add("Mã Nhà Cung Cấp");
+            
         }
 
+        private void txtNhap_TextChanged_1(object sender, EventArgs e)
+        {
+            if (cbCachTim.Text == "Mã Phiếu Nhập")
+            {
+                cn.Open();
+                da = new SqlDataAdapter("SELECT CTPN.MaPN,PN.MaNV,PN.MaNCC,CTPN.MaSP,CTPN.SoLuong, CTPN.ThanhTien, PN.NgayNhap FROM CHITIETPHIEUNHAP CTPN JOIN PHIEUNHAP PN ON CTPN.MaPN = PN.MaPN  WHERE ctpn.MaPN LIKE'%" + txtNhap.Text.Trim() + "%'", cn);
 
+
+                DataTable table = new DataTable();
+                da.Fill(table);
+                dgvTim.DataSource = table;
+                cn.Close();
+            }
+            else if (cbCachTim.Text == "Mã Nhà Cung Cấp")
+            {
+                cn.Open();
+                da = new SqlDataAdapter("SELECT CTPN.MaPN,PN.MaNV,PN.MaNCC,CTPN.MaSP,CTPN.SoLuong, CTPN.ThanhTien, PN.NgayNhap FROM CHITIETPHIEUNHAP CTPN JOIN PHIEUNHAP PN ON CTPN.MaPN = PN.MaPN  WHERE pn.MaNCC LIKE'%" + txtNhap.Text.Trim() + "%'", cn);
+
+
+                DataTable table = new DataTable();
+                da.Fill(table);
+                dgvTim.DataSource = table;
+                cn.Close();
+            }
+        }
     }
 }
