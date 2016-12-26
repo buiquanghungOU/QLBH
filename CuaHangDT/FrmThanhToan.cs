@@ -33,10 +33,10 @@ namespace CuaHangDT
                              SoLuong = CTHD.SoLuong,
                              MaSP = CTHD.MaSP,
                              DonGia = CTHD.DonGia,
+                             NgapLapHD = HD.NgayLapHD,
                          };
                 dgvHoaDon.DataSource = CT.ToList();
             }
-            binding();
         }
 
         private void FrmThanhToan_Load(object sender, EventArgs e)
@@ -44,41 +44,38 @@ namespace CuaHangDT
             QLBH_BTEntities db = new QLBH_BTEntities();
             this.LoadCTHoaDon();
 
-            //Load MaHoaDon vao combobox MaHD
+            LoadComboboxMaHD();
+            LoadComboboxMaKH();
+            LoadComboboxMaNV();
+            LoadComboboxMaSP();
+        }
+
+        private void LoadComboboxMaHD()
+        {
             var LoadMaHD = new QLBH_BTEntities();
             cbMaHD.ValueMember = "MaHD";
             cbMaHD.DataSource = LoadMaHD.HOADONs.ToList();
+        }
 
-            //Load MaKhachHang vao combobox MaKH
+        private void LoadComboboxMaKH()
+        {
             var LoadMaKH = new QLBH_BTEntities();
             cbMaKH.ValueMember = "MaKH";
             cbMaKH.DataSource = LoadMaKH.KHACHHANGs.ToList();
+        }
 
-            //Load MaSanPham vao combobox MaSP
+        private void LoadComboboxMaSP()
+        {
             var LoadMaSP = new QLBH_BTEntities();
             cbMaSP.ValueMember = "MaSP";
             cbMaSP.DataSource = LoadMaSP.SANPHAMs.ToList();
+        }
 
-            //Load MaNhanVien vao combobox MaNV
+        private void LoadComboboxMaNV()
+        {
             var LoadMaNV = new QLBH_BTEntities();
             cbMaNV.ValueMember = "MaNV";
             cbMaNV.DataSource = LoadMaNV.NHANVIENs.ToList();
-        }
-
-        public void binding()
-        {
-            cbMaHD.DataBindings.Clear();
-            cbMaHD.DataBindings.Add("text", dgvHoaDon.DataSource, "MaHD");
-            cbMaKH.DataBindings.Clear();
-            cbMaKH.DataBindings.Add("text", dgvHoaDon.DataSource, "MaKH");
-            cbMaNV.DataBindings.Clear();
-            cbMaNV.DataBindings.Add("text", dgvHoaDon.DataSource, "MaNV");
-            txtSoLuong.DataBindings.Clear();
-            txtSoLuong.DataBindings.Add("text", dgvHoaDon.DataSource, "SoLuong");
-            cbMaSP.DataBindings.Clear();
-            cbMaSP.DataBindings.Add("text", dgvHoaDon.DataSource, "MaSP");
-            txtDonGia.DataBindings.Clear();
-            txtDonGia.DataBindings.Add("text", dgvHoaDon.DataSource, "DonGia");
         }
 
         private void btThem_Click(object sender, EventArgs e)
@@ -98,6 +95,7 @@ namespace CuaHangDT
                         MaHD = cbMaHD.Text,
                         MaKH = cbMaKH.Text,
                         MaNV = cbMaNV.Text,
+                        NgayLapHD = dateNgayLapHD.Value,
                     };
                     db1.HOADONs.Add(hd);
                     db1.SaveChanges();
@@ -121,8 +119,6 @@ namespace CuaHangDT
             }
         }
 
-       
-
         private void btnNext_Click(object sender, EventArgs e)
         {
             FrmKhachHang f = new FrmKhachHang();
@@ -139,36 +135,18 @@ namespace CuaHangDT
             LoadCTHoaDon();
         }
 
-        private void btSua_Click(object sender, EventArgs e)
+        private void dgvHoaDon_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            var MaHD = cbMaHD.Text;
-            try
-            {
-                QLBH_BTEntities db = new QLBH_BTEntities();
-                var CT = db.CHITIETHOADONs.Single(p => p.MaHD == MaHD);
-                var HD = db.HOADONs.Single(p => p.MaHD == MaHD);
+            int index = dgvHoaDon.CurrentRow.Index;
 
-                CT.MaHD = cbMaHD.Text;
-                CT.MaSP = cbMaSP.Text;
-                CT.SoLuong = int.Parse(txtSoLuong.Text);
-                CT.DonGia = int.Parse(txtDonGia.Text);
+            cbMaHD.Text = dgvHoaDon.Rows[index].Cells[0].Value.ToString();
+            cbMaKH.Text = dgvHoaDon.Rows[index].Cells[1].Value.ToString();
+            cbMaNV.Text = dgvHoaDon.Rows[index].Cells[2].Value.ToString();
+            txtSoLuong.Text = dgvHoaDon.Rows[index].Cells[3].Value.ToString();
+            cbMaSP.Text = dgvHoaDon.Rows[index].Cells[4].Value.ToString();
+            txtDonGia.Text = dgvHoaDon.Rows[index].Cells[5].Value.ToString();
+            dateNgayLapHD.Text = dgvHoaDon.Rows[index].Cells[6].Value.ToString();
 
-
-                HD.MaHD = cbMaHD.Text;
-                HD.MaKH = cbMaKH.Text;
-                HD.MaNV = cbMaNV.Text;
-
-
-                db.SaveChanges();
-                LoadCTHoaDon();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                //throw;
-            }
-
-            
         }
     }
 }

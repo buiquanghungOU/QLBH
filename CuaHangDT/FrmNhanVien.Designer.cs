@@ -77,11 +77,11 @@
             this.cbGioiTinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbGioiTinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbGioiTinh.FormattingEnabled = true;
-<<<<<<< HEAD
+
             this.cbGioiTinh.Location = new System.Drawing.Point(150, 111);
-=======
+
             this.cbGioiTinh.Location = new System.Drawing.Point(134, 110);
->>>>>>> d8533a8da7ebf12ecaec5da84869662342fff5c2
+
             this.cbGioiTinh.Name = "cbGioiTinh";
             this.cbGioiTinh.Size = new System.Drawing.Size(101, 27);
             this.cbGioiTinh.TabIndex = 3;
@@ -165,11 +165,11 @@
             // txtDienThoai
             // 
             this.txtDienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
+
             this.txtDienThoai.Location = new System.Drawing.Point(150, 227);
-=======
+
             this.txtDienThoai.Location = new System.Drawing.Point(134, 227);
->>>>>>> d8533a8da7ebf12ecaec5da84869662342fff5c2
+
             this.txtDienThoai.Name = "txtDienThoai";
             this.txtDienThoai.Size = new System.Drawing.Size(192, 26);
             this.txtDienThoai.TabIndex = 9;
@@ -177,11 +177,11 @@
             // txtDiachi
             // 
             this.txtDiachi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
+
             this.txtDiachi.Location = new System.Drawing.Point(150, 189);
-=======
+
             this.txtDiachi.Location = new System.Drawing.Point(134, 189);
->>>>>>> d8533a8da7ebf12ecaec5da84869662342fff5c2
+
             this.txtDiachi.Name = "txtDiachi";
             this.txtDiachi.Size = new System.Drawing.Size(192, 26);
             this.txtDiachi.TabIndex = 7;
@@ -192,11 +192,10 @@
             this.cbVitri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbVitri.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbVitri.FormattingEnabled = true;
-<<<<<<< HEAD
+
             this.cbVitri.Location = new System.Drawing.Point(150, 147);
-=======
-            this.cbVitri.Location = new System.Drawing.Point(134, 145);
->>>>>>> d8533a8da7ebf12ecaec5da84869662342fff5c2
+           this.cbVitri.Location = new System.Drawing.Point(134, 145);
+
             this.cbVitri.Name = "cbVitri";
             this.cbVitri.Size = new System.Drawing.Size(192, 27);
             this.cbVitri.TabIndex = 5;
@@ -213,11 +212,11 @@
             // txtHoNV
             // 
             this.txtHoNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
+
             this.txtHoNV.Location = new System.Drawing.Point(150, 71);
-=======
+
             this.txtHoNV.Location = new System.Drawing.Point(136, 71);
->>>>>>> d8533a8da7ebf12ecaec5da84869662342fff5c2
+
             this.txtHoNV.Name = "txtHoNV";
             this.txtHoNV.Size = new System.Drawing.Size(190, 26);
             this.txtHoNV.TabIndex = 1;
@@ -227,11 +226,11 @@
             this.cbMaNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbMaNV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMaNV.FormattingEnabled = true;
-<<<<<<< HEAD
+
             this.cbMaNV.Location = new System.Drawing.Point(150, 36);
-=======
+
             this.cbMaNV.Location = new System.Drawing.Point(134, 32);
->>>>>>> d8533a8da7ebf12ecaec5da84869662342fff5c2
+
             this.cbMaNV.Name = "cbMaNV";
             this.cbMaNV.Size = new System.Drawing.Size(101, 27);
             this.cbMaNV.TabIndex = 0;
@@ -405,10 +404,9 @@
             this.Name = "FrmNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Nhân Viên";
-<<<<<<< HEAD
-=======
+
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmNhanVien_FormClosing);
->>>>>>> d8533a8da7ebf12ecaec5da84869662342fff5c2
+
             this.Load += new System.EventHandler(this.FrmNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
             this.groupBox1.ResumeLayout(false);
