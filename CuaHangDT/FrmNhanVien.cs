@@ -236,8 +236,8 @@ namespace CuaHangDT
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmTimNV f = new FrmTimNV();            
-            f.Show();
+            //FrmTimNV f = new FrmTimNV();            
+            //f.Show();
         }
 
         private void FrmNhanVien_FormClosing(object sender, FormClosingEventArgs e)
