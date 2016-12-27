@@ -51,7 +51,7 @@
             this.cbCachTim.Name = "cbCachTim";
             this.cbCachTim.Size = new System.Drawing.Size(153, 29);
             this.cbCachTim.TabIndex = 0;
-            this.cbCachTim.SelectedIndexChanged += new System.EventHandler(this.cbCachTim_SelectedIndexChanged);
+          
             // 
             // label1
             // 
@@ -68,6 +68,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.cbCachTim);
+            this.groupBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(25, 12);
             this.groupBox1.Name = "groupBox1";
