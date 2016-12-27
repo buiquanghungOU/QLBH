@@ -57,6 +57,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btTim = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -73,7 +74,7 @@
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(524, 297);
+            this.btnXoa.Location = new System.Drawing.Point(546, 297);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 39);
             this.btnXoa.TabIndex = 44;
@@ -84,7 +85,7 @@
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(359, 297);
+            this.btnSua.Location = new System.Drawing.Point(435, 297);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 39);
             this.btnSua.TabIndex = 43;
@@ -95,7 +96,7 @@
             // btnThem
             // 
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(208, 297);
+            this.btnThem.Location = new System.Drawing.Point(323, 297);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 39);
             this.btnThem.TabIndex = 42;
@@ -116,6 +117,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btTim);
             this.groupBox1.Controls.Add(this.btThoat);
             this.groupBox1.Controls.Add(this.txtBaoHanh);
             this.groupBox1.Controls.Add(this.btnXoa);
@@ -371,6 +373,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã sản phẩm:";
             // 
+            // btTim
+            // 
+            this.btTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTim.Location = new System.Drawing.Point(179, 297);
+            this.btTim.Name = "btTim";
+            this.btTim.Size = new System.Drawing.Size(93, 39);
+            this.btTim.TabIndex = 47;
+            this.btTim.Text = "Tìm Kiếm";
+            this.btTim.UseVisualStyleBackColor = true;
+            this.btTim.Click += new System.EventHandler(this.btTim_Click);
+            // 
             // FrmSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -422,5 +435,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBaoHanh;
         private System.Windows.Forms.Button btThoat;
+        private System.Windows.Forms.Button btTim;
     }
 }
