@@ -110,19 +110,61 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.Location = new System.Drawing.Point(189, 38);
             this.label1.Name = "label1";
+<<<<<<< HEAD:CuaHangDT/frmTimNhapHang.Designer.cs
             this.label1.Size = new System.Drawing.Size(87, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "TNH";
+=======
+            this.label1.Size = new System.Drawing.Size(98, 27);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Tìm Theo: ";
+            // 
+            // cbTim
+            // 
+            this.cbTim.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbTim.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbTim.FormattingEnabled = true;
+            this.cbTim.Items.AddRange(new object[] {
+            "Mã Sản Phẩm",
+            "Tên Sản Phẩm",
+            "Mã Nhà Cung Cấp",
+            "Mã Hãng Sản Xuất"});
+            this.cbTim.Location = new System.Drawing.Point(110, 53);
+            this.cbTim.Name = "cbTim";
+            this.cbTim.Size = new System.Drawing.Size(221, 29);
+            this.cbTim.TabIndex = 0;
+            // 
+            // dgvTim
+            // 
+            this.dgvTim.AllowUserToAddRows = false;
+            this.dgvTim.AllowUserToDeleteRows = false;
+            this.dgvTim.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTim.Location = new System.Drawing.Point(12, 142);
+            this.dgvTim.Name = "dgvTim";
+            this.dgvTim.ReadOnly = true;
+            this.dgvTim.Size = new System.Drawing.Size(661, 253);
+            this.dgvTim.TabIndex = 11;
+>>>>>>> 9b0fbe68ee71c174a2fd69fc1d15a1df6937f64c:CuaHangDT/FrmTimSP.Designer.cs
             // 
             // frmTimNhapHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD:CuaHangDT/frmTimNhapHang.Designer.cs
             this.ClientSize = new System.Drawing.Size(919, 502);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmTimNhapHang";
             this.Text = "frmTimNhapHang";
             this.Load += new System.EventHandler(this.frmTimNhapHang_Load);
+=======
+            this.ClientSize = new System.Drawing.Size(689, 408);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.dgvTim);
+            this.Name = "FrmTimSP";
+            this.Text = "FrmTimSP";
+            this.Load += new System.EventHandler(this.FrmTimSP_Load);
+>>>>>>> 9b0fbe68ee71c174a2fd69fc1d15a1df6937f64c:CuaHangDT/FrmTimSP.Designer.cs
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTim)).EndInit();

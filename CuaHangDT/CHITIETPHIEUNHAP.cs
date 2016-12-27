@@ -19,7 +19,7 @@ namespace CuaHangDT
         public Nullable<float> SoLuong { get; set; }
         public Nullable<int> ThanhTien { get; set; }
         public string Ghichu { get; set; }
-
+    
         public virtual KHOHANG KHOHANG { get; set; }
         public virtual PHIEUNHAP PHIEUNHAP { get; set; }
     }
