@@ -34,6 +34,7 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.btnTaiDL = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btTim = new System.Windows.Forms.Button();
             this.btThoat = new System.Windows.Forms.Button();
             this.txtBaoHanh = new System.Windows.Forms.TextBox();
             this.txtMota = new System.Windows.Forms.TextBox();
@@ -57,7 +58,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btTim = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -152,6 +152,17 @@
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = " Sản Phẩm";
+            // 
+            // btTim
+            // 
+            this.btTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTim.Location = new System.Drawing.Point(179, 297);
+            this.btTim.Name = "btTim";
+            this.btTim.Size = new System.Drawing.Size(93, 39);
+            this.btTim.TabIndex = 47;
+            this.btTim.Text = "Tìm Kiếm";
+            this.btTim.UseVisualStyleBackColor = true;
+            this.btTim.Click += new System.EventHandler(this.btTim_Click);
             // 
             // btThoat
             // 
@@ -373,17 +384,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã sản phẩm:";
             // 
-            // btTim
-            // 
-            this.btTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btTim.Location = new System.Drawing.Point(179, 297);
-            this.btTim.Name = "btTim";
-            this.btTim.Size = new System.Drawing.Size(93, 39);
-            this.btTim.TabIndex = 47;
-            this.btTim.Text = "Tìm Kiếm";
-            this.btTim.UseVisualStyleBackColor = true;
-            this.btTim.Click += new System.EventHandler(this.btTim_Click);
-            // 
             // FrmSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -393,6 +393,8 @@
             this.Controls.Add(this.dgvSanPham);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmSanPham";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sản Phẩm";

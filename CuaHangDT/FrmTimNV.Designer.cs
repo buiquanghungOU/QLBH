@@ -51,7 +51,6 @@
             this.cbCachTim.Name = "cbCachTim";
             this.cbCachTim.Size = new System.Drawing.Size(153, 29);
             this.cbCachTim.TabIndex = 0;
-          
             // 
             // label1
             // 
@@ -115,6 +114,7 @@
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmTimNV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tìm Kiếm Nhân Viên";

@@ -130,11 +130,7 @@ namespace CuaHangDT
             this.Hide();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            LoadCTHoaDon();
-        }
-
+      
         private void dgvHoaDon_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int index = dgvHoaDon.CurrentRow.Index;

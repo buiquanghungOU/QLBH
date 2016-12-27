@@ -235,14 +235,9 @@ namespace CuaHangDT
 
         private void FrmNhanVien_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult Huy;
-            Huy = MessageBox.Show("Bạn Có Muốn Thoát không", "THÔNG BÁO!", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-            if (Huy == DialogResult.No)
-            {
-                e.Cancel = true;
-            }
+
         }
 
-       
+
     }
 }

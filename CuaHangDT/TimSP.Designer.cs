@@ -113,7 +113,11 @@
             this.ClientSize = new System.Drawing.Size(686, 413);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvTim);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "TimSP";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TimSP";
             this.Load += new System.EventHandler(this.TimSP_Load);
             this.groupBox1.ResumeLayout(false);

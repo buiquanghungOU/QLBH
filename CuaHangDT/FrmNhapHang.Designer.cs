@@ -52,7 +52,6 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnDong = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
-            this.btnTaiDuLieu = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietPN)).BeginInit();
@@ -172,6 +171,7 @@
             this.btnTimKiem.TabIndex = 3;
             this.btnTimKiem.Text = "Tìm Kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtThanhTien
             // 
@@ -291,22 +291,11 @@
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // btnTaiDuLieu
-            // 
-            this.btnTaiDuLieu.Location = new System.Drawing.Point(742, 439);
-            this.btnTaiDuLieu.Name = "btnTaiDuLieu";
-            this.btnTaiDuLieu.Size = new System.Drawing.Size(117, 23);
-            this.btnTaiDuLieu.TabIndex = 4;
-            this.btnTaiDuLieu.Text = "TẢI DỮ LIỆU";
-            this.btnTaiDuLieu.UseVisualStyleBackColor = true;
-            this.btnTaiDuLieu.Click += new System.EventHandler(this.btnTaiDuLieu_Click);
-            // 
             // FrmNhapHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(887, 533);
-            this.Controls.Add(this.btnTaiDuLieu);
             this.Controls.Add(this.btnDong);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXoa);
@@ -315,7 +304,10 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmNhapHang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmNhapHang";
             this.Load += new System.EventHandler(this.FrmNhapHang_Load);
             this.groupBox1.ResumeLayout(false);
@@ -350,7 +342,6 @@
         private System.Windows.Forms.Button btnDong;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.ComboBox cbMaPN;
-        private System.Windows.Forms.Button btnTaiDuLieu;
         private System.Windows.Forms.TextBox txtThanhTien;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnTimKiem;

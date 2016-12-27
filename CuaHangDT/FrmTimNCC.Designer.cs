@@ -111,7 +111,11 @@
             this.ClientSize = new System.Drawing.Size(701, 406);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvTim);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmTimNCC";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmTimNCC";
             this.Load += new System.EventHandler(this.FrmTimNCC_Load);
             this.groupBox1.ResumeLayout(false);

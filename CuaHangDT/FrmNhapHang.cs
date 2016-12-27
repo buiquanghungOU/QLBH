@@ -200,9 +200,10 @@ namespace CuaHangDT
             this.Hide();
         }
 
-        private void btnTaiDuLieu_Click(object sender, EventArgs e)
+        private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            LoadCTNhapHang();
+            FrmTim_NhapHang f = new FrmTim_NhapHang();
+            f.Show();
         }
     }
 }

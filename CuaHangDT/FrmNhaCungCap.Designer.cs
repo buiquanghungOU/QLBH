@@ -48,10 +48,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnTim = new System.Windows.Forms.Button();
             this.btnTaiDL = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnTim = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhaCC)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -266,6 +266,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nhà cung cấp";
             // 
+            // btnTim
+            // 
+            this.btnTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTim.Location = new System.Drawing.Point(189, 232);
+            this.btnTim.Name = "btnTim";
+            this.btnTim.Size = new System.Drawing.Size(93, 39);
+            this.btnTim.TabIndex = 31;
+            this.btnTim.Text = "Tìm Kiếm";
+            this.btnTim.UseVisualStyleBackColor = true;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
+            // 
             // btnTaiDL
             // 
             this.btnTaiDL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -298,17 +309,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã nhà cung cấp: ";
             // 
-            // btnTim
-            // 
-            this.btnTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTim.Location = new System.Drawing.Point(189, 232);
-            this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(93, 39);
-            this.btnTim.TabIndex = 31;
-            this.btnTim.Text = "Tìm Kiếm";
-            this.btnTim.UseVisualStyleBackColor = true;
-            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
-            // 
             // FrmNhaCungCap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -318,6 +318,7 @@
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmNhaCungCap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nhà Cung Cấp";
