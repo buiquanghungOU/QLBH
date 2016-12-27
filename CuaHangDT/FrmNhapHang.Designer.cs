@@ -172,7 +172,6 @@
             this.btnTimKiem.TabIndex = 3;
             this.btnTimKiem.Text = "Tìm Kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
-            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtThanhTien
             // 
@@ -257,7 +256,7 @@
             this.btnThem.TabIndex = 3;
             this.btnThem.Text = "THÊM";
             this.btnThem.UseVisualStyleBackColor = true;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click_1);
             // 
             // btnSua
             // 

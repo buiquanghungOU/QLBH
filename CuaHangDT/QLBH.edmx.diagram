@@ -4,9 +4,9 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="185d91b3de4349f48413a231dbd56fd3" Name="Diagram1" ZoomLevel="48">
+      <Diagram DiagramId="185d91b3de4349f48413a231dbd56fd3" Name="Diagram1" ZoomLevel="72">
         <EntityTypeShape EntityType="QLBH_BTModel.CHITIETHOADON" Width="1.5" PointX="8.25" PointY="6" IsExpanded="true" />
-        <EntityTypeShape EntityType="QLBH_BTModel.CHITIETPHIEUNHAP" Width="1.5" PointX="11.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLBH_BTModel.CHITIETPHIEUNHAP" Width="1.5" PointX="11.375" PointY="6.25" IsExpanded="true" />
         <EntityTypeShape EntityType="QLBH_BTModel.CHITIETPHIEUXUAT" Width="1.5" PointX="5.25" PointY="10.75" IsExpanded="true" />
         <EntityTypeShape EntityType="QLBH_BTModel.HANGSANXUAT" Width="1.5" PointX="8.25" PointY="10" IsExpanded="true" />
         <EntityTypeShape EntityType="QLBH_BTModel.HOADON" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />

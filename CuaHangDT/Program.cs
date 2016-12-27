@@ -16,8 +16,12 @@ namespace CuaHangDT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new FrmSanPham());
 
+=======
+            Application.Run(new FrmThanhToan());
+>>>>>>> fa8cf843cbfad25b1860f10173b8f18f5a7a35d8
 
 
         }
