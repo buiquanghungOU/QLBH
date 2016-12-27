@@ -9,22 +9,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Configuration;
-
 namespace CuaHangDT
 {
-    public partial class FrmTim_ThanhToan : Form
+    public partial class FrmTimThanhToan : Form
     {
         string cnStr = "";
         SqlConnection cn;
         SqlDataAdapter da;
-
-        public FrmTim_ThanhToan()
+        public FrmTimThanhToan()
         {
-
             InitializeComponent();
         }
 
-        private void FrmTim_ThanhToan_Load(object sender, EventArgs e)
+        private void FrmTimThanhToan_Load(object sender, EventArgs e)
         {
             cnStr = ConfigurationManager.ConnectionStrings["cnStr"].ConnectionString;
             cn = new SqlConnection(cnStr);
@@ -38,7 +35,7 @@ namespace CuaHangDT
             if (cbCachTim.Text == "Mã Hóa Đơn")
             {
                 cn.Open();
-                da = new SqlDataAdapter("SELECT CTHD.MaHD, HD.MaKH, CTHD.MaSP, HD.MaNV, CTHD.SoLuong, CTHD.DonGia FROM CHITIETHOADON CTHD JOIN HOADON HD ON CTHD.MaHD = HD.MaHD WHERE CTHD.MaHD LIKE'%" + txtNhap.Text.Trim() + "%'", cn);
+                da = new SqlDataAdapter("SELECT CTHD.MaHD, HD.MaKH, CTHD.MaSP, HD.MaNV, CTHD.SoLuong, CTHD.DonGia FROM CHITIETHOADON CTHD JOIN HOADON HD ON CTHD.MaHD = HD.MaHD WHERE CTHD.MaHD LIKE N'%" + txtNhap.Text.Trim() + "%'", cn);
                 DataTable table = new DataTable();
                 da.Fill(table);
                 dgvTim.DataSource = table;

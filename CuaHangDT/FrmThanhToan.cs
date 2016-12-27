@@ -209,11 +209,8 @@ namespace CuaHangDT
 
         private void button2_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            FrmTim_ThanhToan f = new FrmTim_ThanhToan();
-=======
-            FrmTim_NhapHang f = new FrmTim_NhapHang();
->>>>>>> fa8cf843cbfad25b1860f10173b8f18f5a7a35d8
+
+            FrmTimThanhToan f = new FrmTimThanhToan();
             f.Show();
         }
     }
