@@ -150,14 +150,19 @@ namespace CuaHangDT
         {
             using (var db = new QLBH_BTEntities())
             {
-                var MaPX = cbMaPX.Text;
                 try
                 {
-                    var CT = db.CHITIETPHIEUXUATs.Single(p => p.MaPX == MaPX);
-                    CT.SoLuong = int.Parse(txtSoLuong.Text);
-                    CT.Ngayxuat = dateNgayXuat.Value;
+                    var MaPX = cbMaPX.Text;
+                    var MaSP = cbMaSP.Text;
+                    var Sua = (from CTPX in db.CHITIETPHIEUXUATs
+                               join PX in db.PHIEUXUATs on CTPX.MaPX equals PX.MaPX
+                               where (CTPX.MaPX == MaPX && CTPX.MaSP == MaSP)
+                               select CTPX).FirstOrDefault();
+                    Sua.SoLuong = int.Parse(txtSoLuong.Text);
+                    db.Entry(Sua).State = System.Data.Entity.EntityState.Modified;
                     db.SaveChanges();
                     LoadCTPhieuXuat();
+
                 }
                 catch (Exception ex)
                 {
