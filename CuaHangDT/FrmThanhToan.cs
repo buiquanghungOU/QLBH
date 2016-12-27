@@ -206,5 +206,11 @@ namespace CuaHangDT
                 //throw;
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FrmTim_NhapHang f = new FrmTim_NhapHang();
+            f.Show();
+        }
     }
 }

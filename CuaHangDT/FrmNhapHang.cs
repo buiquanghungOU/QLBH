@@ -46,38 +46,56 @@ namespace CuaHangDT
             QLBH_BTEntities db = new QLBH_BTEntities();
             this.LoadCTNhapHang();
 
-            //Load MaPhieuNhap len combobox MaPN
+            LoadComboboxMaNCC();
+            LoadComboboxMaNV();
+            LoadComboboxMaPN();
+            LoadComboboxMaSP();
+        }
+        private void LoadComboboxMaPN()
+        {
             var LoadMaPN = new QLBH_BTEntities();
             cbMaPN.ValueMember = "MaPN";
             cbMaPN.DataSource = LoadMaPN.PHIEUNHAPs.ToList();
 
-            //Load MaNhanVien len combobox MaNV
-            var LoadMaNV = new QLBH_BTEntities();
-            cbMaNV.ValueMember = "MaNV";
-            cbMaNV.DataSource = LoadMaNV.NHANVIENs.ToList();
+        }
 
-            //Load MaNhaCungCap len combobox MaNCC
+        private void LoadComboboxMaNCC()
+        {
             var LoadMaNCC = new QLBH_BTEntities();
             cbMaNCC.ValueMember = "MaNCC";
             cbMaNCC.DataSource = LoadMaNCC.NHACUNGCAPs.ToList();
+        }
 
-            //Load MaSanPham len combobox MaSP
+        private void LoadComboboxMaSP()
+        {
             var LoadMaSP = new QLBH_BTEntities();
             cbMaSP.ValueMember = "MaSP";
             cbMaSP.DataSource = LoadMaSP.SANPHAMs.ToList();
         }
 
-        private void btnDong_Click(object sender, EventArgs e)
+        private void LoadComboboxMaNV()
         {
-            this.Hide();
+            var LoadMaNV = new QLBH_BTEntities();
+            cbMaNV.ValueMember = "MaNV";
+            cbMaNV.DataSource = LoadMaNV.NHANVIENs.ToList();
+
         }
 
-        private void btnTaiDuLieu_Click(object sender, EventArgs e)
+        private void dgvChiTietPN_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            LoadCTNhapHang();
+            int index = dgvChiTietPN.CurrentRow.Index;
+
+            cbMaPN.Text = dgvChiTietPN.Rows[index].Cells[0].Value.ToString();
+            cbMaNV.Text = dgvChiTietPN.Rows[index].Cells[1].Value.ToString();
+            cbMaSP.Text = dgvChiTietPN.Rows[index].Cells[2].Value.ToString();
+            cbMaNCC.Text = dgvChiTietPN.Rows[index].Cells[3].Value.ToString();
+            txtSoLuong.Text = dgvChiTietPN.Rows[index].Cells[4].Value.ToString();
+            txtThanhTien.Text = dgvChiTietPN.Rows[index].Cells[5].Value.ToString();
+            dateNgayNhap.Text = dgvChiTietPN.Rows[index].Cells[6].Value.ToString();
+
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
+        private void btnThem_Click_1(object sender, EventArgs e)
         {
             var db = new QLBH_BTEntities();
             var MaPN = cbMaPN.Text;
@@ -112,16 +130,12 @@ namespace CuaHangDT
                         MaSP = cbMaSP.Text,
                         SoLuong = int.Parse(txtSoLuong.Text),
                         ThanhTien = int.Parse(txtThanhTien.Text),
-
                     };
                     db2.CHITIETPHIEUNHAPs.Add(ctpn);
                     db2.SaveChanges();
-
                 }
-
                 LoadCTNhapHang();
             }
-
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -154,32 +168,6 @@ namespace CuaHangDT
             }
         }
 
-
-
-        private void dgvChiTietPN_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            using (var db = new QLBH_BTEntities())
-            {
-                try
-                {
-                    var index = e.RowIndex;
-                    cbMaPN.SelectedValue = dgvChiTietPN.Rows[index].Cells[0].Value.ToString();
-                    cbMaNV.SelectedValue = dgvChiTietPN.Rows[index].Cells[1].Value.ToString();
-                    cbMaSP.SelectedValue = dgvChiTietPN.Rows[index].Cells[2].Value.ToString();
-                    cbMaNCC.SelectedValue = dgvChiTietPN.Rows[index].Cells[3].Value.ToString();
-                    txtSoLuong.Text = dgvChiTietPN.Rows[index].Cells[4].Value.ToString();
-                    txtThanhTien.Text = dgvChiTietPN.Rows[index].Cells[5].Value.ToString();
-                    dateNgayNhap.Text = dgvChiTietPN.Rows[index].Cells[6].Value.ToString();
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                    //throw;
-                }
-            }
-        }
-
         private void btnSua_Click(object sender, EventArgs e)
         {
             QLBH_BTEntities db = new QLBH_BTEntities();
@@ -209,10 +197,14 @@ namespace CuaHangDT
             }
         }
 
-        private void btnTimKiem_Click(object sender, EventArgs e)
+        private void btnDong_Click(object sender, EventArgs e)
         {
-            //FrmTim_NhapHang f = new FrmTim_NhapHang();
-            //f.Show();
+            this.Hide();
+        }
+
+        private void btnTaiDuLieu_Click(object sender, EventArgs e)
+        {
+            LoadCTNhapHang();
         }
     }
 }
