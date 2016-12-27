@@ -1,0 +1,39 @@
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\bin\Debug\CuaHangDT.exe.config
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\bin\Debug\CuaHangDT.exe
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\bin\Debug\CuaHangDT.pdb
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\bin\Debug\EntityFramework.dll
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\bin\Debug\EntityFramework.xml
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\obj\Debug\CuaHangDT.csprojResolveAssemblyReference.cache
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmKhachHang.resources
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmNhaCungCap.resources
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmNhanVien.resources
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmNhapHang.resources
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\obj\Debug\CuaHangDT.frmQuanLy.resources
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\obj\Debug\CuaHangDT.frmLogin.resources
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmSanPham.resources
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmThanhToan.resources
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmThongKeDT.resources
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmTimNCC.resources
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmTimNV.resources
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmXuatHang.resources
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\obj\Debug\CuaHangDT.Properties.Resources.resources
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\obj\Debug\CuaHangDT.csproj.GenerateResource.Cache
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\obj\Debug\CuaHangDT.exe
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\obj\Debug\CuaHangDT.pdb
+C:\Users\My PC\Desktop\27-12\QLBH\CuaHangDT\obj\Debug\CuaHangDT.FrmTim_ThanhToan.resources
+C:\Users\My PC\Desktop\27-12 - Copy\QLBH\CuaHangDT\bin\Debug\CuaHangDT.exe.config
+C:\Users\My PC\Desktop\27-12 - Copy\QLBH\CuaHangDT\obj\Debug\CuaHangDT.exe
+C:\Users\My PC\Desktop\27-12 - Copy\QLBH\CuaHangDT\obj\Debug\CuaHangDT.pdb
