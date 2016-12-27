@@ -220,12 +220,7 @@ namespace CuaHangDT
 
         private void cbVitri_SelectionChangeCommitted(object sender, EventArgs e)
         {
-
-
             da = new SqlDataAdapter("SELECT * FROM NHANVIEN WHERE ViTri = N'" + cbVitri.SelectedValue + "'", cn);
-
-
-
             DataTable table = new DataTable();
             da.Fill(table);
             da.Dispose();
@@ -234,8 +229,8 @@ namespace CuaHangDT
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //FrmTimNV f = new FrmTimNV();            
-            //f.Show();
+            FrmTimNV f = new FrmTimNV();
+            f.Show();
         }
 
         private void FrmNhanVien_FormClosing(object sender, FormClosingEventArgs e)

@@ -154,8 +154,8 @@ namespace CuaHangDT
 
         private void btnTim_Click(object sender, EventArgs e)
         {
-            //FrmTimKH f = new FrmTimKH();
-            //f.Show();
+            FrmTimKH f = new FrmTimKH();
+            f.Show();
         }
     }
 }

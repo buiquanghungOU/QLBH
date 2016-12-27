@@ -55,9 +55,6 @@ namespace CuaHangDT
           
         }
 
-        private void cbCachTim_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

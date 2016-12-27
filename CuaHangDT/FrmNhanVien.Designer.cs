@@ -76,13 +76,9 @@
             this.cbGioiTinh.DisplayMember = "GioiTinh";
             this.cbGioiTinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbGioiTinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbGioiTinh.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbGioiTinh.FormattingEnabled = true;
-
-            this.cbGioiTinh.Location = new System.Drawing.Point(150, 111);
-
-
             this.cbGioiTinh.Location = new System.Drawing.Point(134, 110);
-
             this.cbGioiTinh.Name = "cbGioiTinh";
             this.cbGioiTinh.Size = new System.Drawing.Size(101, 27);
             this.cbGioiTinh.TabIndex = 3;
@@ -157,7 +153,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(510, 189);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(220, 26);
@@ -165,27 +161,16 @@
             // 
             // txtDienThoai
             // 
-            this.txtDienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
-
-            this.txtDienThoai.Location = new System.Drawing.Point(150, 227);
-
+            this.txtDienThoai.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDienThoai.Location = new System.Drawing.Point(134, 227);
-
-
             this.txtDienThoai.Name = "txtDienThoai";
             this.txtDienThoai.Size = new System.Drawing.Size(192, 26);
             this.txtDienThoai.TabIndex = 9;
             // 
             // txtDiachi
             // 
-            this.txtDiachi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
-            this.txtDiachi.Location = new System.Drawing.Point(150, 189);
-
-
+            this.txtDiachi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiachi.Location = new System.Drawing.Point(134, 189);
-
             this.txtDiachi.Name = "txtDiachi";
             this.txtDiachi.Size = new System.Drawing.Size(192, 26);
             this.txtDiachi.TabIndex = 7;
@@ -194,15 +179,9 @@
             // 
             this.cbVitri.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbVitri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbVitri.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbVitri.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbVitri.FormattingEnabled = true;
-
-
-            this.cbVitri.Location = new System.Drawing.Point(150, 147);
-
             this.cbVitri.Location = new System.Drawing.Point(134, 145);
-
-
             this.cbVitri.Name = "cbVitri";
             this.cbVitri.Size = new System.Drawing.Size(192, 27);
             this.cbVitri.TabIndex = 5;
@@ -210,7 +189,7 @@
             // 
             // txtTenNV
             // 
-            this.txtTenNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenNV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenNV.Location = new System.Drawing.Point(510, 71);
             this.txtTenNV.Name = "txtTenNV";
             this.txtTenNV.Size = new System.Drawing.Size(220, 26);
@@ -218,16 +197,9 @@
             // 
             // txtHoNV
             // 
-            this.txtHoNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
-
-            this.txtHoNV.Location = new System.Drawing.Point(150, 71);
-
+            this.txtHoNV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoNV.Location = new System.Drawing.Point(136, 71);
-
-
             this.txtHoNV.Name = "txtHoNV";
-
             this.txtHoNV.Size = new System.Drawing.Size(190, 26);
             this.txtHoNV.TabIndex = 1;
             // 
@@ -236,12 +208,7 @@
             this.cbMaNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbMaNV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMaNV.FormattingEnabled = true;
-
-
-            this.cbMaNV.Location = new System.Drawing.Point(150, 36);
-
             this.cbMaNV.Location = new System.Drawing.Point(134, 32);
-
             this.cbMaNV.Name = "cbMaNV";
             this.cbMaNV.Size = new System.Drawing.Size(101, 27);
             this.cbMaNV.TabIndex = 0;
@@ -415,9 +382,7 @@
             this.Name = "FrmNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Nhân Viên";
-
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmNhanVien_FormClosing);
-
             this.Load += new System.EventHandler(this.FrmNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
             this.groupBox1.ResumeLayout(false);
