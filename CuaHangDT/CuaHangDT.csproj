@@ -147,13 +147,28 @@
     <Compile Include="FrmTimNV.Designer.cs">
       <DependentUpon>FrmTimNV.cs</DependentUpon>
     </Compile>
+
+
+    <Compile Include="FrmTimSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTimSP.Designer.cs">
+      <DependentUpon>FrmTimSP.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmTim_ThanhToan.cs">
+
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmTim_ThanhToan.Designer.cs">
-      <DependentUpon>FrmTim_ThanhToan.cs</DependentUpon>
+    <Compile Include="FrmTimThanhToan.Designer.cs">
+      <DependentUpon>FrmTimThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTim_NhapHang.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmTim_NhapHang.Designer.cs">
+      <DependentUpon>FrmTim_NhapHang.cs</DependentUpon>
+    </Compile>
+
     <Compile Include="FrmXuatHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -246,8 +261,17 @@
     <EmbeddedResource Include="FrmTimNV.resx">
       <DependentUpon>FrmTimNV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmTim_ThanhToan.resx">
-      <DependentUpon>FrmTim_ThanhToan.cs</DependentUpon>
+
+ 
+
+    <EmbeddedResource Include="FrmTimThanhToan.resx">
+      <DependentUpon>FrmTimThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTim_NhapHang.resx">
+      <DependentUpon>FrmTim_NhapHang.cs</DependentUpon>
+ <EmbeddedResource Include="FrmTimSP.resx">
+      <DependentUpon>FrmTimSP.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="FrmXuatHang.resx">
       <DependentUpon>FrmXuatHang.cs</DependentUpon>

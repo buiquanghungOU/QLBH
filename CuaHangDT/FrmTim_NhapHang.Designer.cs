@@ -1,6 +1,6 @@
 ﻿namespace CuaHangDT
 {
-    partial class FrmTim_ThanhToan
+    partial class FrmTim_NhapHang
     {
         /// <summary>
         /// Required designer variable.
@@ -48,12 +48,12 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 22);
+            this.groupBox1.Location = new System.Drawing.Point(10, 23);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(902, 485);
-            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông tin hóa đơn";
+            this.groupBox1.Text = "Thông tin thông tin nhập hàng";
             // 
             // dgvTim
             // 
@@ -110,19 +110,19 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.Location = new System.Drawing.Point(189, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(529, 37);
+            this.label1.Size = new System.Drawing.Size(576, 37);
             this.label1.TabIndex = 0;
-            this.label1.Text = "TÌM KIẾM THÔNG TIN HÓA ĐƠN";
+            this.label1.Text = "TÌM KIẾM THÔNG TIN PHIẾU NHẬP";
             // 
-            // FrmTim_ThanhToan
+            // FrmTim_NhapHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(923, 514);
+            this.ClientSize = new System.Drawing.Size(924, 531);
             this.Controls.Add(this.groupBox1);
-            this.Name = "FrmTim_ThanhToan";
-            this.Text = "FrmTim_ThanhToan";
-            this.Load += new System.EventHandler(this.FrmTim_ThanhToan_Load);
+            this.Name = "FrmTim_NhapHang";
+            this.Text = "FrmTim_NhapHang";
+            this.Load += new System.EventHandler(this.FrmTim_NhapHang_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTim)).EndInit();
