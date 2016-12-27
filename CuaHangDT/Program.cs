@@ -16,14 +16,8 @@ namespace CuaHangDT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
-            Application.Run(new frmTimNhapHang());
-
-
-
-=======
             Application.Run(new frmLogin());
->>>>>>> 9b0fbe68ee71c174a2fd69fc1d15a1df6937f64c
+
         }
     }
 }
