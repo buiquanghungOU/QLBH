@@ -29,20 +29,31 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmThongKeDT));
+            this.DataTableTKDTBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.DataSetTKDT = new CuaHangDT.DataSetTKDT();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbNgayLap = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lbMain = new System.Windows.Forms.Label();
             this.rpviewTKDT = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.cbNgayLap = new System.Windows.Forms.ComboBox();
-            this.DataSetTKDT = new CuaHangDT.DataSetTKDT();
-            this.DataTableTKDTBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DataTableTKDTTableAdapter = new CuaHangDT.DataSetTKDTTableAdapters.DataTableTKDTTableAdapter();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataSetTKDT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataTableTKDTBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSetTKDT)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // DataTableTKDTBindingSource
+            // 
+            this.DataTableTKDTBindingSource.DataMember = "DataTableTKDT";
+            this.DataTableTKDTBindingSource.DataSource = this.DataSetTKDT;
+            // 
+            // DataSetTKDT
+            // 
+            this.DataSetTKDT.DataSetName = "DataSetTKDT";
+            this.DataSetTKDT.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // groupBox1
             // 
@@ -53,15 +64,23 @@
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.groupBox1.Location = new System.Drawing.Point(13, 45);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(477, 68);
+            this.groupBox1.Size = new System.Drawing.Size(873, 68);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thống Kê Theo";
             // 
+            // cbNgayLap
+            // 
+            this.cbNgayLap.FormattingEnabled = true;
+            this.cbNgayLap.Location = new System.Drawing.Point(140, 21);
+            this.cbNgayLap.Name = "cbNgayLap";
+            this.cbNgayLap.Size = new System.Drawing.Size(621, 27);
+            this.cbNgayLap.TabIndex = 6;
+            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(343, 18);
+            this.button1.Location = new System.Drawing.Point(782, 17);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(83, 32);
             this.button1.TabIndex = 5;
@@ -94,32 +113,14 @@
             // rpviewTKDT
             // 
             this.rpviewTKDT.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.DataTableTKDTBindingSource;
-            this.rpviewTKDT.LocalReport.DataSources.Add(reportDataSource1);
+            reportDataSource2.Name = "DataSet1";
+            reportDataSource2.Value = this.DataTableTKDTBindingSource;
+            this.rpviewTKDT.LocalReport.DataSources.Add(reportDataSource2);
             this.rpviewTKDT.LocalReport.ReportEmbeddedResource = "CuaHangDT.Report1.rdlc";
             this.rpviewTKDT.Location = new System.Drawing.Point(0, 128);
             this.rpviewTKDT.Name = "rpviewTKDT";
             this.rpviewTKDT.Size = new System.Drawing.Size(898, 348);
             this.rpviewTKDT.TabIndex = 11;
-            // 
-            // cbNgayLap
-            // 
-            this.cbNgayLap.FormattingEnabled = true;
-            this.cbNgayLap.Location = new System.Drawing.Point(165, 22);
-            this.cbNgayLap.Name = "cbNgayLap";
-            this.cbNgayLap.Size = new System.Drawing.Size(127, 27);
-            this.cbNgayLap.TabIndex = 6;
-            // 
-            // DataSetTKDT
-            // 
-            this.DataSetTKDT.DataSetName = "DataSetTKDT";
-            this.DataSetTKDT.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // DataTableTKDTBindingSource
-            // 
-            this.DataTableTKDTBindingSource.DataMember = "DataTableTKDT";
-            this.DataTableTKDTBindingSource.DataSource = this.DataSetTKDT;
             // 
             // DataTableTKDTTableAdapter
             // 
@@ -133,14 +134,18 @@
             this.Controls.Add(this.rpviewTKDT);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lbMain);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmThongKeDT";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thống Kê Doanh Thu";
             this.Load += new System.EventHandler(this.FrmThongKeDT_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DataTableTKDTBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSetTKDT)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataSetTKDT)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DataTableTKDTBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

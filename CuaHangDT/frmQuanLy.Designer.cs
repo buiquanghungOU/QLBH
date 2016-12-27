@@ -175,19 +175,20 @@
             // doanhThuToolStripMenuItem
             // 
             this.doanhThuToolStripMenuItem.Name = "doanhThuToolStripMenuItem";
-            this.doanhThuToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.doanhThuToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.doanhThuToolStripMenuItem.Text = "Doanh thu ";
+            this.doanhThuToolStripMenuItem.Click += new System.EventHandler(this.doanhThuToolStripMenuItem_Click);
             // 
             // sảnPhẩmToolStripMenuItem1
             // 
             this.sảnPhẩmToolStripMenuItem1.Name = "sảnPhẩmToolStripMenuItem1";
-            this.sảnPhẩmToolStripMenuItem1.Size = new System.Drawing.Size(150, 22);
+            this.sảnPhẩmToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.sảnPhẩmToolStripMenuItem1.Text = "Sản phẩm bán";
             // 
             // hàngTồnKhoToolStripMenuItem
             // 
             this.hàngTồnKhoToolStripMenuItem.Name = "hàngTồnKhoToolStripMenuItem";
-            this.hàngTồnKhoToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.hàngTồnKhoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.hàngTồnKhoToolStripMenuItem.Text = "Hàng tồn kho";
             // 
             // frmQuanLy

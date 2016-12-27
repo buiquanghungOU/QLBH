@@ -180,9 +180,18 @@ namespace CuaHangDT
             
         }
 
-       
-
-
-
+        private void doanhThuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmThongKeDT"))
+            {
+                FrmThongKeDT f = new FrmThongKeDT();
+                f.MdiParent = this;
+                f.Show();
+            }
+            else
+            {
+                ActiveChilForm("FrmThongKeDT");
+            }
+        }
     }
 }
