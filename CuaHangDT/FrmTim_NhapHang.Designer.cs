@@ -53,7 +53,7 @@
             this.groupBox1.Size = new System.Drawing.Size(902, 485);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông tin thông tin nhập hàng";
+            this.groupBox1.Text = "Thông tin nhập hàng";
             // 
             // dgvTim
             // 
