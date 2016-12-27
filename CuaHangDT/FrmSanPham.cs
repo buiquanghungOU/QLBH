@@ -281,5 +281,11 @@ namespace CuaHangDT
                 this.Close();
             }
         }
+
+        private void btTim_Click(object sender, EventArgs e)
+        {
+            FrmTimSP f = new FrmTimSP();
+            f.Show();
+        }
     }
 }
