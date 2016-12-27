@@ -69,6 +69,11 @@
     <Compile Include="CHITIETPHIEUXUAT.cs">
       <DependentUpon>QLBH.tt</DependentUpon>
     </Compile>
+    <Compile Include="DataSetTKDT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetTKDT.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FrmKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -266,9 +271,21 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="TimSP.resx">
       <DependentUpon>TimSP.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DataSetTKDT.xsc">
+      <DependentUpon>DataSetTKDT.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetTKDT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetTKDT.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetTKDT.xss">
+      <DependentUpon>DataSetTKDT.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
