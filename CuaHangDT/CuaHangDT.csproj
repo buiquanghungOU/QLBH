@@ -69,6 +69,11 @@
     <Compile Include="CHITIETPHIEUXUAT.cs">
       <DependentUpon>QLBH.tt</DependentUpon>
     </Compile>
+    <Compile Include="DataSetHTK.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetHTK.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSetTKDT.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -157,6 +162,12 @@
     </Compile>
     <Compile Include="FrmTim_NhapHang.Designer.cs">
       <DependentUpon>FrmTim_NhapHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTKKTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTKKTK.Designer.cs">
+      <DependentUpon>FrmTKKTK.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmXuatHang.cs">
       <SubType>Form</SubType>
@@ -259,6 +270,9 @@
     <EmbeddedResource Include="FrmTim_NhapHang.resx">
       <DependentUpon>FrmTim_NhapHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmTKKTK.resx">
+      <DependentUpon>FrmTKKTK.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmXuatHang.resx">
       <DependentUpon>FrmXuatHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -271,10 +285,22 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="ReportTKDT.rdlc" />
+    <EmbeddedResource Include="ReportHTK.rdlc" />
     <EmbeddedResource Include="TimSP.resx">
       <DependentUpon>TimSP.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DataSetHTK.xsc">
+      <DependentUpon>DataSetHTK.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetHTK.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetHTK.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetHTK.xss">
+      <DependentUpon>DataSetHTK.xsd</DependentUpon>
+    </None>
     <None Include="DataSetTKDT.xsc">
       <DependentUpon>DataSetTKDT.xsd</DependentUpon>
     </None>
