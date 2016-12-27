@@ -124,6 +124,7 @@
             // 
             // btnCancel
             // 
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Location = new System.Drawing.Point(234, 158);
             this.btnCancel.Name = "btnCancel";
@@ -135,9 +136,11 @@
             // 
             // frmLogin
             // 
+            this.AcceptButton = this.btnSignin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(419, 206);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.lbLoiDangNhap);
@@ -149,6 +152,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmLogin";
