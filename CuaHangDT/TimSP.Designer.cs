@@ -1,6 +1,6 @@
 ﻿namespace CuaHangDT
 {
-    partial class FrmTimNCC
+    partial class TimSP
     {
         /// <summary>
         /// Required designer variable.
@@ -48,9 +48,9 @@
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(661, 129);
-            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "TÌM KIẾM NHÀ CUNG CẤP";
+            this.groupBox1.Text = "TÌM KIẾM SP";
             // 
             // txtNhap
             // 
@@ -86,8 +86,10 @@
             this.cbTim.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTim.FormattingEnabled = true;
             this.cbTim.Items.AddRange(new object[] {
+            "Mã Sản Phẩm",
+            "Tên Sản Phẩm",
             "Mã Nhà Cung Cấp",
-            "Tên Nhà Cung Cấp"});
+            "Hãng Sản Xuất"});
             this.cbTim.Location = new System.Drawing.Point(110, 53);
             this.cbTim.Name = "cbTim";
             this.cbTim.Size = new System.Drawing.Size(153, 29);
@@ -102,18 +104,18 @@
             this.dgvTim.Name = "dgvTim";
             this.dgvTim.ReadOnly = true;
             this.dgvTim.Size = new System.Drawing.Size(661, 253);
-            this.dgvTim.TabIndex = 7;
+            this.dgvTim.TabIndex = 9;
             // 
-            // FrmTimNCC
+            // TimSP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(701, 406);
+            this.ClientSize = new System.Drawing.Size(686, 413);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvTim);
-            this.Name = "FrmTimNCC";
-            this.Text = "FrmTimNCC";
-            this.Load += new System.EventHandler(this.FrmTimNCC_Load);
+            this.Name = "TimSP";
+            this.Text = "TimSP";
+            this.Load += new System.EventHandler(this.TimSP_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTim)).EndInit();
