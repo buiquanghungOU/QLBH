@@ -152,10 +152,47 @@ namespace CuaHangDT
             dgvKhachHang.DataSource = table;//gán dữ liệu nguồn
         }
 
+
+        //Kiem tra form con da dong hay chua
+        private bool CheckExistForm(String name)
+        {
+            bool check = false;
+            foreach (Form frm in this.MdiChildren)
+            {
+                if (frm.Name == name)
+                {
+                    check = true;
+                    break;
+                }
+            }
+            return check;
+        }
+
+        private void ActiveChilForm(string name)
+        {
+            foreach (Form frm in this.MdiChildren)
+            {
+                if (frm.Name == name)
+                {
+                    frm.Activate();
+                    break;
+                }
+            }
+        }
+
         private void btnTim_Click(object sender, EventArgs e)
         {
-            FrmTimKH f = new FrmTimKH();
-            f.Show();
+           
+
+            if (!CheckExistForm("FrmTimKH"))
+            {
+                FrmTimKH f = new FrmTimKH();
+                f.Show();
+            }
+            else
+            {
+                ActiveChilForm("FrmTimKH");
+            }
         }
     }
 }

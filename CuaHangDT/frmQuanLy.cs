@@ -57,7 +57,7 @@ namespace CuaHangDT
 
         private void nhậpHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (!CheckExistForm("FrmNhanVien"))
+            if (!CheckExistForm("FrmNhapHang"))
             {
                 FrmNhapHang f = new FrmNhapHang();
                 f.MdiParent = this;
@@ -65,7 +65,7 @@ namespace CuaHangDT
             }
             else
             {
-                ActiveChilForm("FrmNhanVien");
+                ActiveChilForm("FrmNhapHang");
             }
         }
 
@@ -76,7 +76,7 @@ namespace CuaHangDT
 
         private void xuấtHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (!CheckExistForm("FrmNhanVien"))
+            if (!CheckExistForm("FrmXuatHang"))
             {
                 FrmXuatHang f = new FrmXuatHang();
                 f.MdiParent = this;
@@ -84,14 +84,14 @@ namespace CuaHangDT
             }
             else
             {
-                ActiveChilForm("FrmNhanVien");
+                ActiveChilForm("FrmXuatHang");
             }
             
         }
 
         private void thanhToánToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (!CheckExistForm("FrmNhanVien"))
+            if (!CheckExistForm("FrmThanhToan"))
             {
                 FrmThanhToan f = new FrmThanhToan();
                 f.MdiParent = this;
@@ -99,7 +99,7 @@ namespace CuaHangDT
             }
             else
             {
-                ActiveChilForm("FrmNhanVien");
+                ActiveChilForm("FrmThanhToan");
             }
            
         }
@@ -138,7 +138,7 @@ namespace CuaHangDT
 
         private void danhSáchKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (!CheckExistForm("FrmNhanVien"))
+            if (!CheckExistForm("FrmKhachHang"))
             {
                 FrmKhachHang f = new FrmKhachHang();
                 f.MdiParent = this;
@@ -146,14 +146,14 @@ namespace CuaHangDT
             }
             else
             {
-                ActiveChilForm("FrmNhanVien");
+                ActiveChilForm("FrmKhachHang");
             }
         }
 
 
         private void sảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (!CheckExistForm("FrmNhanVien"))
+            if (!CheckExistForm("FrmSanPham"))
             {
                 FrmSanPham f = new FrmSanPham();
                 f.MdiParent = this;
@@ -161,13 +161,13 @@ namespace CuaHangDT
             }
             else
             {
-                ActiveChilForm("FrmNhanVien");
+                ActiveChilForm("FrmSanPham");
             }
         }
 
         private void nhàCungCấpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (!CheckExistForm("FrmNhanVien"))
+            if (!CheckExistForm("FrmNhaCungCap"))
             {
                 FrmNhaCungCap f = new FrmNhaCungCap();
                 f.MdiParent = this;
@@ -175,7 +175,7 @@ namespace CuaHangDT
             }
             else
             {
-                ActiveChilForm("FrmNhanVien");
+                ActiveChilForm("FrmNhaCungCap");
             }
             
         }

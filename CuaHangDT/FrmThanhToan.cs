@@ -203,11 +203,46 @@ namespace CuaHangDT
             }
         }
 
+
+        //Kiem tra form con da dong hay chua
+        private bool CheckExistForm(String name)
+        {
+            bool check = false;
+            foreach (Form frm in this.MdiChildren)
+            {
+                if (frm.Name == name)
+                {
+                    check = true;
+                    break;
+                }
+            }
+            return check;
+        }
+
+        private void ActiveChilForm(string name)
+        {
+            foreach (Form frm in this.MdiChildren)
+            {
+                if (frm.Name == name)
+                {
+                    frm.Activate();
+                    break;
+                }
+            }
+        }
         private void button2_Click(object sender, EventArgs e)
         {
 
-            FrmTimThanhToan f = new FrmTimThanhToan();
-            f.Show();
+            if (!CheckExistForm("FrmTimThanhToan"))
+            {
+
+                FrmTimThanhToan f = new FrmTimThanhToan();
+                f.Show();
+            }
+            else
+            {
+                ActiveChilForm("FrmTimThanhToan");
+            }
         }
     }
 }

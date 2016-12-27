@@ -233,10 +233,46 @@ namespace CuaHangDT
             txtEmail.Text = dgvNhaCC.Rows[index].Cells[7].Value.ToString();
         }
 
+        //Kiem tra form con da dong hay chua
+        private bool CheckExistForm(String name)
+        {
+            bool check = false;
+            foreach (Form frm in this.MdiChildren)
+            {
+                if (frm.Name == name)
+                {
+                    check = true;
+                    break;
+                }
+            }
+            return check;
+        }
+
+        private void ActiveChilForm(string name)
+        {
+            foreach (Form frm in this.MdiChildren)
+            {
+                if (frm.Name == name)
+                {
+                    frm.Activate();
+                    break;
+                }
+            }
+        }
+
         private void btnTim_Click(object sender, EventArgs e)
         {
-            FrmTimNCC f = new FrmTimNCC();
-            f.Show();
+            
+
+            if (!CheckExistForm("FrmTimNCC"))
+            {
+                FrmTimNCC f = new FrmTimNCC();
+                f.Show();
+            }
+            else
+            {
+                ActiveChilForm("FrmTimNCC");
+            }
         }
     }
 

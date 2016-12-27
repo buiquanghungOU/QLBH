@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmNhanVien));
             this.btnThoat = new System.Windows.Forms.Button();
             this.cbGioiTinh = new System.Windows.Forms.ComboBox();
             this.btnXoa = new System.Windows.Forms.Button();
@@ -269,7 +270,7 @@
             this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(9, 147);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(118, 21);
+            this.label6.Size = new System.Drawing.Size(119, 21);
             this.label6.TabIndex = 5;
             this.label6.Text = "Vị trí làm việc:";
             // 
@@ -289,7 +290,7 @@
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(9, 111);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 21);
+            this.label4.Size = new System.Drawing.Size(80, 21);
             this.label4.TabIndex = 3;
             this.label4.Text = "Giới tính:";
             // 
@@ -378,6 +379,7 @@
             this.Controls.Add(this.dgvNhanVien);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmNhanVien";

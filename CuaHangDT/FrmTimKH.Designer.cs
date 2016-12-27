@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTimKH));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtNhap = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -113,6 +114,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvTim);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmTimKH";
