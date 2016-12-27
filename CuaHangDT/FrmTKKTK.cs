@@ -13,39 +13,37 @@ using System.Configuration;
 
 namespace CuaHangDT
 {
-    public partial class FrmThongKeDT : Form
+    public partial class FrmTKKTK : Form
     {
         string cnStr = "";
         SqlConnection cn;
         SqlDataAdapter da;
-
-        public FrmThongKeDT()
+        public FrmTKKTK()
         {
             InitializeComponent();
         }
 
-        private void FrmThongKeDT_Load(object sender, EventArgs e)
-        {
+        private void FrmTKKTK_Load(object sender, EventArgs e)
+        {                       
             cnStr = ConfigurationManager.ConnectionStrings["cnStr"].ConnectionString;
             cn = new SqlConnection(cnStr);
-            LoadComboBoxNgayLapHD();
-           
+            LoadComboBoxMaSP();
+            
         }
-        private void LoadComboBoxNgayLapHD()
+         private void LoadComboBoxMaSP()
          {
-             da = new SqlDataAdapter("SELECT DISTINCT * FROM HOADON", cn);
+             da = new SqlDataAdapter("SELECT DISTINCT * FROM SANPHAM", cn);
              DataTable table = new DataTable();
              da.Fill(table);
              da.Dispose();
-             cbNgayLap.DataSource = table;//gán dữ liệu nguồn
+             cbMaSP.DataSource = table;//gán dữ liệu nguồn
 
-             cbNgayLap.ValueMember = "NgayLapHD";
+             cbMaSP.ValueMember = "MaSP";
          }
         private void button1_Click(object sender, EventArgs e)
         {
-             this.DataTableTKDTTableAdapter.Fill(this.DataSetTKDT.DataTableTKDT,cbNgayLap.SelectedValue.ToString());
-
-            this.rpviewTKDT.RefreshReport();
+            this.DataTable1TableAdapter.Fill(this.DataSetHTK.DataTable1,cbMaSP.SelectedValue.ToString());
+            this.reportViewer1.RefreshReport();          
         }
     }
 }
