@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-using System.Configuration;
 
 namespace CuaHangDT
 {
@@ -34,7 +32,7 @@ namespace CuaHangDT
                              MaSP = CTPN.MaSP,
                              MaNCC = PN.MaNCC,
                              SoLuong = CTPN.SoLuong,
-                             ThanhTien = CTPN.ThanhTien,
+                             //ThanhTien = CTPN.ThanhTien,
                              NgayNhap = PN.NgayNhap,
                          };
                 dgvChiTietPN.DataSource = CT.ToList();
