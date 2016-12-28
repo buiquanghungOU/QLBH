@@ -79,6 +79,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetTKDT.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DsTKSanPhamBan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsTKSanPhamBan.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FrmKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +173,12 @@
     </Compile>
     <Compile Include="FrmTKKTK.Designer.cs">
       <DependentUpon>FrmTKKTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTKSanPhamBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTKSanPhamBan.Designer.cs">
+      <DependentUpon>FrmTKSanPhamBan.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmXuatHang.cs">
       <SubType>Form</SubType>
@@ -273,6 +284,9 @@
     <EmbeddedResource Include="FrmTKKTK.resx">
       <DependentUpon>FrmTKKTK.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmTKSanPhamBan.resx">
+      <DependentUpon>FrmTKSanPhamBan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmXuatHang.resx">
       <DependentUpon>FrmXuatHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -287,6 +301,7 @@
     </Compile>
     <EmbeddedResource Include="ReportTKDT.rdlc" />
     <EmbeddedResource Include="ReportHTK.rdlc" />
+    <EmbeddedResource Include="RpTKSanPhamBan.rdlc" />
     <EmbeddedResource Include="TimSP.resx">
       <DependentUpon>TimSP.cs</DependentUpon>
     </EmbeddedResource>
@@ -311,6 +326,17 @@
     </None>
     <None Include="DataSetTKDT.xss">
       <DependentUpon>DataSetTKDT.xsd</DependentUpon>
+    </None>
+    <None Include="DsTKSanPhamBan.xsc">
+      <DependentUpon>DsTKSanPhamBan.xsd</DependentUpon>
+    </None>
+    <None Include="DsTKSanPhamBan.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsTKSanPhamBan.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DsTKSanPhamBan.xss">
+      <DependentUpon>DsTKSanPhamBan.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
