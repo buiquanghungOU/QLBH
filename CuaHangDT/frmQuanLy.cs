@@ -193,5 +193,19 @@ namespace CuaHangDT
                 ActiveChilForm("FrmThongKeDT");
             }
         }
+
+        private void hàngTồnKhoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmTKKTK"))
+            {
+                FrmTKKTK f = new FrmTKKTK();
+                f.MdiParent = this;
+                f.Show();
+            }
+            else
+            {
+                ActiveChilForm("FrmTKKTK");
+            }
+        }
     }
 }

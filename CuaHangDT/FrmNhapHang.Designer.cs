@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmNhapHang));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dateNgayNhap = new System.Windows.Forms.DateTimePicker();
@@ -53,6 +54,9 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnDong = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.lbGioNhap = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietPN)).BeginInit();
@@ -146,6 +150,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.lbGioNhap);
+            this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.btnTimKiem);
             this.groupBox2.Controls.Add(this.txtThanhTien);
             this.groupBox2.Controls.Add(this.txtSoLuong);
@@ -292,6 +298,28 @@
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(32, 80);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(69, 19);
+            this.label11.TabIndex = 4;
+            this.label11.Text = "Giờ Nhập";
+            // 
+            // lbGioNhap
+            // 
+            this.lbGioNhap.AutoSize = true;
+            this.lbGioNhap.Location = new System.Drawing.Point(160, 80);
+            this.lbGioNhap.Name = "lbGioNhap";
+            this.lbGioNhap.Size = new System.Drawing.Size(0, 19);
+            this.lbGioNhap.TabIndex = 5;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // FrmNhapHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -347,5 +375,8 @@
         private System.Windows.Forms.TextBox txtThanhTien;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnTimKiem;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lbGioNhap;
+        private System.Windows.Forms.Timer timer1;
     }
 }

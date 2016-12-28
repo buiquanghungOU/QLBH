@@ -190,6 +190,7 @@
             this.hàngTồnKhoToolStripMenuItem.Name = "hàngTồnKhoToolStripMenuItem";
             this.hàngTồnKhoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.hàngTồnKhoToolStripMenuItem.Text = "Hàng tồn kho";
+            this.hàngTồnKhoToolStripMenuItem.Click += new System.EventHandler(this.hàngTồnKhoToolStripMenuItem_Click);
             // 
             // frmQuanLy
             // 

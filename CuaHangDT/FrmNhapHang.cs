@@ -48,6 +48,9 @@ namespace CuaHangDT
             LoadComboboxMaNV();
             LoadComboboxMaPN();
             LoadComboboxMaSP();
+
+            //Load Gio
+            lbGioNhap.Text = DateTime.Now.ToLongTimeString();
         }
         private void LoadComboboxMaPN()
         {
@@ -204,6 +207,11 @@ namespace CuaHangDT
         {
             FrmTim_NhapHang f = new FrmTim_NhapHang();
             f.Show();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lbGioNhap.Text = DateTime.Now.ToLongTimeString();
         }
     }
 }
