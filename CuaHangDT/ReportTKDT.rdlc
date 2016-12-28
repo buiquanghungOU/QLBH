@@ -6,16 +6,16 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>0.94792in</Width>
+              <Width>1.26042in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.08333in</Width>
+              <Width>1.47916in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.04167in</Width>
+              <Width>1.4375in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.13666in</Width>
+              <Width>1.34499in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1.25in</Width>
@@ -35,7 +35,7 @@
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.25in</Height>
+              <Height>0.35417in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -49,6 +49,7 @@
                               <Value>Mã Hóa Đơn</Value>
                               <Style>
                                 <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -85,6 +86,7 @@
                               <Value>Mã Khách Hàng</Value>
                               <Style>
                                 <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -121,6 +123,7 @@
                               <Value>Mã Sản Phẩm</Value>
                               <Style>
                                 <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -157,6 +160,7 @@
                               <Value>Tên Sản Phẩm</Value>
                               <Style>
                                 <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -193,6 +197,7 @@
                               <Value>Mã Nhà Cung Cấp</Value>
                               <Style>
                                 <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -229,6 +234,7 @@
                               <Value>Ngày Lập Hóa Đơn</Value>
                               <Style>
                                 <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -265,6 +271,7 @@
                               <Value>Số Lượng</Value>
                               <Style>
                                 <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -301,6 +308,7 @@
                               <Value>Đơn Gía</Value>
                               <Style>
                                 <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -337,6 +345,7 @@
                               <Value>Thành Tiền</Value>
                               <Style>
                                 <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -655,7 +664,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -688,8 +696,8 @@
         <DataSetName>DataSet1</DataSetName>
         <Top>2.30083in</Top>
         <Left>0.26958in</Left>
-        <Height>0.5in</Height>
-        <Width>10.43875in</Width>
+        <Height>0.60417in</Height>
+        <Width>11.75126in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -857,11 +865,81 @@
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
+      <Textbox Name="Textbox8">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!ThanhTien.Value, "DataSet1")</Value>
+                <Style>
+                  <FontFamily>Times New Roman</FontFamily>
+                  <FontSize>14pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <Format>#,0 'VND';(#,0 'VND')</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox8</rd:DefaultName>
+        <Top>3.96875in</Top>
+        <Left>9.50917in</Left>
+        <Height>0.32292in</Height>
+        <Width>1.63542in</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BackgroundColor>Orange</BackgroundColor>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox10">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>TỔNG CỘNG:</Value>
+                <Style>
+                  <FontFamily>TIMes New Roman</FontFamily>
+                  <FontSize>14pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox10</rd:DefaultName>
+        <Top>3.96875in</Top>
+        <Left>7.79167in</Left>
+        <Height>0.32292in</Height>
+        <Width>1.46875in</Width>
+        <ZIndex>5</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
     </ReportItems>
-    <Height>5.26042in</Height>
+    <Height>5.36459in</Height>
     <Style />
   </Body>
-  <Width>11.20833in</Width>
+  <Width>12.50001in</Width>
   <Page>
     <LeftMargin>1in</LeftMargin>
     <RightMargin>1in</RightMargin>
