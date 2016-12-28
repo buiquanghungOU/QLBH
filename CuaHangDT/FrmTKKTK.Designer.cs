@@ -30,6 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTKKTK));
+            this.DataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.DataSetHTK = new CuaHangDT.DataSetHTK();
             this.lbMain = new System.Windows.Forms.Label();
             this.DataTableTKDTBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DataSetTKDT = new CuaHangDT.DataSetTKDT();
@@ -39,15 +42,23 @@
             this.label1 = new System.Windows.Forms.Label();
             this.DataTableTKDTTableAdapter = new CuaHangDT.DataSetTKDTTableAdapters.DataTableTKDTTableAdapter();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.DataSetHTK = new CuaHangDT.DataSetHTK();
-            this.DataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DataTable1TableAdapter = new CuaHangDT.DataSetHTKTableAdapters.DataTable1TableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.DataTable1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSetHTK)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataTableTKDTBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataSetTKDT)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataSetHTK)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DataTable1BindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // DataTable1BindingSource
+            // 
+            this.DataTable1BindingSource.DataMember = "DataTable1";
+            this.DataTable1BindingSource.DataSource = this.DataSetHTK;
+            // 
+            // DataSetHTK
+            // 
+            this.DataSetHTK.DataSetName = "DataSetHTK";
+            this.DataSetHTK.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // lbMain
             // 
@@ -130,16 +141,6 @@
             this.reportViewer1.Size = new System.Drawing.Size(748, 298);
             this.reportViewer1.TabIndex = 14;
             // 
-            // DataSetHTK
-            // 
-            this.DataSetHTK.DataSetName = "DataSetHTK";
-            this.DataSetHTK.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // DataTable1BindingSource
-            // 
-            this.DataTable1BindingSource.DataMember = "DataTable1";
-            this.DataTable1BindingSource.DataSource = this.DataSetHTK;
-            // 
             // DataTable1TableAdapter
             // 
             this.DataTable1TableAdapter.ClearBeforeFill = true;
@@ -152,15 +153,16 @@
             this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lbMain);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmTKKTK";
             this.Text = "Thống Kê Hàng Tồn Kho";
             this.Load += new System.EventHandler(this.FrmTKKTK_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DataTable1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSetHTK)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataTableTKDTBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataSetTKDT)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataSetHTK)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DataTable1BindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

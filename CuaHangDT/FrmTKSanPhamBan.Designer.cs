@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTKSanPhamBan));
             this.DataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DsTKSanPhamBan = new CuaHangDT.DsTKSanPhamBan();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -93,11 +94,11 @@
             // 
             this.label1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(242, 9);
+            this.label1.Location = new System.Drawing.Point(236, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(418, 31);
+            this.label1.Size = new System.Drawing.Size(616, 44);
             this.label1.TabIndex = 3;
-            this.label1.Text = "THỐNG KÊ SẢN PHẨM ĐĂ BÁN";
+            this.label1.Text = "THỐNG KÊ SẢN PHẨM ĐÃ BÁN";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox1
@@ -130,6 +131,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.reportViewer1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmTKSanPhamBan";
             this.Text = "Thông Kê Sản Phẩm Bán";
             this.Load += new System.EventHandler(this.FrmTKSanPhamBan_Load);

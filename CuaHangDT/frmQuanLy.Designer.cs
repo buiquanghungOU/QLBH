@@ -184,6 +184,7 @@
             this.sảnPhẩmToolStripMenuItem1.Name = "sảnPhẩmToolStripMenuItem1";
             this.sảnPhẩmToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.sảnPhẩmToolStripMenuItem1.Text = "Sản phẩm bán";
+            this.sảnPhẩmToolStripMenuItem1.Click += new System.EventHandler(this.sảnPhẩmToolStripMenuItem1_Click);
             // 
             // hàngTồnKhoToolStripMenuItem
             // 

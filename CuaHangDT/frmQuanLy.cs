@@ -207,5 +207,19 @@ namespace CuaHangDT
                 ActiveChilForm("FrmTKKTK");
             }
         }
+
+        private void sảnPhẩmToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (!CheckExistForm("FrmTKSanPhamBan"))
+            {
+                FrmTKSanPhamBan f = new FrmTKSanPhamBan();
+                f.MdiParent = this;
+                f.Show();
+            }
+            else
+            {
+                ActiveChilForm("FrmTKSanPhamBan");
+            }
+        }
     }
 }
