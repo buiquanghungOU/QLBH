@@ -118,7 +118,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmTimNCC";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmTimNCC";
+            this.Text = "Thông tin tìm kiếm nhà cung cấp";
             this.Load += new System.EventHandler(this.FrmTimNCC_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

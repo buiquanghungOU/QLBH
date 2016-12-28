@@ -40,6 +40,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lbGioNhap = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.txtThanhTien = new System.Windows.Forms.TextBox();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
@@ -54,8 +56,6 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnDong = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.lbGioNhap = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -168,6 +168,23 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "CHI TIẾT PHIẾU NHẬP";
+            // 
+            // lbGioNhap
+            // 
+            this.lbGioNhap.AutoSize = true;
+            this.lbGioNhap.Location = new System.Drawing.Point(160, 80);
+            this.lbGioNhap.Name = "lbGioNhap";
+            this.lbGioNhap.Size = new System.Drawing.Size(0, 19);
+            this.lbGioNhap.TabIndex = 5;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(32, 80);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(69, 19);
+            this.label11.TabIndex = 4;
+            this.label11.Text = "Giờ Nhập";
             // 
             // btnTimKiem
             // 
@@ -298,23 +315,6 @@
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(32, 80);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(69, 19);
-            this.label11.TabIndex = 4;
-            this.label11.Text = "Giờ Nhập";
-            // 
-            // lbGioNhap
-            // 
-            this.lbGioNhap.AutoSize = true;
-            this.lbGioNhap.Location = new System.Drawing.Point(160, 80);
-            this.lbGioNhap.Name = "lbGioNhap";
-            this.lbGioNhap.Size = new System.Drawing.Size(0, 19);
-            this.lbGioNhap.TabIndex = 5;
-            // 
             // timer1
             // 
             this.timer1.Enabled = true;
@@ -338,7 +338,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmNhapHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmNhapHang";
+            this.Text = "Quản lý nhập hàng";
             this.Load += new System.EventHandler(this.FrmNhapHang_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -302,7 +302,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmThanhToan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmThanhToan";
+            this.Text = "Thanh Toán";
             this.Load += new System.EventHandler(this.FrmThanhToan_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

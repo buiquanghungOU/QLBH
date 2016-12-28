@@ -128,7 +128,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmTimThanhToan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmTimThanhToan";
+            this.Text = "Tìm kiếm thông tin hóa đơn";
             this.Load += new System.EventHandler(this.FrmTimThanhToan_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

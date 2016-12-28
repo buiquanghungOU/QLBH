@@ -259,7 +259,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmXuatHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmXuatHang";
+            this.Text = "Quản lý Xuất Hàng";
             this.Load += new System.EventHandler(this.FrmXuatHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietPhieuXuat)).EndInit();
             this.groupBox1.ResumeLayout(false);

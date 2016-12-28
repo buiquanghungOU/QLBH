@@ -127,7 +127,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmTim_NhapHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmTim_NhapHang";
+            this.Text = "Tìm kiếm thông tin phiếu nhập";
             this.Load += new System.EventHandler(this.FrmTim_NhapHang_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
