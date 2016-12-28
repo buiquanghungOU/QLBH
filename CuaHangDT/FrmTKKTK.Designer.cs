@@ -154,7 +154,10 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lbMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmTKKTK";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thống Kê Hàng Tồn Kho";
             this.Load += new System.EventHandler(this.FrmTKKTK_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataTable1BindingSource)).EndInit();

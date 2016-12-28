@@ -127,7 +127,12 @@ namespace CuaHangDT
 
         private void btnDong_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            DialogResult Thoat;
+            Thoat = MessageBox.Show("Bạn có muốn thoát không?", "THÔNG BÁO!", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (Thoat == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
 
       
