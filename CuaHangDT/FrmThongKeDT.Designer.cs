@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmThongKeDT));
             this.DataTableTKDTBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DataSetTKDT = new CuaHangDT.DataSetTKDT();
@@ -105,7 +105,7 @@
             this.lbMain.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.lbMain.Location = new System.Drawing.Point(0, 0);
             this.lbMain.Name = "lbMain";
-            this.lbMain.Size = new System.Drawing.Size(898, 128);
+            this.lbMain.Size = new System.Drawing.Size(1197, 128);
             this.lbMain.TabIndex = 8;
             this.lbMain.Text = "THỐNG KÊ DOANH THU";
             this.lbMain.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -113,13 +113,13 @@
             // rpviewTKDT
             // 
             this.rpviewTKDT.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource2.Name = "DataSet1";
-            reportDataSource2.Value = this.DataTableTKDTBindingSource;
-            this.rpviewTKDT.LocalReport.DataSources.Add(reportDataSource2);
-            this.rpviewTKDT.LocalReport.ReportEmbeddedResource = "CuaHangDT.Report1.rdlc";
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.DataTableTKDTBindingSource;
+            this.rpviewTKDT.LocalReport.DataSources.Add(reportDataSource1);
+            this.rpviewTKDT.LocalReport.ReportEmbeddedResource = "CuaHangDT.ReportTKDT.rdlc";
             this.rpviewTKDT.Location = new System.Drawing.Point(0, 128);
             this.rpviewTKDT.Name = "rpviewTKDT";
-            this.rpviewTKDT.Size = new System.Drawing.Size(898, 348);
+            this.rpviewTKDT.Size = new System.Drawing.Size(1197, 386);
             this.rpviewTKDT.TabIndex = 11;
             // 
             // DataTableTKDTTableAdapter
@@ -130,7 +130,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(898, 476);
+            this.ClientSize = new System.Drawing.Size(1197, 514);
             this.Controls.Add(this.rpviewTKDT);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lbMain);

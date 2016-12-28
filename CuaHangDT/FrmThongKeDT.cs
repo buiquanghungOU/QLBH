@@ -26,6 +26,7 @@ namespace CuaHangDT
 
         private void FrmThongKeDT_Load(object sender, EventArgs e)
         {
+            
             cnStr = ConfigurationManager.ConnectionStrings["cnStr"].ConnectionString;
             cn = new SqlConnection(cnStr);
             LoadComboBoxNgayLapHD();

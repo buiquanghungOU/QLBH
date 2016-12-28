@@ -32,7 +32,7 @@ namespace CuaHangDT
         }
          private void LoadComboBoxMaSP()
          {
-             da = new SqlDataAdapter("SELECT DISTINCT * FROM SANPHAM", cn);
+             da = new SqlDataAdapter("SELECT DISTINCT MaSP FROM SANPHAM", cn);
              DataTable table = new DataTable();
              da.Fill(table);
              da.Dispose();
