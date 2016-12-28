@@ -107,42 +107,50 @@ namespace CuaHangDT
                     db2.CHITIETPHIEUXUATs.Add(ctpx);
                     db2.SaveChanges();
                 }
+                
                 LoadCTPhieuXuat();
+                MessageBox.Show("THÊM THÀNH CÔNG", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            var MaPX = cbMaPX.Text;
-            try
+            DialogResult del;
+            del = MessageBox.Show("Bạn có chắc chắn muốn xóa phiếu xuất này?", "THÔNG BÁO!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (del == DialogResult.Yes)
             {
-                QLBH_BTEntities db = new QLBH_BTEntities();
-                //var CT = db.CHITIETPHIEUXUATs.Single(p => p.MaPX == MaPX);
-                //db.CHITIETPHIEUXUATs.Remove(CT);
-
-                var Xoa = (from PX in db.PHIEUXUATs
-                          join CT in db.CHITIETPHIEUXUATs on PX.MaPX equals CT.MaPX
-                          where CT.MaPX == MaPX 
-                          select CT).FirstOrDefault();
-                db.CHITIETPHIEUXUATs.Remove(Xoa);
+                var MaPX = cbMaPX.Text;
                 try
                 {
-                    db.CHITIETPHIEUXUATs.Single(p => p.MaPX == MaPX);
-                }
-                catch
-                {
-                    var PX = db.PHIEUXUATs.Single(p => p.MaPX == MaPX);
-                    db.PHIEUXUATs.Remove(PX);
-                    
-                }
-                db.SaveChanges();
-                LoadCTPhieuXuat();
+                    QLBH_BTEntities db = new QLBH_BTEntities();
+                    //var CT = db.CHITIETPHIEUXUATs.Single(p => p.MaPX == MaPX);
+                    //db.CHITIETPHIEUXUATs.Remove(CT);
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                //throw;
+                    var Xoa = (from PX in db.PHIEUXUATs
+                               join CT in db.CHITIETPHIEUXUATs on PX.MaPX equals CT.MaPX
+                               where CT.MaPX == MaPX
+                               select CT).FirstOrDefault();
+                    db.CHITIETPHIEUXUATs.Remove(Xoa);
+                    try
+                    {
+                        db.CHITIETPHIEUXUATs.Single(p => p.MaPX == MaPX);
+                    }
+                    catch
+                    {
+                        var PX = db.PHIEUXUATs.Single(p => p.MaPX == MaPX);
+                        db.PHIEUXUATs.Remove(PX);
+
+                    }
+                    db.SaveChanges();
+                    LoadCTPhieuXuat();
+                    MessageBox.Show("XÓA THÀNH CÔNG", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    //throw;
+                }
             }
         }
 
@@ -162,6 +170,8 @@ namespace CuaHangDT
                     db.Entry(Sua).State = System.Data.Entity.EntityState.Modified;
                     db.SaveChanges();
                     LoadCTPhieuXuat();
+                    MessageBox.Show("SỬA THÀNH CÔNG", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                   
 
                 }
                 catch (Exception ex)
@@ -199,7 +209,12 @@ namespace CuaHangDT
 
         private void btnDong_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            DialogResult Thoat;
+            Thoat = MessageBox.Show("Bạn có muốn thoát không?", "THÔNG BÁO!", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (Thoat == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

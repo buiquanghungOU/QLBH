@@ -32,7 +32,7 @@ namespace CuaHangDT
                              MaSP = CTPN.MaSP,
                              MaNCC = PN.MaNCC,
                              SoLuong = CTPN.SoLuong,
-                             //ThanhTien = CTPN.ThanhTien,
+                             ThanhTien = CTPN.ThanhTien,
                              NgayNhap = PN.NgayNhap,
                          };
                 dgvChiTietPN.DataSource = CT.ToList();
@@ -197,7 +197,7 @@ namespace CuaHangDT
 
         private void btnDong_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)
